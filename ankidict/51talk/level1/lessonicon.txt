@@ -1,0 +1,162 @@
+793561, //static.51talk.com/upload/course/2018-06-05/1528170070dd19.jpg?v=1)
+793571, //static.51talk.com/upload/course/2018-06-05/15281701025c71.jpg?v=1)
+793581, //static.51talk.com/upload/course/2018-06-05/152817011942bd.jpg?v=1)
+793591, //static.51talk.com/upload/course/2018-06-05/15281701440edb.jpg?v=1)
+793601, //static.51talk.com/upload/course/2018-06-05/152817015706ee.jpg?v=1)
+793611, //static.51talk.com/upload/course/2018-06-05/15281701737b99.jpg?v=1)
+793621, //static.51talk.com/upload/course/2018-06-05/152817018726aa.jpg?v=1)
+793631, //static.51talk.com/upload/course/2018-06-05/1528170198d468.jpg?v=1)
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_793551.jpg
+793921, //static.51talk.com/upload/course/2018-06-05/1528170236bbdb.jpg?v=1
+793931, //static.51talk.com/upload/course/2018-06-05/15281702637eae.jpg?v=1
+793941, //static.51talk.com/upload/course/2018-06-05/1528170298b906.jpg?v=1
+793951, //static.51talk.com/upload/course/2018-06-05/152817032528eb.jpg?v=1
+793961, //static.51talk.com/upload/course/2018-06-05/1528170335bdac.jpg?v=1
+793971, //static.51talk.com/upload/course/2018-06-05/15281703457b73.jpg?v=1
+793981, //static.51talk.com/upload/course/2018-06-05/15281703578020.jpg?v=1
+793991, //static.51talk.com/upload/course/2018-06-05/1528170370e943.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_793911.jpg
+793741, //static.51talk.com/upload/course/2018-06-05/1528170396660d.jpg?v=1
+793751, //static.51talk.com/upload/course/2018-06-05/15281704084fac.jpg?v=1
+793761, //static.51talk.com/upload/course/2018-06-05/152817041803b1.jpg?v=1
+793771, //static.51talk.com/upload/course/2018-06-05/1528170427912b.jpg?v=1
+793781, //static.51talk.com/upload/course/2018-06-05/15281704399f47.jpg?v=1
+793791, //static.51talk.com/upload/course/2018-06-05/15281704503212.jpg?v=1
+793801, //static.51talk.com/upload/course/2018-06-05/152817046282f4.jpg?v=1
+793811, //static.51talk.com/upload/course/2018-06-05/15281704723de8.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_793731.jpg
+793651, //static.51talk.com/upload/course/2018-06-05/15281708190d4d.jpg?v=1
+793661, //static.51talk.com/upload/course/2018-06-05/1528170831f485.jpg?v=1
+793671, //static.51talk.com/upload/course/2018-06-05/1528170844f18e.jpg?v=1
+793681, //static.51talk.com/upload/course/2018-06-05/1528170856432f.jpg?v=1
+793691, //static.51talk.com/upload/course/2018-06-05/152817086811cf.jpg?v=1
+793701, //static.51talk.com/upload/course/2018-06-05/1528170881e569.jpg?v=1
+793711, //static.51talk.com/upload/course/2018-06-05/15281708923691.jpg?v=1
+793721, //static.51talk.com/upload/course/2018-06-05/1528170906ddaf.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_793641.jpg
+793831, //static.51talk.com/upload/course/2018-06-05/152817129723d7.jpg?v=1
+793841, //static.51talk.com/upload/course/2018-06-05/15281713256b22.jpg?v=1
+793851, //static.51talk.com/upload/course/2018-06-05/15281713420a87.jpg?v=1
+793861, //static.51talk.com/upload/course/2018-06-05/15281713530379.jpg?v=1
+793871, //static.51talk.com/upload/course/2018-06-05/1528171366db7c.jpg?v=1
+793881, //static.51talk.com/upload/course/2018-06-05/15281713760cb6.jpg?v=1
+793891, //static.51talk.com/upload/course/2018-06-05/152817138799d3.jpg?v=1
+793901, //static.51talk.com/upload/course/2018-06-05/15281714010eb4.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_793821.jpg
+794011, //static.51talk.com/upload/course/2018-06-05/1528175353d79a.jpg?v=1
+794021, //static.51talk.com/upload/course/2018-06-05/15281753668946.jpg?v=1
+794031, //static.51talk.com/upload/course/2018-06-05/15281753774021.jpg?v=1
+794041, //static.51talk.com/upload/course/2018-06-05/1528175390cc88.jpg?v=1
+794051, //static.51talk.com/upload/course/2018-06-05/1528175403249a.jpg?v=1
+794061, //static.51talk.com/upload/course/2018-06-05/1528175415bfe7.jpg?v=1
+794071, //static.51talk.com/upload/course/2018-06-05/15281754264cf3.jpg?v=1
+794081, //static.51talk.com/upload/course/2018-06-05/1528175438c875.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_794001.jpg
+776931, //static.51talk.com/upload/course/2018-06-05/1528175470fa6a.jpg?v=1
+776941, //static.51talk.com/upload/course/2018-06-05/15281754875bbd.jpg?v=1
+776951, //static.51talk.com/upload/course/2018-06-05/152817549827c2.jpg?v=1
+776961, //static.51talk.com/upload/course/2018-06-05/1528175509d28b.jpg?v=1
+776971, //static.51talk.com/upload/course/2018-06-05/1528175642d3d8.jpg?v=1
+776981, //static.51talk.com/upload/course/2018-06-05/1528175655940a.jpg?v=1
+776991, //static.51talk.com/upload/course/2018-06-05/1528175673fb7a.jpg?v=1
+777001, //static.51talk.com/upload/course/2018-06-05/15281756903fe6.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_770231.jpg
+777011, //static.51talk.com/upload/course/2018-06-05/1528175981dd91.jpg?v=1
+777021, //static.51talk.com/upload/course/2018-06-05/1528177204b76c.jpg?v=1
+777031, //static.51talk.com/upload/course/2018-06-05/15281772173b6b.jpg?v=1
+777041, //static.51talk.com/upload/course/2018-06-05/1528177236f909.jpg?v=1
+777051, //static.51talk.com/upload/course/2018-06-05/1528177262b3f9.jpg?v=1
+777061, //static.51talk.com/upload/course/2018-06-05/1528177285e2c8.jpg?v=1
+777071, //static.51talk.com/upload/course/2018-06-05/1528177301dac5.jpg?v=1
+777081, //static.51talk.com/upload/course/2018-06-05/15281773124f96.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_771221.jpg
+777091, //static.51talk.com/upload/course/2018-06-05/1528177383bfa5.jpg?v=1
+777101, //static.51talk.com/upload/course/2018-06-05/1528177375f385.jpg?v=1
+777111, //static.51talk.com/upload/course/2018-06-05/1528177393a243.jpg?v=1
+777121, //static.51talk.com/upload/course/2018-06-05/15281774044481.jpg?v=1
+777131, //static.51talk.com/upload/course/2018-06-05/15281774189730.jpg?v=1
+777141, //static.51talk.com/upload/course/2018-06-05/1528177431eed1.jpg?v=1
+777151, //static.51talk.com/upload/course/2018-06-05/1528177446a96a.jpg?v=1
+777161, //static.51talk.com/upload/course/2018-06-05/1528177459d2de.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_771231.jpg
+777181, //static.51talk.com/upload/course/2018-06-05/15281775429194.jpg?v=1
+777191, //static.51talk.com/upload/course/2018-06-05/15281775564b66.jpg?v=1
+777201, //static.51talk.com/upload/course/2018-06-05/1528177574894f.jpg?v=1
+777211, //static.51talk.com/upload/course/2018-06-05/152817758708a2.jpg?v=1
+777221, //static.51talk.com/upload/course/2018-06-05/15281776100ca6.jpg?v=1
+777231, //static.51talk.com/upload/course/2018-06-05/1528177629d429.jpg?v=1
+777241, //static.51talk.com/upload/course/2018-06-05/1528177645ea5e.jpg?v=1
+777251, //static.51talk.com/upload/course/2018-06-05/1528177658e43e.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_771241.jpg
+777261, //static.51talk.com/upload/course/2018-06-05/1528177721df58.jpg?v=1
+777271, //static.51talk.com/upload/course/2018-06-05/15281777402134.jpg?v=1
+777281, //static.51talk.com/upload/course/2018-06-05/152817775887ed.jpg?v=1
+777291, //static.51talk.com/upload/course/2018-06-05/15281778371126.jpg?v=1
+777301, //static.51talk.com/upload/course/2018-06-05/1528177851c1a6.jpg?v=1
+777311, //static.51talk.com/upload/course/2018-06-05/15281778668f03.jpg?v=1
+777321, //static.51talk.com/upload/course/2018-06-05/15281778779e6e.jpg?v=1
+777331, //static.51talk.com/upload/course/2018-06-05/152817789161bf.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_769961.jpg
+777351, //static.51talk.com/upload/course/2018-06-05/15281782567c1e.jpg?v=1
+777361, //static.51talk.com/upload/course/2018-06-05/1528178884a2de.jpg?v=1
+777371, //static.51talk.com/upload/course/2018-06-05/1528178870e943.jpg?v=1
+777381, //static.51talk.com/upload/course/2018-06-05/1528178900e13e.jpg?v=1
+777391, //static.51talk.com/upload/course/2018-06-05/1528178920c824.jpg?v=1
+777401, //static.51talk.com/upload/course/2018-06-05/15281789354a12.jpg?v=1
+777411, //static.51talk.com/upload/course/2018-06-05/1528178951399f.jpg?v=1
+777421, //static.51talk.com/upload/course/2018-06-05/15281789694835.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_777341.jpg
+777431, //static.51talk.com/upload/course/2018-06-05/15281790169265.jpg?v=1
+777441, //static.51talk.com/upload/course/2018-06-05/1528179035a11e.jpg?v=1
+777451, //static.51talk.com/upload/course/2018-06-05/15281790534ac9.jpg?v=1
+777461, //static.51talk.com/upload/course/2018-06-05/1528179066a325.jpg?v=1
+777471, //static.51talk.com/upload/course/2018-06-05/152817907812d4.jpg?v=1
+777481, //static.51talk.com/upload/course/2018-06-05/15281790940739.jpg?v=1
+777491, //static.51talk.com/upload/course/2018-06-05/15281791087d6d.jpg?v=1
+777501, //static.51talk.com/upload/course/2018-06-05/1528179123ed81.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_770241.jpg
+777511, //static.51talk.com/upload/course/2018-06-05/15281791605cd7.jpg?v=1
+777521, //static.51talk.com/upload/course/2018-06-05/152817917196dc.jpg?v=1
+777531, //static.51talk.com/upload/course/2018-06-05/15281791836c54.jpg?v=1
+777541, //static.51talk.com/upload/course/2018-06-05/1528179200e7a7.jpg?v=1
+777551, //static.51talk.com/upload/course/2018-06-05/152817921483ac.jpg?v=1
+777561, //static.51talk.com/upload/course/2018-06-05/1528179232776c.jpg?v=1
+777571, //static.51talk.com/upload/course/2018-06-05/15281792454d15.jpg?v=1
+777581, //static.51talk.com/upload/course/2018-06-05/15281792558ab2.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_772111.jpg
+777591, //static.51talk.com/upload/course/2018-06-05/152818243624e2.jpg?v=1
+777601, //static.51talk.com/upload/course/2018-06-05/1528182449fe5c.jpg?v=1
+777611, //static.51talk.com/upload/course/2018-06-05/15281824623444.jpg?v=1
+777621, //static.51talk.com/upload/course/2018-06-05/15281824745b81.jpg?v=1
+777631, //static.51talk.com/upload/course/2018-06-05/1528182495770e.jpg?v=1
+777641, //static.51talk.com/upload/course/2018-06-05/1528182506738e.jpg?v=1
+777651, //static.51talk.com/upload/course/2018-06-05/152818251877ab.jpg?v=1
+777661, //static.51talk.com/upload/course/2018-06-05/152818253102a8.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_771251.jpg
+777681, //static.51talk.com/upload/course/2018-06-05/15281833169e3a.jpg?v=1
+777691, //static.51talk.com/upload/course/2018-06-05/15281833283426.jpg?v=1
+777701, //static.51talk.com/upload/course/2018-06-05/1528183340d447.jpg?v=1
+777711, //static.51talk.com/upload/course/2018-06-05/15281833536b23.jpg?v=1
+777721, //static.51talk.com/upload/course/2018-06-05/15281833704107.jpg?v=1
+777731, //static.51talk.com/upload/course/2018-06-05/1528183385c9ea.jpg?v=1
+777741, //static.51talk.com/upload/course/2018-06-05/1528183397bc0d.jpg?v=1
+777751, //static.51talk.com/upload/course/2018-06-05/1528183408cb52.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_769971.jpg
+777761, //static.51talk.com/upload/course/2018-06-05/1528183454be25.jpg?v=1
+777771, //static.51talk.com/upload/course/2018-06-05/152818346512fd.jpg?v=1
+777781, //static.51talk.com/upload/course/2018-06-05/1528183485cd85.jpg?v=1
+777791, //static.51talk.com/upload/course/2018-06-05/1528183496d89c.jpg?v=1
+777801, //static.51talk.com/upload/course/2018-06-05/15281835089e11.jpg?v=1
+777811, //static.51talk.com/upload/course/2018-06-05/15281835171617.jpg?v=1
+777821, //static.51talk.com/upload/course/2018-06-05/15281835282a86.jpg?v=1
+777831, //static.51talk.com/upload/course/2018-06-05/1528183538a2b9.jpg?v=1
+      , //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_772121.jpg
+777841, //static.51talk.com/upload/course/2018-06-05/15281839582835.jpg?v=1
+777851, //static.51talk.com/upload/course/2018-06-05/15281839816cc9.jpg?v=1
+777861, //static.51talk.com/upload/course/2018-06-05/152818400337e5.jpg?v=1
+777871, //static.51talk.com/upload/course/2018-06-05/1528184013f575.jpg?v=1
+777881, //static.51talk.com/upload/course/2018-06-05/15281840256ce1.jpg?v=1
+777891, //static.51talk.com/upload/course/2018-06-05/1528184039dcad.jpg?v=1
+777901, //static.51talk.com/upload/course/2018-06-05/15281840501894.jpg?v=1
+777911, //static.51talk.com/upload/course/2018-06-05/1528184063ab6e.jpg?v=1
+        //static.51talk.com/upload/course/2018-07-09/unit_cej_test4ori_769981.jpg

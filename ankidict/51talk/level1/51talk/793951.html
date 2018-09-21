@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>51Talk会员中心</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <link rel="stylesheet" href="https://static.51talk.com/static/css/u_efl_style.css?v=1535631903783" type="text/css">
+
+  <link rel="shortcut icon" href="https://static.51talk.com/static/image/favicon/favicon.png?v=1535631903783">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://static.51talk.com/static/image/favicon/apple-touch-icon.png?v=1535631903783">
+  <script type="text/javascript" src="https://static.51talk.com/static/js/jquery-1.8.2.min.js?v=1535631903783"></script>
+  <!-- efl start -->
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <link rel="stylesheet" href="https://static.51talk.com/static/css/html/class_2017/ui.css?v=1535631903783" type="text/css">
+
+  <script type='text/javascript' src="//sdk.17kouyu.com/jssdk/v3.0/iload.js"></script>
+    <!-- efl end -->
+  <script type="text/javascript" src="https://static.51talk.com/static/js/html/lib/ckplayer/ckplayer.min.js?v=1535631903783"></script>
+  <!-- ntalker end -->
+  
+  <!-- 环信 start -->
+  
+  <script>
+      window.easemobim = window.easemobim || {};
+      easemobim.config = {
+          ticket: false,//是否展示留言入口
+          satisfaction:false,//满意度评价入口
+          offDutyType: 'none',    //下班后消息进入待接入
+          offDutyWord: encodeURIComponent('现在是下班时间，如有问题请您于客服上班时间咨询，我们的上班时间是9:00-22:30，感谢您使用51talk无忧英语在线客服系统，欢迎您再来咨询！')//下班提示语
+      };
+  </script>
+  
+  <script src='//kefu.easemob.com/webim/easemob.js?tenantId=6437&hide=true&sat=true' async='async'></script>
+  <!-- 环信 end -->
+
+  <!-- 百度统计代码 start -->
+  
+  <script>
+      var _hmt = _hmt || [];
+      (function() {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?cd5cd03181b14b3269f31c9cc8fe277f";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+      })();
+  </script>
+  <!--[if IE 6]>
+<script src="//static.51talk.com/js/new_user/background.png.js?v=1439877955695" type="text/javascript" charset="utf-8" language="javascript"></script>
+<script type="text/javascript">DD_belatedPNG.fix('*');</script>
+<![endif]-->
+  
+  <!-- 百度统计代码 end -->
+</head>
+
+<body>
+<div class="m-load" id="m-load" style="display: none;">正在努力加载中</div>
+<div id="classMask"></div>
+<div class="g-hd">
+  <div class="m-top" id="jsHead">
+    <div class="g-in f-cb">
+      <div class="m-menu f-fl">
+        <a class="user __dim__o" setdata='UserMenu_username'  href="https://www.51talk.com/user/index">hi,<em class="nick">Alice</em>！</a><i>|</i><a class="msg __dim__o" setdata='UserMenu_msg' href="https://www.51talk.com/user/wll">消息<span class="num">31</span></a><i>|</i><a class='__dim__o' setdata='UserMenu_logout'  href=https://www.51talk.com/sso/logout>退出</a>
+      </div>
+      <ul class="m-link f-ib f-fr">
+        <li><a href="//www.51talk.com" class='__dim__o' setdata='HeadLink_1'>官网首页</a></li>
+                        <li><a href="https://sale.51talk.com" class='__dim__o' setdata='HeadLink_2'>购买课程</a></li>
+                        <li>
+                                                <a href="//www.51talk.com/h/course.html" class='__dim__o' setdata='HeadLink_3'>课程介绍</a></li>
+                                    <li>
+                       <a href="https://www.51talk.com/testing/index/?type=login" class='__dim__o' setdata='HeadLink_4'>英语水平</a>
+                      </li>
+        <li><a target="_blank" href="https://www.51talk.com/page/faq" class='__dim__o' setdata='HeadLink_5'>常见问题</a></li>
+        <li><a target="_blank" href="https://www.51talk.com/page/cet" class='__dim__o' setdata='HeadLink_6'>企业培训</a></li>
+        <li class="jsMore follow"><a href="https://www.51talk.com/page/about/" class='__dim__o' setdata='HeadLink_7'>关注我们</a>
+          <ul class="jsUl">
+            <li class="tsina"><a href="http://weibo.com/51talk" rel="nofollow" target="_blank">新浪微博</a></li>
+            <li class="tqq"><a href="http://e.t.qq.com/t51talk" rel="nofollow" target="_blank">腾讯微博</a></li>
+          </ul>
+        </li>
+                 			<li><a href="https://www.51talk.com/user/invitefriend" target="_blank" class='__dim__o' setdata='HeadLink_8'>邀请有礼</a></li>
+                        <li><a href="https://www.51talk.com/activity/ipadClient" target="_blank" onclick = "__sdonclick('ipadclient');" title="iPad客户端">iPad客户端</a></li>
+      </ul>
+    </div>
+    <div class="down_ac" style='width:105px;height:78px;position:absolute;top:0;right:0;'>
+      <a href="https://www.51talk.com/ac/51TalkAC.php" target="_blank"><img src="https://static.51talk.com/static/image/menber/un/down_AC.png?v=1535631903783" alt=""/></a>
+    </div>
+  </div>
+  <!-- /m-top -->
+  <div class="m-head">
+    <div class="g-in">
+                    <div style="float: left; margin-top: 17px;"><a href="//www.51talk.com"><img src="https://static.51talk.com/static/image/common/jonior_logo.png?v=1535631903783"/></a></div>
+        
+      <!--<h1 class="logo">
+          <a href="https://www.51talk.com/" class='__dim__o' setdata='nav_51talk_logo'>51talk 无忧英语</a>
+      </h1>-->
+      <ul class="nav">
+                  <li><a href="https://www.51talk.com/user/index" class='__dim__o' setdata='nav_1'>首页</a></li>
+                  <li><a href="//home.51talk.com/user/remind" class='__dim__o' setdata='nav_2'>账户设置</a></li>
+                  <li><a  href="https://sale.51talk.com" class='__dim__o' setdata='nav_3'>购买课程</a></li>
+                          <li><a href="//bbs.51talk.com" target="_blank" hidefocus="true" style="outline:none;" class='__dim__o' setdata='nav_4' >学习社区</a></li>
+              </ul>
+      <div class="contact">
+        <p><a href="javascript:void(0)" onclick="easemobIM()" data-type='261110' rel="nofollow" class='hiring u-b-ntkf' title="在线客服" data-url="/Ajax/countQqZiXun">客服在线咨询 (09:00-22:30)</a></p>
+        <p class="phone">4000-51-51-51</p>
+      </div>
+              <a class="file_style f-fr addFile addStyle05 __dim__o add-bg"  href="https://www.51talk.com/user/invitefriend?style=5"  setdata='nav_ad_logo' title="邀请好友送次卡 " target="_blank"></a>
+               </div>
+  </div>
+  <!-- /m-head -->
+</div>
+<!-- /g-hd -->
+<script>
+    //变量初始化
+    var www_url = "//static.51talk.com";
+    var word_ref = [{"title":"homework","url":"dfbc9f46aa9df9734335ef4ab14520bb_17051681a.mp3","sentence1":"He is doing his homework.","sentence1_url":"633f1f752280183b328a78d62420f630_1705162f4.mp3","sentence2":"","sentence2_url":""},{"title":"math","url":"4c34bb1b450791cc41998697b2fdd2ec_170516eb3.mp3","sentence1":"He likes math very much.","sentence1_url":"1d663dcef38965e5941017218814747c_170516396.mp3","sentence2":"","sentence2_url":""},{"title":"grade","url":"bab66be97b3a67854951e5e2f8d7ed5a_170516d51.mp3","sentence1":"Tom is in the fifth grade.","sentence1_url":"6265ae6da8dd00f61a59a95e1c120f84_170516395.mp3","sentence2":"","sentence2_url":""},{"title":"tomato","url":"cc06f78756d9e4706674b1bf0af7b965_170516946.mp3","sentence1":"There is a tomato on the desk.","sentence1_url":"5de938800d9c543944b9aa7c1d77d98d_170516300.mp3","sentence2":"","sentence2_url":""},{"title":"tea","url":"64465d21a7251ba1120a74a2572511af_1705168c8.mp3","sentence1":"I want a cup of tea.","sentence1_url":"70b8b42e6b534735341e945c2cd915f5_1705168d7.mp3","sentence2":"","sentence2_url":""},{"title":"dentist","url":"36ad05f8ccbc0c1ca24416157f099f86_1705165f1.mp3","sentence1":"He is a dentist.","sentence1_url":"57d08b6c4ef3b3c05217373e49e5cc36_17051667f.mp3","sentence2":"","sentence2_url":""},{"title":"class","url":"2c594e38e00146e1b871c7f7cd8ac691_1705166fe.mp3","sentence1":"My favorite class is math.","sentence1_url":"4f20649c9fad823236217756a04ef383_1705166e3.mp3","sentence2":"","sentence2_url":""},{"title":"science","url":"caa5e02152f94a4315c01b67b57216e5_170516835.mp3","sentence1":"This is my science teacher.","sentence1_url":"5748ab6dda161646673e37ac93175a91_170516845.mp3","sentence2":"","sentence2_url":""},{"title":"English","url":"e2d26ee8d3e1c5b430eea63d136d8dcc_1705161ae.mp3","sentence1":"I am doing my English homework.","sentence1_url":"2025078e91e5fedf55f1d4ad740c18d1_17051681d.mp3","sentence2":"","sentence2_url":""}];
+    var dialog_ref = {"talk0":{"title":["Please take out your math books.","Ugh! I don't like math. It's not easy.","What is your favorite class?","My favorite class is English.","We are in the first grade. We need to study math and science.","Oh no. I hope the homework is easy.","Don't worry, Timmy. I can help you!","Thanks. I will work harder!"],"url":["02c9496c053082f6eef007d2a6c30f98_170926fec.mp3","d4599df188e18c228d52901a1f7708d8_170926139.mp3","fef4e8cfdb7c47c59557653de77c39cb_1709265f0.mp3","bab5bef82e99ea77faebcf6a4ea499fa_1709266c3.mp3","a2dc6f870131698029d037b2fa154e32_1709262c9.mp3","4ff1344eb251e649b34a2bd21e583d9d_180308503.mp3","24767f5629edfccaef24346551605974_1709261e6.mp3","62fafdf497ae0bc4bfa5f6c8f6bdbc3b_170926963.mp3"]}};
+    var sentence_ref = 0;
+    var params = 793951;
+    var snum = "U23057131136";
+    var video_url = "https://static.51talk.com/upload/efl_video/prepar/609cf91b0a9fdf628540c41b5050a2aa_180601937.mp4";
+</script>
+<!-- 加载sdk -->
+
+<!-- 美小转介绍二维码 -->
+    <!-- 美小转介绍二维码end -->
+<div class="g-bd">
+    <div class="g-in ">
+        <div class="g-mnc m-efl" id="container" data-init="upEfl">
+            <div class="m-crumb">
+                <span title="Level 1">Level 1</span><i>&gt;</i>
+                <span title="Unit 2">Unit 2</span><i>&gt;</i>
+                <span title="Lesson 4 Math and Science">Lesson 4 Math and Science</span><i>&gt;</i>
+                <span>课前预习</span>
+                <div class="f-fr">
+                    <a class="note exp" href="https://www.51talk.com/page/detail/408" target="_blank">使用说明</a>
+                    <a class="note look" href="https://www.51talk.com/user/sword" target="_blank">查看生词表</a>
+                </div>
+            </div>
+            <!-- /m-crumb -->
+            <ul class="g-mncw m-tab f-ff1">
+                                <li class="crt jsPart u-arrow" data-type='1'><a href="javascript:;">Part 1 Word 预习单词</a></li>
+                <li class="jsPart u-arrow" data-type='2'><a href="javascript:;">Part 2 Dialogue 课中对话</a></li>
+                                
+                                <li class="jsPart "  data-type='5'>
+                    <img src="https://static.51talk.com/static/image/menber/up_c/sel-icon-hot.png?v=1535631903783" style="margin-top: -16px;">
+                    <a href="javascript:;">Part 3 Preview 课前视频</a></li>
+                            </ul>
+            <!-- /m-tab -->
+            <!-- Word start-->
+            <div class="g-mncw preview">
+                <div class="f-tac note">
+                    <p class="u-txt">单词发声训练：点击“听”试听单词发音，点击“读”进行发音练习后，系统会自动为你打分。</p>
+                </div>
+                <div class="translate f-cb">
+                                        <div class="trans-content" >
+                        <div class="trans-group">
+                            <div class="title">
+                                <span class="word">homework</span>
+                                <span class="spell">英/ˈhəumwəːk/ 美/ˈhoumwəːrk/</span>
+                                                                <a class="favo add" href="javascript:void(0)" title="添加该单词到生词本" onclick="add_new_words($(this), 'homework', '156437', '793951', '1');">添加到生词本</a>                            </div>
+                            <div class="comment">
+                                <p>释义：n.作业</p>
+                                <p class="tpl3"></p>
+                            </div>
+                            <div class="operate box_pre_r ">
+                                <span class="u-btn hover listen word_p" title='听' onclick="play_ref('word', '');">听<i class="icon listen"></i></span>
+                                <span class="jsRead u-btn hover read word_r" title='读' onclick="record_ref('word', '');">读<i class="icon read"></i></span>
+                                <div class="m-tips" >
+                                    听到“叮”声后开始朗读
+                                    <a class="u-btn active" id="iknow" href="javascript:void(0)">我知道啦</a>
+                                    <i class="arrow"></i>
+                                    <i class="arrow2"></i>
+                                </div>
+                                                                <span class="word_"></span><!-- g_1 - g_5 -->
+                                                            </div>
+                        </div>
+                        <!-- /trans-group -->
+                        <!-- 一个句子 -->
+                                                <div class="samples">
+                            <div class="u-tt-md">例句：</div>
+                            <ol>
+                                                                <li class="trans-group">
+                                    <div class="f-cb" style="width: 490px; float:left;padding-right: 20px;">
+                                    <div class="comment">
+                                        <p class="sentence1_t">He is doing his homework.</p>
+                                        <p class="s-fc3">他正在做作业。</p>
+                                    </div>
+                                    <div class="operate">
+                                        <span class="u-btn hover listen sentence1_p" title='听' onclick="play_ref('sentence1', '');">听<i class="icon listen"></i></span>
+                                        <span class="u-btn hover read sentence1_r" title='读' onclick="record_ref('sentence1', '');">读<i class="icon read"></i></span>
+                                        <span class="sentence1_"></span>                                    </div>
+                                    </div>
+                                                                    </li>
+                                                                                            </ol>
+                        </div>
+                                            </div>
+                    <!-- /samples -->
+                                        <div class="trans-content" style="display:none">
+                        <div class="trans-group">
+                            <div class="title">
+                                <span class="word">math</span>
+                                <span class="spell">英/mæθ/ 美/mæθ/</span>
+                                                                <a class="favo add" href="javascript:void(0)" title="添加该单词到生词本" onclick="add_new_words($(this), 'math', '156438', '793951', '1');">添加到生词本</a>                            </div>
+                            <div class="comment">
+                                <p>释义：n.数学</p>
+                                <p class="tpl3"></p>
+                            </div>
+                            <div class="operate box_pre_r ">
+                                <span class="u-btn hover listen word_p1" title='听' onclick="play_ref('word', '1');">听<i class="icon listen"></i></span>
+                                <span class="jsRead u-btn hover read word_r1" title='读' onclick="record_ref('word', '1');">读<i class="icon read"></i></span>
+                                <div class="m-tips" style="display:none">
+                                    听到“叮”声后开始朗读
+                                    <a class="u-btn active" id="iknow" href="javascript:void(0)">我知道啦</a>
+                                    <i class="arrow"></i>
+                                    <i class="arrow2"></i>
+                                </div>
+                                                                <span class="word_1"></span><!-- g_1 - g_5 -->
+                                                            </div>
+                        </div>
+                        <!-- /trans-group -->
+                        <!-- 一个句子 -->
+                                                <div class="samples">
+                            <div class="u-tt-md">例句：</div>
+                            <ol>
+                                                                <li class="trans-group">
+                                    <div class="f-cb" style="width: 490px; float:left;padding-right: 20px;">
+                                    <div class="comment">
+                                        <p class="sentence1_t1">He likes math very much.</p>
+                                        <p class="s-fc3">他非常喜欢数学。</p>
+                                    </div>
+                                    <div class="operate">
+                                        <span class="u-btn hover listen sentence1_p1" title='听' onclick="play_ref('sentence1', '1');">听<i class="icon listen"></i></span>
+                                        <span class="u-btn hover read sentence1_r1" title='读' onclick="record_ref('sentence1', '1');">读<i class="icon read"></i></span>
+                                        <span class="sentence1_1"></span>                                    </div>
+                                    </div>
+                                                                    </li>
+                                                                                            </ol>
+                        </div>
+                                            </div>
+                    <!-- /samples -->
+                                        <div class="trans-content" style="display:none">
+                        <div class="trans-group">
+                            <div class="title">
+                                <span class="word">grade</span>
+                                <span class="spell">英/greɪd/ 美/greɪd/</span>
+                                                                <a class="favo add" href="javascript:void(0)" title="添加该单词到生词本" onclick="add_new_words($(this), 'grade', '156439', '793951', '1');">添加到生词本</a>                            </div>
+                            <div class="comment">
+                                <p>释义：n.年级</p>
+                                <p class="tpl3"></p>
+                            </div>
+                            <div class="operate box_pre_r ">
+                                <span class="u-btn hover listen word_p2" title='听' onclick="play_ref('word', '2');">听<i class="icon listen"></i></span>
+                                <span class="jsRead u-btn hover read word_r2" title='读' onclick="record_ref('word', '2');">读<i class="icon read"></i></span>
+                                <div class="m-tips" style="display:none">
+                                    听到“叮”声后开始朗读
+                                    <a class="u-btn active" id="iknow" href="javascript:void(0)">我知道啦</a>
+                                    <i class="arrow"></i>
+                                    <i class="arrow2"></i>
+                                </div>
+                                                                <span class="word_2"></span><!-- g_1 - g_5 -->
+                                                            </div>
+                        </div>
+                        <!-- /trans-group -->
+                        <!-- 一个句子 -->
+                                                <div class="samples">
+                            <div class="u-tt-md">例句：</div>
+                            <ol>
+                                                                <li class="trans-group">
+                                    <div class="f-cb" style="width: 490px; float:left;padding-right: 20px;">
+                                    <div class="comment">
+                                        <p class="sentence1_t2">Tom is in the fifth grade.</p>
+                                        <p class="s-fc3">汤姆正在读五年级。</p>
+                                    </div>
+                                    <div class="operate">
+                                        <span class="u-btn hover listen sentence1_p2" title='听' onclick="play_ref('sentence1', '2');">听<i class="icon listen"></i></span>
+                                        <span class="u-btn hover read sentence1_r2" title='读' onclick="record_ref('sentence1', '2');">读<i class="icon read"></i></span>
+                                        <span class="sentence1_2"></span>                                    </div>
+                                    </div>
+                                                                    </li>
+                                                                                            </ol>
+                        </div>
+                                            </div>
+                    <!-- /samples -->
+                                        <div class="trans-content" style="display:none">
+                        <div class="trans-group">
+                            <div class="title">
+                                <span class="word">tomato</span>
+                                <span class="spell">英/təˈmɑːtəu/ 美/tə ˈmeɪtou/</span>
+                                                                <a class="favo add" href="javascript:void(0)" title="添加该单词到生词本" onclick="add_new_words($(this), 'tomato', '156440', '793951', '1');">添加到生词本</a>                            </div>
+                            <div class="comment">
+                                <p>释义：n.西红柿</p>
+                                <p class="tpl3"></p>
+                            </div>
+                            <div class="operate box_pre_r ">
+                                <span class="u-btn hover listen word_p3" title='听' onclick="play_ref('word', '3');">听<i class="icon listen"></i></span>
+                                <span class="jsRead u-btn hover read word_r3" title='读' onclick="record_ref('word', '3');">读<i class="icon read"></i></span>
+                                <div class="m-tips" style="display:none">
+                                    听到“叮”声后开始朗读
+                                    <a class="u-btn active" id="iknow" href="javascript:void(0)">我知道啦</a>
+                                    <i class="arrow"></i>
+                                    <i class="arrow2"></i>
+                                </div>
+                                                                <span class="word_3"></span><!-- g_1 - g_5 -->
+                                                            </div>
+                        </div>
+                        <!-- /trans-group -->
+                        <!-- 一个句子 -->
+                                                <div class="samples">
+                            <div class="u-tt-md">例句：</div>
+                            <ol>
+                                                                <li class="trans-group">
+                                    <div class="f-cb" style="width: 490px; float:left;padding-right: 20px;">
+                                    <div class="comment">
+                                        <p class="sentence1_t3">There is a tomato on the desk.</p>
+                                        <p class="s-fc3">桌子上有一个西红柿。</p>
+                                    </div>
+                                    <div class="operate">
+                                        <span class="u-btn hover listen sentence1_p3" title='听' onclick="play_ref('sentence1', '3');">听<i class="icon listen"></i></span>
+                                        <span class="u-btn hover read sentence1_r3" title='读' onclick="record_ref('sentence1', '3');">读<i class="icon read"></i></span>
+                                        <span class="sentence1_3"></span>                                    </div>
+                                    </div>
+                                                                    </li>
+                                                                                            </ol>
+                        </div>
+                                            </div>
+                    <!-- /samples -->
+                                        <div class="trans-content" style="display:none">
+                        <div class="trans-group">
+                            <div class="title">
+                                <span class="word">tea</span>
+                                <span class="spell">英/tiː/ 美/tiː/</span>
+                                                                <a class="favo add" href="javascript:void(0)" title="添加该单词到生词本" onclick="add_new_words($(this), 'tea', '156441', '793951', '1');">添加到生词本</a>                            </div>
+                            <div class="comment">
+                                <p>释义：n.茶</p>
+                                <p class="tpl3"></p>
+                            </div>
+                            <div class="operate box_pre_r ">
+                                <span class="u-btn hover listen word_p4" title='听' onclick="play_ref('word', '4');">听<i class="icon listen"></i></span>
+                                <span class="jsRead u-btn hover read word_r4" title='读' onclick="record_ref('word', '4');">读<i class="icon read"></i></span>
+                                <div class="m-tips" style="display:none">
+                                    听到“叮”声后开始朗读
+                                    <a class="u-btn active" id="iknow" href="javascript:void(0)">我知道啦</a>
+                                    <i class="arrow"></i>
+                                    <i class="arrow2"></i>
+                                </div>
+                                                                <span class="word_4"></span><!-- g_1 - g_5 -->
+                                                            </div>
+                        </div>
+                        <!-- /trans-group -->
+                        <!-- 一个句子 -->
+                                                <div class="samples">
+                            <div class="u-tt-md">例句：</div>
+                            <ol>
+                                                                <li class="trans-group">
+                                    <div class="f-cb" style="width: 490px; float:left;padding-right: 20px;">
+                                    <div class="comment">
+                                        <p class="sentence1_t4">I want a cup of tea.</p>
+                                        <p class="s-fc3">我想要一杯茶。</p>
+                                    </div>
+                                    <div class="operate">
+                                        <span class="u-btn hover listen sentence1_p4" title='听' onclick="play_ref('sentence1', '4');">听<i class="icon listen"></i></span>
+                                        <span class="u-btn hover read sentence1_r4" title='读' onclick="record_ref('sentence1', '4');">读<i class="icon read"></i></span>
+                                        <span class="sentence1_4"></span>                                    </div>
+                                    </div>
+                                                                    </li>
+                                                                                            </ol>
+                        </div>
+                                            </div>
+                    <!-- /samples -->
+                                        <div class="trans-content" style="display:none">
+                        <div class="trans-group">
+                            <div class="title">
+                                <span class="word">dentist</span>
+                                <span class="spell">英/ˈdentɪst/ 美/ˈdentɪst/</span>
+                                                                <a class="favo add" href="javascript:void(0)" title="添加该单词到生词本" onclick="add_new_words($(this), 'dentist', '156442', '793951', '1');">添加到生词本</a>                            </div>
+                            <div class="comment">
+                                <p>释义：n.牙医</p>
+                                <p class="tpl3"></p>
+                            </div>
+                            <div class="operate box_pre_r ">
+                                <span class="u-btn hover listen word_p5" title='听' onclick="play_ref('word', '5');">听<i class="icon listen"></i></span>
+                                <span class="jsRead u-btn hover read word_r5" title='读' onclick="record_ref('word', '5');">读<i class="icon read"></i></span>
+                                <div class="m-tips" style="display:none">
+                                    听到“叮”声后开始朗读
+                                    <a class="u-btn active" id="iknow" href="javascript:void(0)">我知道啦</a>
+                                    <i class="arrow"></i>
+                                    <i class="arrow2"></i>
+                                </div>
+                                                                <span class="word_5"></span><!-- g_1 - g_5 -->
+                                                            </div>
+                        </div>
+                        <!-- /trans-group -->
+                        <!-- 一个句子 -->
+                                                <div class="samples">
+                            <div class="u-tt-md">例句：</div>
+                            <ol>
+                                                                <li class="trans-group">
+                                    <div class="f-cb" style="width: 490px; float:left;padding-right: 20px;">
+                                    <div class="comment">
+                                        <p class="sentence1_t5">He is a dentist.</p>
+                                        <p class="s-fc3">他是一个牙医。</p>
+                                    </div>
+                                    <div class="operate">
+                                        <span class="u-btn hover listen sentence1_p5" title='听' onclick="play_ref('sentence1', '5');">听<i class="icon listen"></i></span>
+                                        <span class="u-btn hover read sentence1_r5" title='读' onclick="record_ref('sentence1', '5');">读<i class="icon read"></i></span>
+                                        <span class="sentence1_5"></span>                                    </div>
+                                    </div>
+                                                                    </li>
+                                                                                            </ol>
+                        </div>
+                                            </div>
+                    <!-- /samples -->
+                                        <div class="trans-content" style="display:none">
+                        <div class="trans-group">
+                            <div class="title">
+                                <span class="word">class</span>
+                                <span class="spell">英/klɑːs/ 美/klæs/</span>
+                                                                <a class="favo add" href="javascript:void(0)" title="添加该单词到生词本" onclick="add_new_words($(this), 'class', '156443', '793951', '1');">添加到生词本</a>                            </div>
+                            <div class="comment">
+                                <p>释义：n.课程</p>
+                                <p class="tpl3"></p>
+                            </div>
+                            <div class="operate box_pre_r ">
+                                <span class="u-btn hover listen word_p6" title='听' onclick="play_ref('word', '6');">听<i class="icon listen"></i></span>
+                                <span class="jsRead u-btn hover read word_r6" title='读' onclick="record_ref('word', '6');">读<i class="icon read"></i></span>
+                                <div class="m-tips" style="display:none">
+                                    听到“叮”声后开始朗读
+                                    <a class="u-btn active" id="iknow" href="javascript:void(0)">我知道啦</a>
+                                    <i class="arrow"></i>
+                                    <i class="arrow2"></i>
+                                </div>
+                                                                <span class="word_6"></span><!-- g_1 - g_5 -->
+                                                            </div>
+                        </div>
+                        <!-- /trans-group -->
+                        <!-- 一个句子 -->
+                                                <div class="samples">
+                            <div class="u-tt-md">例句：</div>
+                            <ol>
+                                                                <li class="trans-group">
+                                    <div class="f-cb" style="width: 490px; float:left;padding-right: 20px;">
+                                    <div class="comment">
+                                        <p class="sentence1_t6">My favorite class is math.</p>
+                                        <p class="s-fc3">我最喜欢的课程是数学。</p>
+                                    </div>
+                                    <div class="operate">
+                                        <span class="u-btn hover listen sentence1_p6" title='听' onclick="play_ref('sentence1', '6');">听<i class="icon listen"></i></span>
+                                        <span class="u-btn hover read sentence1_r6" title='读' onclick="record_ref('sentence1', '6');">读<i class="icon read"></i></span>
+                                        <span class="sentence1_6"></span>                                    </div>
+                                    </div>
+                                                                    </li>
+                                                                                            </ol>
+                        </div>
+                                            </div>
+                    <!-- /samples -->
+                                        <div class="trans-content" style="display:none">
+                        <div class="trans-group">
+                            <div class="title">
+                                <span class="word">science</span>
+                                <span class="spell">英/ˈsaɪəns/ 美/ˈsaɪəns/</span>
+                                                                <a class="favo add" href="javascript:void(0)" title="添加该单词到生词本" onclick="add_new_words($(this), 'science', '156444', '793951', '1');">添加到生词本</a>                            </div>
+                            <div class="comment">
+                                <p>释义：n.科学</p>
+                                <p class="tpl3"></p>
+                            </div>
+                            <div class="operate box_pre_r ">
+                                <span class="u-btn hover listen word_p7" title='听' onclick="play_ref('word', '7');">听<i class="icon listen"></i></span>
+                                <span class="jsRead u-btn hover read word_r7" title='读' onclick="record_ref('word', '7');">读<i class="icon read"></i></span>
+                                <div class="m-tips" style="display:none">
+                                    听到“叮”声后开始朗读
+                                    <a class="u-btn active" id="iknow" href="javascript:void(0)">我知道啦</a>
+                                    <i class="arrow"></i>
+                                    <i class="arrow2"></i>
+                                </div>
+                                                                <span class="word_7"></span><!-- g_1 - g_5 -->
+                                                            </div>
+                        </div>
+                        <!-- /trans-group -->
+                        <!-- 一个句子 -->
+                                                <div class="samples">
+                            <div class="u-tt-md">例句：</div>
+                            <ol>
+                                                                <li class="trans-group">
+                                    <div class="f-cb" style="width: 490px; float:left;padding-right: 20px;">
+                                    <div class="comment">
+                                        <p class="sentence1_t7">This is my science teacher.</p>
+                                        <p class="s-fc3">这是我的科学老师。</p>
+                                    </div>
+                                    <div class="operate">
+                                        <span class="u-btn hover listen sentence1_p7" title='听' onclick="play_ref('sentence1', '7');">听<i class="icon listen"></i></span>
+                                        <span class="u-btn hover read sentence1_r7" title='读' onclick="record_ref('sentence1', '7');">读<i class="icon read"></i></span>
+                                        <span class="sentence1_7"></span>                                    </div>
+                                    </div>
+                                                                    </li>
+                                                                                            </ol>
+                        </div>
+                                            </div>
+                    <!-- /samples -->
+                                        <div class="trans-content" style="display:none">
+                        <div class="trans-group">
+                            <div class="title">
+                                <span class="word">English</span>
+                                <span class="spell">英/ˈɪŋglɪʃ/ 美/ˈɪŋglɪʃ/</span>
+                                                                <a class="favo add" href="javascript:void(0)" title="添加该单词到生词本" onclick="add_new_words($(this), 'English', '156445', '793951', '1');">添加到生词本</a>                            </div>
+                            <div class="comment">
+                                <p>释义：n.英语</p>
+                                <p class="tpl3"></p>
+                            </div>
+                            <div class="operate box_pre_r ">
+                                <span class="u-btn hover listen word_p8" title='听' onclick="play_ref('word', '8');">听<i class="icon listen"></i></span>
+                                <span class="jsRead u-btn hover read word_r8" title='读' onclick="record_ref('word', '8');">读<i class="icon read"></i></span>
+                                <div class="m-tips" style="display:none">
+                                    听到“叮”声后开始朗读
+                                    <a class="u-btn active" id="iknow" href="javascript:void(0)">我知道啦</a>
+                                    <i class="arrow"></i>
+                                    <i class="arrow2"></i>
+                                </div>
+                                                                <span class="word_8"></span><!-- g_1 - g_5 -->
+                                                            </div>
+                        </div>
+                        <!-- /trans-group -->
+                        <!-- 一个句子 -->
+                                                <div class="samples">
+                            <div class="u-tt-md">例句：</div>
+                            <ol>
+                                                                <li class="trans-group">
+                                    <div class="f-cb" style="width: 490px; float:left;padding-right: 20px;">
+                                    <div class="comment">
+                                        <p class="sentence1_t8">I am doing my English homework.</p>
+                                        <p class="s-fc3">我在做英语作业。</p>
+                                    </div>
+                                    <div class="operate">
+                                        <span class="u-btn hover listen sentence1_p8" title='听' onclick="play_ref('sentence1', '8');">听<i class="icon listen"></i></span>
+                                        <span class="u-btn hover read sentence1_r8" title='读' onclick="record_ref('sentence1', '8');">读<i class="icon read"></i></span>
+                                        <span class="sentence1_8"></span>                                    </div>
+                                    </div>
+                                                                    </li>
+                                                                                            </ol>
+                        </div>
+                                            </div>
+                    <!-- /samples -->
+                                        <!-- /trans-content -->
+                </div>
+                <!-- /translate -->
+                                <div class="trans-pages">
+                    <a class="prev dis-prev" href="javascript:;" title="上一个单词">&lt;</a>
+                    <span class="crt">1/9</span>
+                    <a class="next " href="javascript:;" title="下一个单词">&gt;</a>
+                </div>
+                                <!-- /trans-pages -->
+            </div>
+            <div id="iPanel">
+                <div id="aiPanel"><em class="play"></em><em class="record"></em><div>
+                </div>
+                    <!-- /preview -->
+                    <!-- Word end-->
+                    <!--<div class="f-tac u-pages">Word 2/8</div>-->
+                    <!-- dialog start -->
+                                        <div class="g-mncw preview f-dn">
+                        <div class="s_ec">
+                            <h3 class="u-tt">提示: 可以选择完整试听全文后，进行单个句子练习，点击“读”进行发音练习后，系统会自动为你打分！</h3>
+                        </div>
+                                                <div class="part">
+                                                                                    <div class="f-cb">
+                                <a href="javascript:;" playele="talk0" onclick="listen('talk0');" class="cta_btn">完整试听全文</a>
+                                <a href="javascript:;" class="checkbox" >循环播放</a>
+                                                                <a href="https://static.51talk.com/upload/efl_audio/zip/talk0793951.zip" class="download" >下载音频</a>
+                                                            </div>
+                        </div>
+                        <div class="translate exc f-cb">
+                            <div class="trans-content">
+                                <div class="samples">
+                                    <ol>
+                                                                                <li class="trans-group f-bbn" style="height:auto;">
+                                            <div class="comment">
+                                                <p class="m-dia talk0_t_" >
+                                                    <em style="font-weight:bold;color:#ef885d;">Teacher:</em><em class="u-sen talk0_t">Please take out your math books.</em>
+                                                </p>
+                                            </div>
+                                            <div class="operate">
+                                                <span class="u-btn hover talk0_p" onclick="play_ref('talk0', '');">听<i class="icon listen"></i></span>
+                                                <span class="jsRead u-btn hover talk0_r" onclick="record_ref('talk0', '');">读<i class="icon read"></i></span>
+                                                <span class="talk0_"></span>
+                                                <div class="m-tips ">
+                                                    听到“叮”声后开始朗读
+                                                    <a class="u-btn active iknow" href="javascript:void(0)">我知道啦</a>
+                                                    <i class="arrow"></i>
+                                                    <i class="arrow2"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                                                                <li class="trans-group f-bbn" style="height:auto;">
+                                            <div class="comment">
+                                                <p class="m-dia talk0_t_1" >
+                                                    <em style="font-weight:bold;color:#e6ad00;"> Timmy:</em><em class="u-sen talk0_t1">Ugh! I don't like math. It's not easy.</em>
+                                                </p>
+                                            </div>
+                                            <div class="operate">
+                                                <span class="u-btn hover talk0_p1" onclick="play_ref('talk0', '1');">听<i class="icon listen"></i></span>
+                                                <span class="jsRead u-btn hover talk0_r1" onclick="record_ref('talk0', '1');">读<i class="icon read"></i></span>
+                                                <span class="talk0_1"></span>
+                                                <div class="m-tips f-dn">
+                                                    听到“叮”声后开始朗读
+                                                    <a class="u-btn active iknow" href="javascript:void(0)">我知道啦</a>
+                                                    <i class="arrow"></i>
+                                                    <i class="arrow2"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                                                                <li class="trans-group f-bbn" style="height:auto;">
+                                            <div class="comment">
+                                                <p class="m-dia talk0_t_2" >
+                                                    <em style="font-weight:bold;color:#ef885d;">Teacher:</em><em class="u-sen talk0_t2">What is your favorite class?</em>
+                                                </p>
+                                            </div>
+                                            <div class="operate">
+                                                <span class="u-btn hover talk0_p2" onclick="play_ref('talk0', '2');">听<i class="icon listen"></i></span>
+                                                <span class="jsRead u-btn hover talk0_r2" onclick="record_ref('talk0', '2');">读<i class="icon read"></i></span>
+                                                <span class="talk0_2"></span>
+                                                <div class="m-tips f-dn">
+                                                    听到“叮”声后开始朗读
+                                                    <a class="u-btn active iknow" href="javascript:void(0)">我知道啦</a>
+                                                    <i class="arrow"></i>
+                                                    <i class="arrow2"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                                                                <li class="trans-group f-bbn" style="height:auto;">
+                                            <div class="comment">
+                                                <p class="m-dia talk0_t_3" >
+                                                    <em style="font-weight:bold;color:#e6ad00;"> Timmy:</em><em class="u-sen talk0_t3">My favorite class is English.</em>
+                                                </p>
+                                            </div>
+                                            <div class="operate">
+                                                <span class="u-btn hover talk0_p3" onclick="play_ref('talk0', '3');">听<i class="icon listen"></i></span>
+                                                <span class="jsRead u-btn hover talk0_r3" onclick="record_ref('talk0', '3');">读<i class="icon read"></i></span>
+                                                <span class="talk0_3"></span>
+                                                <div class="m-tips f-dn">
+                                                    听到“叮”声后开始朗读
+                                                    <a class="u-btn active iknow" href="javascript:void(0)">我知道啦</a>
+                                                    <i class="arrow"></i>
+                                                    <i class="arrow2"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                                                                <li class="trans-group f-bbn" style="height:auto;">
+                                            <div class="comment">
+                                                <p class="m-dia talk0_t_4" >
+                                                    <em style="font-weight:bold;color:#ef885d;">Teacher:</em><em class="u-sen talk0_t4">We are in the first grade. We need to study math and science.</em>
+                                                </p>
+                                            </div>
+                                            <div class="operate">
+                                                <span class="u-btn hover talk0_p4" onclick="play_ref('talk0', '4');">听<i class="icon listen"></i></span>
+                                                <span class="jsRead u-btn hover talk0_r4" onclick="record_ref('talk0', '4');">读<i class="icon read"></i></span>
+                                                <span class="talk0_4"></span>
+                                                <div class="m-tips f-dn">
+                                                    听到“叮”声后开始朗读
+                                                    <a class="u-btn active iknow" href="javascript:void(0)">我知道啦</a>
+                                                    <i class="arrow"></i>
+                                                    <i class="arrow2"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                                                                <li class="trans-group f-bbn" style="height:auto;">
+                                            <div class="comment">
+                                                <p class="m-dia talk0_t_5" >
+                                                    <em style="font-weight:bold;color:#e6ad00;"> Timmy:</em><em class="u-sen talk0_t5">Oh no. I hope the homework is easy.</em>
+                                                </p>
+                                            </div>
+                                            <div class="operate">
+                                                <span class="u-btn hover talk0_p5" onclick="play_ref('talk0', '5');">听<i class="icon listen"></i></span>
+                                                <span class="jsRead u-btn hover talk0_r5" onclick="record_ref('talk0', '5');">读<i class="icon read"></i></span>
+                                                <span class="talk0_5"></span>
+                                                <div class="m-tips f-dn">
+                                                    听到“叮”声后开始朗读
+                                                    <a class="u-btn active iknow" href="javascript:void(0)">我知道啦</a>
+                                                    <i class="arrow"></i>
+                                                    <i class="arrow2"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                                                                <li class="trans-group f-bbn" style="height:auto;">
+                                            <div class="comment">
+                                                <p class="m-dia talk0_t_6" >
+                                                    <em style="font-weight:bold;color:#ef885d;">Teacher:</em><em class="u-sen talk0_t6">Don't worry, Timmy. I can help you!</em>
+                                                </p>
+                                            </div>
+                                            <div class="operate">
+                                                <span class="u-btn hover talk0_p6" onclick="play_ref('talk0', '6');">听<i class="icon listen"></i></span>
+                                                <span class="jsRead u-btn hover talk0_r6" onclick="record_ref('talk0', '6');">读<i class="icon read"></i></span>
+                                                <span class="talk0_6"></span>
+                                                <div class="m-tips f-dn">
+                                                    听到“叮”声后开始朗读
+                                                    <a class="u-btn active iknow" href="javascript:void(0)">我知道啦</a>
+                                                    <i class="arrow"></i>
+                                                    <i class="arrow2"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                                                                <li class="trans-group f-bbn" style="height:auto;">
+                                            <div class="comment">
+                                                <p class="m-dia talk0_t_7" >
+                                                    <em style="font-weight:bold;color:#e6ad00;"> Timmy:</em><em class="u-sen talk0_t7">Thanks. I will work harder!</em>
+                                                </p>
+                                            </div>
+                                            <div class="operate">
+                                                <span class="u-btn hover talk0_p7" onclick="play_ref('talk0', '7');">听<i class="icon listen"></i></span>
+                                                <span class="jsRead u-btn hover talk0_r7" onclick="record_ref('talk0', '7');">读<i class="icon read"></i></span>
+                                                <span class="talk0_7"></span>
+                                                <div class="m-tips f-dn">
+                                                    听到“叮”声后开始朗读
+                                                    <a class="u-btn active iknow" href="javascript:void(0)">我知道啦</a>
+                                                    <i class="arrow"></i>
+                                                    <i class="arrow2"></i>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                                                            </ol>
+                                </div>
+                                <!-- /samples -->
+                            </div>
+                            <!-- /trans-content -->
+                        </div>
+                                            </div>
+                                                                    <div class="g-mncw preview f-dn">
+                        <div class="zn-video ">
+                            <div id="playerContent" class="f_video"></div>
+                        </div>
+                    </div>
+                                        <!--dialog end -->
+                    <div class="g-mncw preview f-dn">
+                        <div class="translate f-cb">
+                                                        <!-- /trans-content -->
+                        </div>
+                        <!-- /translate -->
+                                                <!-- /trans-pages -->
+                    </div>
+                    <!-- /preview -->
+                    <!--<div class="f-tac u-pages">Grammer 1/1</div>-->
+                    <div class="f-tac complete">
+                        <a class="u-btn md active" href="https://www.51talk.com/user/index">都掌握好了，返回会员中心</a>
+                    </div>
+                    <!--add-->
+                                        <div class="lt_img" data-type="1" data-action="4" target="_blank">
+                        <img src="https://static.51talk.com/static/image/menber/up/c_code.png?v=1535631903783" width="152" height="245">
+                    </div>
+                                        <!--addend-->
+                </div>
+                <!-- /g-mnc -->
+            </div>
+        </div>
+    </div>
+</div>
+<div id="player"></div>
+<!-- /container -->
+<!-- 录音弹层开始 -->
+<div id="iMediaDialog" class="iMediaDialog iMediaDialog iMediaDialogClosed">
+    <div class="dialogTitle">
+        设置面板
+        <button class="dialogCloseButton">
+            X
+        </button>
+    </div>
+    <div class="dialogFlashError">
+        <p class="flashVersion hidden">
+            您电脑的Flash版本过低，请点击此链接升级。
+            <br/>
+            <a href="//get.adobe.com/flashplayer/" target="_blank">点击下载最新Flash版本</a>
+        </p>
+        <p class="flashPlugin hidden">
+            您的电脑没有安装或者禁用Flash插件，请确认。
+            <br/>
+            <a href="//get.adobe.com/flashplayer/" target="_blank">点击下载最新Flash版本</a>
+        </p>
+    </div>
+    <div class="dialogBody">
+    <div id="recorder"></div>
+    </div>
+    <div class="dialogInfo">
+        <a href="javascript:void(0);" onClick="$('#speak_tishi').slideToggle();">查看提示</a>
+        <img id="speak_tishi" style="display:none;" src="//cdn.iciba.com/web/dayWord/js/jqueryUI/img/flash.gif">
+        <h5>状态信息</h5>
+        <ul>
+            <li class="loadFlashPlayer hidden">
+                <span class="info">正在下载Flash播放器...</span>
+            </li>
+            <li class="loadFlashRecorder hidden">
+                <span class="info">正在下载Flash录音机...</span><br/>如长时间下载中，请点击
+                <a href="//get.adobe.com/flashplayer/" target="_blank" style="color: red;font-size: small;font-weight: bold;">[手动下载]</a>
+            </li>
+            <li class="connectServerInit hidden">
+                <span class="">还没有连接录音服务器</span>
+            </li>
+            <li class="connectServerStart hidden">
+                <span class="info">正在连接录音服务器，请稍候...</span>
+            </li>
+            <li class="connectServerSuccess hidden">
+                <span class="success">连接录音服务器成功</span>
+            </li>
+            <li class="connectServerError hidden">
+                <span class="">连接录音服务器失败，请<a href="javascript:aiPanel.recorder.reconnect();">重试</a></span>
+            </li>
+            <li class="micStatusAllow hidden">
+                <span class="success">Flash可以访问麦克风</span>
+            </li>
+            <li class="micStatusDisallow hidden">
+                 <span class="">Flash不能访问麦克风，<em style="color: red;font-weight: bold;">请点击上方设置按钮</em></span>
+            </li>
+            <li class="micStatusError hidden">
+                <span class="">没有找到录音设备，请检查</span><br/>推荐解决方法
+                <a href="//get.adobe.com/flashplayer/" target="_blank" style="color: red;font-size: small;font-weight: bold;">[点击下载Flash最新版]</a>
+            </li>
+            <li class="mmscfgError hidden">
+                <span class="error">Flash被禁止访问麦克风，请手动删除 mms.cfg文件，然后重试</span>
+            </li>
+        </ul>
+    </div>
+    <div class="dialogButton">
+        <button class="okButton">
+            确定
+        </button>
+    </div>
+</div>
+<!-- 录音弹层结束 -->
+
+<script type="text/javascript">
+    function changRecordSize(){
+        $("#recorder").addClass("normal");
+        $("#player").addClass("normal");
+        //$("#recorder").css({"width":"1px","height":"1px"});
+        //$("#player").css({"width":"1px","height":"1px"});
+    }
+    //window.onload=changRecordSize();
+</script>
+
+<div class="g-ft">
+    <div class="g-in f-tac">
+        <div class="links">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="https://www.51talk.com/page/about/" target="_blank" title="关于我们">关于我们</a><i>|</i>
+            <!--<a href="//Zhaopin.51talk.com" target="_blank"title="加入我们">加入我们</a><i>|</i>-->
+            <a href="https://www.51talk.com/page/cet/" target="_blank" title="企业培训">企业培训</a><i>|</i>
+			<a href="https://www.51talk.com/page/o2o/" target="_blank" title="O2O代理招募">O2O代理招募</a><i>|</i>
+            <a href="https://www.51talk.com/ac/51TalkAC.php" target="_blank" title="AC客户端">AC客户端</a><i>|</i>
+            <!--<a href="//www.51kt.com/" title="无忧课堂" target="_blank">无忧课堂</a>-->
+        </div>
+        <div class="trust">
+            <a style="cursor:default;" href="http://www.51honest.org/wscredit/detail.credit?action=preLevel&credcode=NO.20000038643" target="_blank" title="信星认证" class="t1"></a>
+            <a href="http://www.itrust.org.cn/home/index/itrust_certifi/wm/1579059481.html" target="_blank" title="企业信用认证" class="t2"></a>
+            <a href="http://www.315online.com.cn/member/315120032.html" target="_blank" title="网上交易保障" class="t3"></a>
+            <a style="cursor:default;" href="#" title="支付宝特约商户" class="t4"></a>
+        </div>
+        <p class="piped">Copyrigh&copy;北京大生知行科技有限公司<i>|</i>
+            <a href="https://www.51talk.com/page/privacy/" target="_blank" title="隐私声明">隐私声明</a><i>|</i>
+            <a href="https://www.51talk.com/page/terms/" target="_blank" title="用户协议">用户协议</a><i>|</i>
+            <a href="https://www.51talk.com/page/icp/" target="_blank" title="京ICP证110696号">京ICP证110696号</a><em></em>
+            <a href="http://www.miibeian.gov.cn" target="_blank" title="京ICP备11031999号">京ICP备11031999号</a><em></em>
+            <a href="javascript:;" target="_blank" title="京公网安备11010802018414号" style="cursor:text;">京公网安备11010802018414号</a><em></em>
+            <!--
+            <script type="text/javascript">
+                var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                document.write(unescape("%3Cspan id='cnzz_stat_icon_1253020514'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s19.cnzz.com/z_stat.php%3Fid%3D1253020514%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+            -->
+        </p>
+    </div>
+</div>
+<div id="u-gotop" class="f-dn">
+    <a href="javascript:;" title="回到顶部">回到顶部</a>
+</div>
+    <script type="text/javascript" src="https://static.51talk.com/static/js/vendor.js?v=1535631903783" id="seajsnode"></script>
+<script type="text/javascript" src="//static.51talk.com/js/efl/chivox_preview2.0.js?v=1503544423739"></script>
+<!--[if IE 6]><script src="/static/js/lib/DD_belatedPNG_0.0.8a.min.js"></script><![endif]-->
+<img style="display:none;" src="//beacon.51talk.com/a.gif?v=d09f7dd15f4f00bdb01ac0e5cd743cef&site=1&type=1&uuid=35605452-a282-4c0d-8d87-9114b09c6970&uid=U23057131136&ref=https%3A%2F%2Fefl.51talk.com%2Fefl%2Fpreview"  border="0" alt=""/><script type="text/javascript" src="https://static.51talk.com/static/js/html/project/www_new/pind.js?v=1535631903783" id="__pindjssjbm"></script>
+
+
+
+</body>
+</html>
