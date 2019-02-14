@@ -1,0 +1,3994 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "7694275c-2f59-11e9-900f-180373427d85",
+    "deck_config_uuid": "acf515f0-bbe8-11e8-acfd-180373427d85",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "acf515f0-bbe8-11e8-acfd-180373427d85",
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    10
+                ],
+                "leechAction": 0,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1,
+                    10
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    7
+                ],
+                "order": 1,
+                "perDay": 0,
+                "separate": true
+            },
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 200
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 10,
+    "extendRev": 50,
+    "media_files": [],
+    "name": "语文::听写",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "css": ".card {\n font-family: \"Arial\",\"Microsoft YaHei\",\"黑体\",\"宋体\",sans-serif;;\n font-size: 1rem;\n text-align: center;\n color: black;\n background-color: white;\n}\n.zyh_question_title, .zyh_answer_title {\n  margin:1rem;\n}\n.zyh_answer_word {\n  font-size:3rem;\n  margin:1rem;\n}\n.zyh_pinyin {\n  font-size:2rem;\n}\n.zyh_pinyin span {\n  color: green;\n}\n.zyh_dictionary {\n  font-size:1rem;\n  float:right;\n}\n.zyh_dictionary a{\n  margin-left:0.5rem;\n}",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Provenance",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Word",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Pinyin1",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Pinyin2",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Pinyin1Url",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Pinyin2Url",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "name": "Basic (type in the answer)",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        2,
+                        3,
+                        4,
+                        5
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"zyh_answer_title\">正确答案</div>\n\n<div class=\"zyh_pinyin\">\n{{#Pinyin1}}\n<span>{{Pinyin1}}</span>\n{{/Pinyin1}}\n{{#Pinyin1Url}}\n[sound:https://ss0.baidu.com/6KAZsjip0QIZ8tyhnq/text2audio?tex={{Pinyin1Url}}&cuid=dict&lan=ZH&ctp=1&pdt=30&vol=9&spd=4]\n{{/Pinyin1Url}}\n\n{{#Pinyin2}}\n/ <span>{{Pinyin2}}</span>\n{{/Pinyin2}}\n{{#Pinyin2Url}}\n[sound:https://ss0.baidu.com/6KAZsjip0QIZ8tyhnq/text2audio?tex={{Pinyin2Url}}&cuid=dict&lan=ZH&ctp=1&pdt=30&vol=9&spd=4]\n{{/Pinyin2Url}}\n</div>\n\n<div class=\"zyh_answer_word\">{{Word}}</div>\n\n<div class=\"zyh_dictionary\"  id=\"zyh_word\">\n<span>百度汉语:</span>\n</div>\n\n<script>\nfunction init() {\nvar wordElem = document.getElementById('zyh_word');\nvar word = '{{text:Word}}';\nfor(i = 0; i < word.length; i++) {\n  var a = document.createElement('a');\n  a.href = 'https://dict.baidu.com/s?wd=' + word[i] + '&ptype=zici';\n  a.innerText = word[i];\n  wordElem.appendChild(a);\n}\nvar a = document.createElement('a');\na.href = 'https://dict.baidu.com/s?wd=' + word + '&ptype=zici';\na.innerText = word;\nwordElem.appendChild(a);\n}\n\ninit();\n</script>\n\n<!--\n<textarea style=\"width:100%;height:200px;\" id=\"kaiwa\" >_</textarea>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=document.body.innerHTML;return false;\">body</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.innerHTML;return false;\">parent1</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.innerHTML;return false;\">parent2</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.parentNode.innerHTML;return false;\">parent3</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.parentNode.parentNode.innerHTML;return false;\">parent4</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.parentNode.parentNode.parentNode.innerHTML;return false;\">parent5</a>\n-->",
+                    "bafmt": "{{Word}}({{Pinyin1}})",
+                    "bqfmt": "{{Word}}({{Pinyin1}})",
+                    "did": null,
+                    "name": "听写词语",
+                    "ord": 0,
+                    "qfmt": "<div class=\"zyh_question_title\">请写出听到的词语</div>\n\n<div class=\"zyh_pinyin\">\n{{#Pinyin1}}\n<span>{{Pinyin1}}</span>\n{{/Pinyin1}}\n{{#Pinyin1Url}}\n[sound:https://ss0.baidu.com/6KAZsjip0QIZ8tyhnq/text2audio?tex={{Pinyin1Url}}&cuid=dict&lan=ZH&ctp=1&pdt=30&vol=9&spd=4]\n{{/Pinyin1Url}}\n\n{{#Pinyin2}}\n/ <span>{{Pinyin2}}</span>\n{{/Pinyin2}}\n{{#Pinyin2Url}}\n[sound:https://ss0.baidu.com/6KAZsjip0QIZ8tyhnq/text2audio?tex={{Pinyin2Url}}&cuid=dict&lan=ZH&ctp=1&pdt=30&vol=9&spd=4]\n{{/Pinyin2Url}}\n</div>\n\n<!--\n<textarea style=\"width:100%;height:200px;\" id=\"kaiwa\" >_</textarea>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=document.body.innerHTML;return false;\">body</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.innerHTML;return false;\">parent1</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.innerHTML;return false;\">parent2</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.parentNode.innerHTML;return false;\">parent3</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.parentNode.parentNode.innerHTML;return false;\">parent4</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.parentNode.parentNode.parentNode.innerHTML;return false;\">parent5</a>\n-->\n"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文1",
+                "看见",
+                "kàn jiàn",
+                "kàn jian",
+                "看(kan4)见(jian4)",
+                "看(kan4)见(jian5)"
+            ],
+            "flags": 0,
+            "guid": "48b3d334-300c-11e9-bfdc-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文1",
+                "哪里",
+                "nǎ lǐ",
+                "",
+                "哪(na3)里(li3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "48e34858-300c-11e9-9d83-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文1",
+                "那边",
+                "nà biān",
+                "",
+                "那(na4)边(bian1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "490ace1a-300c-11e9-87a3-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文1",
+                "头顶",
+                "tóu dǐng",
+                "",
+                "头(tou2)顶(ding3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "49356128-300c-11e9-bf42-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文1",
+                "眼睛",
+                "yǎn jing",
+                "",
+                "眼(yan3)睛(jing5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "499312e8-300c-11e9-89c4-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文1",
+                "雪白",
+                "xuě bái",
+                "",
+                "雪(xue3)白(bai2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "49c10164-300c-11e9-99f0-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文1",
+                "肚皮",
+                "dù pí",
+                "",
+                "肚(du4)皮(pi2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "49eb6d64-300c-11e9-a678-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文1",
+                "孩子",
+                "hái zi",
+                "",
+                "孩(hai2)子(zi5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4a18235c-300c-11e9-8134-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文2",
+                "天空",
+                "tiān kōng",
+                "",
+                "天(tian1)空(kong1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4a43048c-300c-11e9-924d-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文2",
+                "傍晚",
+                "bàng wǎn",
+                "",
+                "傍(bang4)晚(wan3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4a6d2268-300c-11e9-85e1-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文2",
+                "人们",
+                "rén men",
+                "",
+                "人(ren2)们(men5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4a94f650-300c-11e9-a5a2-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文2",
+                "冬天",
+                "dōng tiān",
+                "",
+                "冬(dong1)天(tian1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4aef9ac2-300c-11e9-a7f4-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文2",
+                "花朵",
+                "huā duǒ",
+                "",
+                "花(hua1)朵(duo3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4b4a1826-300c-11e9-a7fa-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文2",
+                "平常",
+                "píng cháng",
+                "",
+                "平(ping2)常(chang2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4b7a027a-300c-11e9-a1d5-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文2",
+                "江河",
+                "jiāng hé",
+                "",
+                "江(jiang1)河(he2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4ba5f51e-300c-11e9-8680-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文2",
+                "海洋",
+                "hǎi yáng",
+                "",
+                "海(hai3)洋(yang2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4bfd6536-300c-11e9-b8e3-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文2",
+                "田地",
+                "tián dì",
+                "",
+                "田(tian2)地(di4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4c300eb4-300c-11e9-9566-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文2",
+                "工作",
+                "gōng zuò",
+                "",
+                "工(gong1)作(zuo4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4c5ee794-300c-11e9-8228-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文3",
+                "办法",
+                "bàn fǎ",
+                "",
+                "办(ban4)法(fa3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4c892c82-300c-11e9-8b79-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文3",
+                "如果",
+                "rú guǒ",
+                "",
+                "如(ru2)果(guo3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4cb2ae1e-300c-11e9-bc4f-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文3",
+                "长大",
+                "zhǎng dà",
+                "cháng dà",
+                "长(zhang3)大(da4)",
+                "长(chang2)大(da4)"
+            ],
+            "flags": 0,
+            "guid": "4cdb4558-300c-11e9-b468-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文3",
+                "四海为家",
+                "sì hǎi wéi jiā",
+                "",
+                "四(si4)海(hai3)为(wei2)家(jia1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4d131f08-300c-11e9-8aa9-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文3",
+                "娃娃",
+                "wá wa",
+                "",
+                "娃(wa2)娃(wa5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4d3f5fcc-300c-11e9-8e42-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文3",
+                "只要",
+                "zhǐ yào",
+                "",
+                "只(zhi3)要(yao4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4da771f4-300c-11e9-8a3d-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文3",
+                "皮毛",
+                "pí máo",
+                "",
+                "皮(pi2)毛(mao2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4e00b6d2-300c-11e9-abe7-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文3",
+                "那里",
+                "nà lǐ",
+                "",
+                "那(na4)里(li3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4e32c40c-300c-11e9-8645-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文3",
+                "知识",
+                "zhī shi",
+                "",
+                "知(zhi1)识(shi5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4e88fba2-300c-11e9-bf2a-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字1",
+                "花园",
+                "huā yuán",
+                "",
+                "花(hua1)园(yuan2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4ee351f4-300c-11e9-8dfb-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字1",
+                "石桥",
+                "shí qiáo",
+                "",
+                "石(shi2)桥(qiao2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4f55012e-300c-11e9-86c3-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字1",
+                "队旗",
+                "duì qí",
+                "",
+                "队(dui4)旗(qi2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "4f7e34a8-300c-11e9-9463-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字1",
+                "铜号",
+                "tóng hào",
+                "",
+                "铜(tong2)号(hao4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "50b29a7a-300c-11e9-a802-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字1",
+                "红领巾",
+                "hóng lǐng jīn",
+                "",
+                "红(hong2)领(ling3)巾(jin1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "511afac2-300c-11e9-a3e7-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字1",
+                "欢笑",
+                "huān xiào",
+                "",
+                "欢(huan1)笑(xiao4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5171ce9a-300c-11e9-b7d4-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字2",
+                "杨树",
+                "yáng shù",
+                "",
+                "杨(yang2)树(shu4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "519c3a98-300c-11e9-a6cd-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字2",
+                "树叶",
+                "shù yè",
+                "",
+                "树(shu4)叶(ye4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "51f57f76-300c-11e9-8c07-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字2",
+                "枫树",
+                "fēng shù",
+                "",
+                "枫(feng1)树(shu4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "54387312-300c-11e9-966e-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字2",
+                "松柏",
+                "sōng bǎi",
+                "",
+                "松(song1)柏(bai3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "548e8392-300c-11e9-b815-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字2",
+                "木棉",
+                "mù mián",
+                "",
+                "木(mu4)棉(mian2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "54e1d4ec-300c-11e9-86f1-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字2",
+                "水杉",
+                "shuǐ shān",
+                "",
+                "水(shui3)杉(shan1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5537703a-300c-11e9-933b-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字2",
+                "化石",
+                "huà shí",
+                "",
+                "化(hua4)石(shi2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "55686c06-300c-11e9-afb7-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字2",
+                "金桂",
+                "jīn guì",
+                "",
+                "金(jin1)桂(gui4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "55e083f6-300c-11e9-b540-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字3",
+                "丛林",
+                "cóng lín",
+                "",
+                "丛(cong2)林(lin2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "56130664-300c-11e9-a616-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字3",
+                "深处",
+                "shēn chù",
+                "",
+                "深(shen1)处(chu4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5639efe4-300c-11e9-a54b-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字3",
+                "竹林",
+                "zhú lín",
+                "",
+                "竹(zhu2)林(lin2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "566630ac-300c-11e9-8dee-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字3",
+                "熊猫",
+                "xióng māo",
+                "",
+                "熊(xiong2)猫(mao1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "56bc412e-300c-11e9-aa2f-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字3",
+                "朋友",
+                "péng you",
+                "",
+                "朋(peng2)友(you5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "56eb8f40-300c-11e9-aa87-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字4",
+                "四季",
+                "sì jì",
+                "",
+                "四(si4)季(ji4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5746cff6-300c-11e9-b323-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字4",
+                "月光",
+                "yuè guāng",
+                "",
+                "月(yue4)光(guang1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "57709fb4-300c-11e9-b9ff-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字4",
+                "辛苦",
+                "xīn kǔ",
+                "",
+                "辛(xin1)苦(ku3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "579eb540-300c-11e9-8b68-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册识字4",
+                "棉衣",
+                "mián yī",
+                "",
+                "棉(mian2)衣(yi1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "57f33f1c-300c-11e9-89ed-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文4",
+                "一同",
+                "yī tóng",
+                "",
+                "一(yi1)同(tong2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "581e204c-300c-11e9-bef3-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文4",
+                "柱子",
+                "zhù zi",
+                "",
+                "柱(zhu4)子(zi5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "584705a6-300c-11e9-9a9b-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文4",
+                "一边",
+                "yī biān",
+                "",
+                "一(yi1)边(bian1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "58778c3a-300c-11e9-9703-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文4",
+                "到底",
+                "dào dǐ",
+                "",
+                "到(dao4)底(di3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "58a134e8-300c-11e9-a34c-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文4",
+                "秤杆",
+                "chèng gǎn",
+                "",
+                "秤(cheng4)杆(gan3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "58c81e68-300c-11e9-a0fe-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文4",
+                "力气",
+                "lì qi",
+                "",
+                "力(li4)气(qi5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "58f3c2ee-300c-11e9-a33e-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文4",
+                "出来",
+                "chū lái",
+                "",
+                "出(chu1)来(lai2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "59216348-300c-11e9-bd9c-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文4",
+                "船身",
+                "chuán shēn",
+                "",
+                "船(chuan2)身(shen1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "59748d90-300c-11e9-a4aa-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文4",
+                "石头",
+                "shí tou",
+                "",
+                "石(shi2)头(tou5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "59b4569e-300c-11e9-b8d7-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文4",
+                "地方",
+                "dì fāng",
+                "dì fang",
+                "地(di4)方(fang1)",
+                "地(di4)方(fang5)"
+            ],
+            "flags": 0,
+            "guid": "59df85f0-300c-11e9-a27e-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文4",
+                "果然",
+                "guǒ rán",
+                "",
+                "果(guo3)然(ran2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5a0fbe66-300c-11e9-96bb-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文5",
+                "评奖",
+                "píng jiǎng",
+                "",
+                "评(ping2)奖(jiang3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5a3d85d2-300c-11e9-a758-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文5",
+                "时间",
+                "shí jiān",
+                "",
+                "时(shi2)间(jian1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5a67a3ae-300c-11e9-8775-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文5",
+                "时候",
+                "shí hou",
+                "",
+                "时(shi2)候(hou5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5a925dd0-300c-11e9-b469-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文5",
+                "来不及",
+                "lái bu jí",
+                "",
+                "来(lai2)不(bu5)及(ji2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5ad0a038-300c-11e9-8ba6-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文6",
+                "出国",
+                "chū guó",
+                "",
+                "出(chu1)国(guo2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5b02d486-300c-11e9-99a8-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文6",
+                "半年",
+                "bàn nián",
+                "",
+                "半(ban4)年(nian2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5daec4a8-300c-11e9-b44e-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文6",
+                "今天",
+                "jīn tiān",
+                "",
+                "今(jin1)天(tian1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5dd90998-300c-11e9-8d4a-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文6",
+                "圆珠笔",
+                "yuán zhū bǐ",
+                "",
+                "圆(yuan2)珠(zhu1)笔(bi3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5e2703ac-300c-11e9-b2f2-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文6",
+                "开心",
+                "kāi xīn",
+                "",
+                "开(kai1)心(xin1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5e531d62-300c-11e9-8cbd-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文6",
+                "以前",
+                "yǐ qián",
+                "",
+                "以(yi3)前(qian2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5e7db070-300c-11e9-93dc-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文6",
+                "还有",
+                "hái yǒu",
+                "",
+                "还(hai2)有(you3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5ea5ab66-300c-11e9-8cc5-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文6",
+                "台灯",
+                "tái dēng",
+                "",
+                "台(tai2)灯(deng1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "5ecf7b24-300c-11e9-87f3-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文6",
+                "这时",
+                "zhè shí",
+                "",
+                "这(zhe4)时(shi2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "62073292-300c-11e9-87ce-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文6",
+                "阳光",
+                "yáng guāng",
+                "",
+                "阳(yang2)光(guang1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "623484cc-300c-11e9-a809-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文7",
+                "明亮",
+                "míng liàng",
+                "",
+                "明(ming2)亮(liang4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6261aff6-300c-11e9-be8a-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文7",
+                "故事",
+                "gù shì",
+                "gù shi",
+                "故(gu4)事(shi4)",
+                "故(gu4)事(shi5)"
+            ],
+            "flags": 0,
+            "guid": "628c1bf6-300c-11e9-9656-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文7",
+                "头发",
+                "tóu fa",
+                "",
+                "头(tou2)发(fa5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "62e6c068-300c-11e9-bcbf-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文7",
+                "窗外",
+                "chuāng wài",
+                "",
+                "窗(chuang1)外(wai4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "655b4c0c-300c-11e9-a64f-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文9",
+                "黄山",
+                "huáng shān",
+                "",
+                "黄(huang2)山(shan1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "65b41bb8-300c-11e9-9c38-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文9",
+                "南部",
+                "nán bù",
+                "",
+                "南(nan2)部(bu4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "65e20a36-300c-11e9-8192-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文9",
+                "那些",
+                "nà xiē",
+                "",
+                "那(na4)些(xie1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6630c79c-300c-11e9-9187-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文9",
+                "山顶",
+                "shān dǐng",
+                "",
+                "山(shan1)顶(ding3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6686b110-300c-11e9-9976-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文9",
+                "一动不动",
+                "yī dòng bù dòng",
+                "",
+                "一(yi1)动(dong4)不(bu4)动(dong4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "66c1980a-300c-11e9-92b8-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文9",
+                "云海",
+                "yún hǎi",
+                "",
+                "云(yun2)海(hai3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "66fea1f0-300c-11e9-bba2-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文9",
+                "巨石",
+                "jù shí",
+                "",
+                "巨(ju4)石(shi2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "69442da4-300c-11e9-9112-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文9",
+                "前方",
+                "qián fāng",
+                "",
+                "前(qian2)方(fang1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "699a8c48-300c-11e9-b152-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文9",
+                "每当",
+                "měi dāng",
+                "",
+                "每(mei3)当(dang1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "69c3e6d2-300c-11e9-a84f-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文9",
+                "金光闪闪",
+                "jīn guāng shǎn shǎn",
+                "",
+                "金(jin1)光(guang1)闪(shan3)闪(shan3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6a4d6426-300c-11e9-9594-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文9",
+                "它们",
+                "tā men",
+                "",
+                "它(ta1)们(men5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6aa91a0c-300c-11e9-b2da-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文10",
+                "群山",
+                "qún shān",
+                "",
+                "群(qun2)山(shan1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6b1f5d38-300c-11e9-90e7-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文10",
+                "树木",
+                "shù mù",
+                "",
+                "树(shu4)木(mu4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6b48ded4-300c-11e9-af85-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文10",
+                "名胜古迹",
+                "míng shèng gǔ jì",
+                "",
+                "名(ming2)胜(sheng4)古(gu3)迹(ji4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6b804354-300c-11e9-ba85-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文10",
+                "中央",
+                "zhōng yāng",
+                "",
+                "中(zhong1)央(yang1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6bade3b0-300c-11e9-98e3-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文10",
+                "美丽",
+                "měi lì",
+                "",
+                "美(mei3)丽(li4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6bdd0ab0-300c-11e9-af55-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文10",
+                "灯光",
+                "dēng guāng",
+                "",
+                "灯(deng1)光(guang1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6c3230d0-300c-11e9-8511-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文10",
+                "中午",
+                "zhōng wǔ",
+                "",
+                "中(zhong1)午(wu3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6c886864-300c-11e9-bd51-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文10",
+                "展现",
+                "zhǎn xiàn",
+                "",
+                "展(zhan3)现(xian4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6cb6a500-300c-11e9-bcfa-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文10",
+                "风光",
+                "fēng guāng",
+                "fēng guang",
+                "风(feng1)光(guang1)",
+                "风(feng1)光(guang5)"
+            ],
+            "flags": 0,
+            "guid": "6ce1ad40-300c-11e9-a87a-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文11",
+                "水果",
+                "shuǐ guǒ",
+                "",
+                "水(shui3)果(guo3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6d6dc2ae-300c-11e9-8394-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文11",
+                "月份",
+                "yuè fèn",
+                "",
+                "月(yue4)份(fen4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6dc559d8-300c-11e9-887d-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文11",
+                "山坡",
+                "shān pō",
+                "",
+                "山(shan1)坡(po1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6e041174-300c-11e9-8279-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文11",
+                "枝叶",
+                "zhī yè",
+                "",
+                "枝(zhi1)叶(ye4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6e2a5eb0-300c-11e9-b2b1-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文11",
+                "展开",
+                "zhǎn kāi",
+                "",
+                "展(zhan3)开(kai1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6e595ea2-300c-11e9-b4f9-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文11",
+                "五光十色",
+                "wǔ guāng shí sè",
+                "",
+                "五(wu3)光(guang1)十(shi2)色(se4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6e9508f0-300c-11e9-a616-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文11",
+                "好客",
+                "hào kè",
+                "",
+                "好(hao4)客(ke4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6ec1bee8-300c-11e9-acc4-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文11",
+                "老乡",
+                "lǎo xiāng",
+                "",
+                "老(lao3)乡(xiang1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6eeca01a-300c-11e9-aadb-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文11",
+                "城市",
+                "chéng shì",
+                "",
+                "城(cheng2)市(shi4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6f42627a-300c-11e9-abd6-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文11",
+                "利用",
+                "lì yòng",
+                "",
+                "利(li4)用(yong4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6f97afac-300c-11e9-a808-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文11",
+                "空气",
+                "kōng qì",
+                "",
+                "空(kong1)气(qi4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6fd073c0-300c-11e9-8055-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文11",
+                "水分",
+                "shuǐ fèn",
+                "",
+                "水(shui3)分(fen4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "6ffc3f54-300c-11e9-a7b7-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文12",
+                "坐井观天",
+                "zuò jǐng guān tiān",
+                "",
+                "坐(zuo4)井(jing3)观(guan1)天(tian1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "70306f76-300c-11e9-aba0-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文12",
+                "井沿",
+                "jǐng yán",
+                "",
+                "井(jing3)沿(yan2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7359a7c0-300c-11e9-9660-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文12",
+                "回答",
+                "huí dá",
+                "",
+                "回(hui2)答(da2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "73b53698-300c-11e9-bf14-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文12",
+                "口渴",
+                "kǒu kě",
+                "",
+                "口(kou3)渴(ke3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "73e4abba-300c-11e9-966e-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文12",
+                "大话",
+                "dà huà",
+                "",
+                "大(da4)话(hua4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "742c6426-300c-11e9-8713-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文12",
+                "井口",
+                "jǐng kǒu",
+                "",
+                "井(jing3)口(kou3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "745c758a-300c-11e9-a23a-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文12",
+                "无边无际",
+                "wú biān wú jì",
+                "",
+                "无(wu2)边(bian1)无(wu2)际(ji4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7493b2fa-300c-11e9-8ab0-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文13",
+                "山脚",
+                "shān jiǎo",
+                "",
+                "山(shan1)脚(jiao3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "74bb5fd0-300c-11e9-bac2-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文13",
+                "当作",
+                "dàng zuò",
+                "",
+                "当(dang4)作(zuo4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "75114940-300c-11e9-8480-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文13",
+                "前面",
+                "qián miàn",
+                "",
+                "前(qian2)面(mian4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7543f2c0-300c-11e9-9f55-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文13",
+                "晴朗",
+                "qíng lǎng",
+                "",
+                "晴(qing2)朗(lang3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "756cff28-300c-11e9-a31b-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文13",
+                "枯草",
+                "kū cǎo",
+                "",
+                "枯(ku1)草(cao3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "75912980-300c-11e9-bd60-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文13",
+                "正好",
+                "zhèng hǎo",
+                "",
+                "正(zheng4)好(hao3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "75bb204c-300c-11e9-a762-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文13",
+                "清早",
+                "qīng zǎo",
+                "",
+                "清(qing1)早(zao3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "75e76112-300c-11e9-8eb5-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文13",
+                "现在",
+                "xiàn zài",
+                "",
+                "现(xian4)在(zai4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "760ff84a-300c-11e9-827a-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文13",
+                "将来",
+                "jiāng lái",
+                "",
+                "将(jiang1)来(lai2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "763ed12c-300c-11e9-84b9-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文13",
+                "大雪纷飞",
+                "dà xuě fēn fēi",
+                "",
+                "大(da4)雪(xue3)纷(fen1)飞(fei1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "768d4070-300c-11e9-b9d8-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文13",
+                "枝头",
+                "zhī tóu",
+                "",
+                "枝(zhi1)头(tou2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "76d65874-300c-11e9-86c5-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文13",
+                "夜里",
+                "yè lǐ",
+                "",
+                "夜(ye4)里(li3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "76ffda0c-300c-11e9-acf4-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文14",
+                "从前",
+                "cóng qián",
+                "",
+                "从(cong2)前(qian2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "772e3dba-300c-11e9-ab9b-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文14",
+                "细长",
+                "xì cháng",
+                "",
+                "细(xi4)长(chang2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7759bb2e-300c-11e9-8905-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文14",
+                "可爱",
+                "kě ài",
+                "",
+                "可(ke3)爱(ai4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "77893052-300c-11e9-aa81-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文14",
+                "每天",
+                "měi tiān",
+                "",
+                "每(mei3)天(tian1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "77f84774-300c-11e9-b69b-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文14",
+                "自言自语",
+                "zì yán zì yǔ",
+                "",
+                "自(zi4)言(yan2)自(zi4)语(yu3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "782fabf0-300c-11e9-b32b-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文14",
+                "南瓜",
+                "nán guā",
+                "",
+                "南(nan2)瓜(gua1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7855d21e-300c-11e9-b025-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文14",
+                "邻居",
+                "lín jū",
+                "",
+                "邻(lin2)居(ju1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "787fc8ee-300c-11e9-b126-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文14",
+                "奇怪",
+                "qí guài",
+                "",
+                "奇(qi2)怪(guai4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "78accd06-300c-11e9-ad69-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "洪水",
+                "hóng shuǐ",
+                "",
+                "洪(hong2)水(shui3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "78d69cc2-300c-11e9-ba5d-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "经常",
+                "jīng cháng",
+                "",
+                "经(jing1)常(chang2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7902b678-300c-11e9-9dd7-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "到处",
+                "dào chù",
+                "",
+                "到(dao4)处(chu4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "792c1102-300c-11e9-a399-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "百姓",
+                "bǎi xìng",
+                "",
+                "百(bai3)姓(xing4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "79813724-300c-11e9-830b-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "灾难",
+                "zāi nàn",
+                "",
+                "灾(zai1)难(nan4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "79b0ac46-300c-11e9-b30a-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "当时",
+                "dāng shí",
+                "dàng shí",
+                "当(dang1)时(shi2)",
+                "当(dang4)时(shi2)"
+            ],
+            "flags": 0,
+            "guid": "7a32d67a-300c-11e9-ab45-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "知道",
+                "zhī dào",
+                "",
+                "知(zhi1)道(dao4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7a5d1b6c-300c-11e9-b2ac-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "家乡",
+                "jiā xiāng",
+                "",
+                "家(jia1)乡(xiang1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7a856482-300c-11e9-ab04-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "可是",
+                "kě shì",
+                "",
+                "可(ke3)是(shi4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7aae22ca-300c-11e9-b9be-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "认为",
+                "rèn wéi",
+                "",
+                "认(ren4)为(wei2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7ad88eca-300c-11e9-abff-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "采用",
+                "cǎi yòng",
+                "",
+                "采(cai3)用(yong4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7b04334c-300c-11e9-ab8f-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "千千万万",
+                "qiān qiān wàn wàn",
+                "",
+                "千(qian1)千(qian1)万(wan4)万(wan4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7b39ea18-300c-11e9-9132-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "一起",
+                "yī qǐ",
+                "",
+                "一(yi1)起(qi3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7b67ffa4-300c-11e9-bd9b-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "河道",
+                "hé dào",
+                "",
+                "河(he2)道(dao4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7ba90136-300c-11e9-9207-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "土地",
+                "tǔ dì",
+                "tǔ di",
+                "土(tu3)地(di4)",
+                "土(tu3)地(di5)"
+            ],
+            "flags": 0,
+            "guid": "7bfb8f3a-300c-11e9-88a8-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "农业",
+                "nóng yè",
+                "",
+                "农(nong2)业(ye4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7c5d5fba-300c-11e9-ad92-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文15",
+                "生产",
+                "shēng chǎn",
+                "",
+                "生(sheng1)产(chan3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7c85cfe4-300c-11e9-bdb4-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文16",
+                "扁担",
+                "biǎn dan",
+                "",
+                "扁(bian3)担(dan5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7caf9f9e-300c-11e9-8d67-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文16",
+                "同志",
+                "tóng zhì",
+                "",
+                "同(tong2)志(zhi4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7cd9213a-300c-11e9-b0d8-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文16",
+                "带领",
+                "dài lǐng",
+                "",
+                "带(dai4)领(ling3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7d0058de-300c-11e9-89ee-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文16",
+                "队伍",
+                "duì wu",
+                "",
+                "队(dui4)伍(wu5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7d27dea2-300c-11e9-afa6-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文16",
+                "会师",
+                "huì shī",
+                "",
+                "会(hui4)师(shi1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7d53d148-300c-11e9-bff4-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文16",
+                "红军",
+                "hóng jūn",
+                "",
+                "红(hong2)军(jun1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7da5ea1c-300c-11e9-95f2-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文16",
+                "来回",
+                "lái huí",
+                "",
+                "来(lai2)回(hui2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7dd89398-300c-11e9-9887-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文16",
+                "战士",
+                "zhàn shì",
+                "",
+                "战(zhan4)士(shi4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7e571442-300c-11e9-bca8-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文16",
+                "白天",
+                "bái tiān",
+                "",
+                "白(bai2)天(tian1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7e7f364a-300c-11e9-b67e-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文16",
+                "起来",
+                "qǐ lái",
+                "",
+                "起(qi3)来(lai2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7eaadacc-300c-11e9-8ec9-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文17",
+                "难忘",
+                "nán wàng",
+                "",
+                "难(nan2)忘(wang4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7ed769b4-300c-11e9-b09c-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文17",
+                "泼水节",
+                "pō shuǐ jié",
+                "",
+                "泼(po1)水(shui3)节(jie2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7f314ad4-300c-11e9-a01b-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文17",
+                "火红",
+                "huǒ hóng",
+                "",
+                "火(huo3)红(hong2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7f86e624-300c-11e9-b077-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文17",
+                "一年一度",
+                "yī nián yī dù",
+                "",
+                "一(yi1)年(nian2)一(yi1)度(du4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7fc5017e-300c-11e9-8bb9-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文17",
+                "四面八方",
+                "sì miàn bā fāng",
+                "",
+                "四(si4)面(mian4)八(ba1)方(fang1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "7fff4c38-300c-11e9-87ec-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文17",
+                "龙船",
+                "lóng chuán",
+                "",
+                "龙(long2)船(chuan2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8051da3e-300c-11e9-8691-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文17",
+                "花炮",
+                "huā pào",
+                "",
+                "花(hua1)炮(pao4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "807ae6a8-300c-11e9-9f2c-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文17",
+                "欢呼",
+                "huān hū",
+                "",
+                "欢(huan1)呼(hu1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "80a44134-300c-11e9-9cbd-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文17",
+                "人群",
+                "rén qún",
+                "",
+                "人(ren2)群(qun2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "80cc1518-300c-11e9-9897-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文17",
+                "欢乐",
+                "huān lè",
+                "",
+                "欢(huan1)乐(le4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "80f6cf38-300c-11e9-995a-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文17",
+                "清水",
+                "qīng shuǐ",
+                "",
+                "清(qing1)水(shui3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "811f6670-300c-11e9-8f97-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文17",
+                "柏树枝",
+                "bǎi shù zhī",
+                "",
+                "柏(bai3)树(shu4)枝(zhi1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "843eb386-300c-11e9-8aad-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文17",
+                "多么",
+                "duō me",
+                "",
+                "多(duo1)么(me5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "846acd3a-300c-11e9-a7db-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "于是",
+                "yú shì",
+                "",
+                "于(yu2)是(shi4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "84970e00-300c-11e9-873e-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "无论",
+                "wú lùn",
+                "",
+                "无(wu2)论(lun4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "84c152ee-300c-11e9-9efb-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "海水",
+                "hǎi shuǐ",
+                "",
+                "海(hai3)水(shui3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "84eafb9c-300c-11e9-a63d-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "船只",
+                "chuán zhī",
+                "",
+                "船(chuan2)只(zhi1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8538807e-300c-11e9-94f9-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "远方",
+                "yuǎn fāng",
+                "",
+                "远(yuan3)方(fang1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "85642500-300c-11e9-80d9-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "连同",
+                "lián tóng",
+                "",
+                "连(lian2)同(tong2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "85b5c8a4-300c-11e9-b951-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "岸边",
+                "àn biān",
+                "",
+                "岸(an4)边(bian1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "85da411c-300c-11e9-9842-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "海岸",
+                "hǎi àn",
+                "",
+                "海(hai3)岸(an4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "862de094-300c-11e9-94c3-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "同时",
+                "tóng shí",
+                "",
+                "同(tong2)时(shi2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "86584c94-300c-11e9-b37a-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "房屋",
+                "fáng wū",
+                "",
+                "房(fang2)屋(wu1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8685ecee-300c-11e9-9941-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "行人",
+                "xíng rén",
+                "",
+                "行(xing2)人(ren2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "86ac6140-300c-11e9-b4b6-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "一切",
+                "yī qiè",
+                "",
+                "一(yi1)切(qie4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "86d96558-300c-11e9-adc9-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "不久",
+                "bù jiǔ",
+                "",
+                "不(bu4)久(jiu3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "87264df8-300c-11e9-a90c-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "出现",
+                "chū xiàn",
+                "",
+                "出(chu1)现(xian4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8782a022-300c-11e9-85d9-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文19",
+                "散步",
+                "sàn bù",
+                "",
+                "散(san4)步(bu4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "87adcf74-300c-11e9-b42c-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文20",
+                "出门",
+                "chū mén",
+                "",
+                "出(chu1)门(men2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "87f057ae-300c-11e9-b5ef-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文20",
+                "空地",
+                "kòng dì",
+                "",
+                "空(kong4)地(di4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8818a0c6-300c-11e9-b41e-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文20",
+                "唱歌",
+                "chàng gē",
+                "",
+                "唱(chang4)歌(ge1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "883e9fe4-300c-11e9-b4b3-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文20",
+                "回家",
+                "huí jiā",
+                "",
+                "回(hui2)家(jia1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8892666e-300c-11e9-807e-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文20",
+                "屋子",
+                "wū zi",
+                "",
+                "屋(wu1)子(zi5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "88be0af0-300c-11e9-9c8c-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文20",
+                "赶快",
+                "gǎn kuài",
+                "",
+                "赶(gan3)快(kuai4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "88e6c938-300c-11e9-abf8-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文20",
+                "旁边",
+                "páng biān",
+                "",
+                "旁(pang2)边(bian1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "894bf524-300c-11e9-856f-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文20",
+                "火星",
+                "huǒ xīng",
+                "",
+                "火(huo3)星(xing1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "89a86e5e-300c-11e9-9f79-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文20",
+                "连忙",
+                "lián máng",
+                "",
+                "连(lian2)忙(mang2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "89cfa602-300c-11e9-a7df-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文20",
+                "浑身",
+                "hún shēn",
+                "",
+                "浑(hun2)身(shen1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "89f704b6-300c-11e9-9bc3-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文20",
+                "谢谢",
+                "xiè xie",
+                "",
+                "谢(xie4)谢(xie5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8a1ed89c-300c-11e9-a3b6-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文20",
+                "水汽",
+                "shuǐ qì",
+                "",
+                "水(shui3)汽(qi4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8a864e80-300c-11e9-a65b-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文20",
+                "白云",
+                "bái yún",
+                "",
+                "白(bai2)云(yun2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8aace9e2-300c-11e9-9726-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文21",
+                "食物",
+                "shí wù",
+                "",
+                "食(shi2)物(wu4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8b062ebe-300c-11e9-b35a-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文21",
+                "身边",
+                "shēn biān",
+                "",
+                "身(shen1)边(bian1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8b304c9c-300c-11e9-abde-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文21",
+                "为什么",
+                "wèi shén me",
+                "",
+                "为(wei4)什(shen2)么(me5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8b804288-300c-11e9-9ea6-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文21",
+                "爪子",
+                "zhuǎ zi",
+                "",
+                "爪(zhua3)子(zi5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8bbcfe4a-300c-11e9-ac69-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文21",
+                "面前",
+                "miàn qián",
+                "",
+                "面(mian4)前(qian2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8c086046-300c-11e9-bc2c-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文21",
+                "神气活现",
+                "shén qì huó xiàn",
+                "",
+                "神(shen2)气(qi4)活(huo2)现(xian4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8c81b0be-300c-11e9-a38b-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文21",
+                "野猪",
+                "yě zhū",
+                "",
+                "野(ye3)猪(zhu1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8ca69e66-300c-11e9-a276-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文21",
+                "往常",
+                "wǎng cháng",
+                "",
+                "往(wang3)常(chang2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8cd13176-300c-11e9-ab4c-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文21",
+                "身后",
+                "shēn hòu",
+                "",
+                "身(shen1)后(hou4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8cf7a5c8-300c-11e9-80b2-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文21",
+                "信以为真",
+                "xìn yǐ wéi zhēn",
+                "",
+                "信(xin4)以(yi3)为(wei2)真(zhen1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8d2daab0-300c-11e9-9a9e-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文22",
+                "开始",
+                "kāi shǐ",
+                "",
+                "开(kai1)始(shi3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8d5b4b0c-300c-11e9-86aa-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文22",
+                "过来",
+                "guò lái",
+                "",
+                "过(guo4)来(lai2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8d825b9e-300c-11e9-a9bb-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文22",
+                "仔细",
+                "zǐ xì",
+                "",
+                "仔(zi3)细(xi4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8dafadda-300c-11e9-b818-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文22",
+                "生气",
+                "shēng qì",
+                "",
+                "生(sheng1)气(qi4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8ddcd902-300c-11e9-abda-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文22",
+                "公平",
+                "gōng píng",
+                "",
+                "公(gong1)平(ping2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8e297380-300c-11e9-997f-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文23",
+                "纸船",
+                "zhǐ chuán",
+                "",
+                "纸(zhi3)船(chuan2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8f0ef4de-300c-11e9-9217-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文23",
+                "松果",
+                "sōng guǒ",
+                "",
+                "松(song1)果(guo3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8f672848-300c-11e9-ad66-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文23",
+                "纸条",
+                "zhǐ tiáo",
+                "",
+                "纸(zhi3)条(tiao2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8fb0b57a-300c-11e9-94b2-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文23",
+                "难过",
+                "nán guò",
+                "",
+                "难(nan2)过(guo4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "8fdc32ee-300c-11e9-8e56-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文23",
+                "但是",
+                "dàn shì",
+                "",
+                "但(dan4)是(shi4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "90078952-300c-11e9-9290-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文23",
+                "屋顶",
+                "wū dǐng",
+                "",
+                "屋(wu1)顶(ding3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "9034665a-300c-11e9-9b8a-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文23",
+                "和好",
+                "hé hǎo",
+                "",
+                "和(he2)好(hao3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "905bc50c-300c-11e9-a4ca-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文24",
+                "田野",
+                "tián yě",
+                "",
+                "田(tian2)野(ye3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "908594ca-300c-11e9-8d90-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文24",
+                "事情",
+                "shì qing",
+                "",
+                "事(shi4)情(qing5)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "90b4e2dc-300c-11e9-9bf6-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文24",
+                "风车",
+                "fēng chē",
+                "",
+                "风(feng1)车(che1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "9103c752-300c-11e9-aac6-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文24",
+                "飞快",
+                "fēi kuài",
+                "",
+                "飞(fei1)快(kuai4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "914f023e-300c-11e9-bcea-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文24",
+                "秧苗",
+                "yāng miáo",
+                "",
+                "秧(yang1)苗(miao2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "9195d046-300c-11e9-bd81-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文24",
+                "不住",
+                "bù zhù",
+                "",
+                "不(bu4)住(zhu4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "91c174ca-300c-11e9-b6ee-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文24",
+                "点头",
+                "diǎn tóu",
+                "",
+                "点(dian3)头(tou2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "91eec706-300c-11e9-9074-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文24",
+                "急忙",
+                "jí máng",
+                "",
+                "急(ji2)忙(mang2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "921ab9a8-300c-11e9-9830-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文24",
+                "广场",
+                "guǎng chǎng",
+                "",
+                "广(guang3)场(chang3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "9246d35e-300c-11e9-a35b-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文24",
+                "伤心",
+                "shāng xīn",
+                "",
+                "伤(shang1)心(xin1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "926be81a-300c-11e9-bed7-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文24",
+                "路边",
+                "lù biān",
+                "",
+                "路(lu4)边(bian1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "9297176c-300c-11e9-975c-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "深圳语文部编二年级上册课文24",
+                "还要",
+                "hái yào",
+                "",
+                "还(hai2)要(yao4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "93344418-300c-11e9-a673-180373427d85",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        }
+    ]
+}
