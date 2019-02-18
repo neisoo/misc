@@ -1,0 +1,3842 @@
+[
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文1",
+            "看见",
+            "kàn jiàn",
+            "kàn jian",
+            "看(kan4)见(jian4)",
+            "看(kan4)见(jian5)"
+        ],
+        "flags": 0,
+        "guid": "6bee0b86-32a6-11e9-bbdc-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文1",
+            "哪里",
+            "nǎ lǐ",
+            "",
+            "哪(na3)里(li3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6c1615fa-32a6-11e9-93f4-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文1",
+            "那边",
+            "nà biān",
+            "",
+            "那(na4)边(bian1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6c448a24-32a6-11e9-bba7-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文1",
+            "头顶",
+            "tóu dǐng",
+            "",
+            "头(tou2)顶(ding3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6c701080-32a6-11e9-82bc-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文1",
+            "眼睛",
+            "yǎn jing",
+            "",
+            "眼(yan3)睛(jing5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6c9c8408-32a6-11e9-8b63-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文1",
+            "雪白",
+            "xuě bái",
+            "",
+            "雪(xue3)白(bai2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6ccbb0a8-32a6-11e9-b7c9-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文1",
+            "肚皮",
+            "dù pí",
+            "",
+            "肚(du4)皮(pi2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6cf72e88-32a6-11e9-bd78-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文1",
+            "孩子",
+            "hái zi",
+            "",
+            "孩(hai2)子(zi5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6d1cb9c6-32a6-11e9-8459-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文2",
+            "天空",
+            "tiān kōng",
+            "",
+            "天(tian1)空(kong1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6d49a354-32a6-11e9-aceb-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文2",
+            "傍晚",
+            "bàng wǎn",
+            "",
+            "傍(bang4)晚(wan3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6d72badc-32a6-11e9-84cd-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文2",
+            "人们",
+            "rén men",
+            "",
+            "人(ren2)们(men5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6da03426-32a6-11e9-b22e-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文2",
+            "冬天",
+            "dōng tiān",
+            "",
+            "冬(dong1)天(tian1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6dd1fe46-32a6-11e9-ba73-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文2",
+            "花朵",
+            "huā duǒ",
+            "",
+            "花(hua1)朵(duo3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6df7f3c0-32a6-11e9-aaac-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文2",
+            "平常",
+            "píng cháng",
+            "",
+            "平(ping2)常(chang2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6e2aaa40-32a6-11e9-a5f1-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文2",
+            "江河",
+            "jiāng hé",
+            "",
+            "江(jiang1)河(he2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6e5404e2-32a6-11e9-9090-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文2",
+            "海洋",
+            "hǎi yáng",
+            "",
+            "海(hai3)洋(yang2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6e82508c-32a6-11e9-ab2a-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文2",
+            "田地",
+            "tián dì",
+            "",
+            "田(tian2)地(di4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6ead64da-32a6-11e9-8a7c-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文2",
+            "工作",
+            "gōng zuò",
+            "",
+            "工(gong1)作(zuo4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6ede1b1c-32a6-11e9-b488-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文3",
+            "办法",
+            "bàn fǎ",
+            "",
+            "办(ban4)法(fa3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6f0ad78c-32a6-11e9-a1be-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文3",
+            "如果",
+            "rú guǒ",
+            "",
+            "如(ru2)果(guo3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6f3a7e86-32a6-11e9-9535-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文3",
+            "长大",
+            "zhǎng dà",
+            "cháng dà",
+            "长(zhang3)大(da4)",
+            "长(chang2)大(da4)"
+        ],
+        "flags": 0,
+        "guid": "6f6a1e12-32a6-11e9-ae88-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文3",
+            "四海为家",
+            "sì hǎi wéi jiā",
+            "",
+            "四(si4)海(hai3)为(wei2)家(jia1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6fa8b7b4-32a6-11e9-9d09-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文3",
+            "娃娃",
+            "wá wa",
+            "",
+            "娃(wa2)娃(wa5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6fd34552-32a6-11e9-a022-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文3",
+            "只要",
+            "zhǐ yào",
+            "",
+            "只(zhi3)要(yao4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "6ffed47a-32a6-11e9-a8a3-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文3",
+            "皮毛",
+            "pí máo",
+            "",
+            "皮(pi2)毛(mao2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "702eeb2c-32a6-11e9-a404-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文3",
+            "那里",
+            "nà lǐ",
+            "",
+            "那(na4)里(li3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7059f112-32a6-11e9-8870-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文3",
+            "知识",
+            "zhī shi",
+            "",
+            "知(zhi1)识(shi5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "708611dc-32a6-11e9-8af6-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字1",
+            "花园",
+            "huā yuán",
+            "",
+            "花(hua1)园(yuan2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "70b151c6-32a6-11e9-9fc9-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字1",
+            "石桥",
+            "shí qiáo",
+            "",
+            "石(shi2)桥(qiao2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7100da78-32a6-11e9-957f-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字1",
+            "队旗",
+            "duì qí",
+            "",
+            "队(dui4)旗(qi2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "712ec68c-32a6-11e9-8e32-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字1",
+            "铜号",
+            "tóng hào",
+            "",
+            "铜(tong2)号(hao4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "74ac72b6-32a6-11e9-b142-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字1",
+            "红领巾",
+            "hóng lǐng jīn",
+            "",
+            "红(hong2)领(ling3)巾(jin1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "74f96a68-32a6-11e9-8c62-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字1",
+            "欢笑",
+            "huān xiào",
+            "",
+            "欢(huan1)笑(xiao4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7525f578-32a6-11e9-b9a4-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字2",
+            "杨树",
+            "yáng shù",
+            "",
+            "杨(yang2)树(shu4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "75546266-32a6-11e9-92d4-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字2",
+            "树叶",
+            "shù yè",
+            "",
+            "树(shu4)叶(ye4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "759bafc6-32a6-11e9-a87c-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字2",
+            "枫树",
+            "fēng shù",
+            "",
+            "枫(feng1)树(shu4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "78bf7af4-32a6-11e9-aa74-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字2",
+            "松柏",
+            "sōng bǎi",
+            "",
+            "松(song1)柏(bai3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "79181592-32a6-11e9-bd1f-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字2",
+            "木棉",
+            "mù mián",
+            "",
+            "木(mu4)棉(mian2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "79438ccc-32a6-11e9-8f0d-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字2",
+            "水杉",
+            "shuǐ shān",
+            "",
+            "水(shui3)杉(shan1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7971b06c-32a6-11e9-900b-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字2",
+            "化石",
+            "huà shí",
+            "",
+            "化(hua4)石(shi2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "799e36c2-32a6-11e9-96ea-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字2",
+            "金桂",
+            "jīn guì",
+            "",
+            "金(jin1)桂(gui4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7a086c68-32a6-11e9-b052-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字3",
+            "丛林",
+            "cóng lín",
+            "",
+            "丛(cong2)林(lin2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7a40c142-32a6-11e9-ba2b-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字3",
+            "深处",
+            "shēn chù",
+            "",
+            "深(shen1)处(chu4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7a71a198-32a6-11e9-b7e0-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字3",
+            "竹林",
+            "zhú lín",
+            "",
+            "竹(zhu2)林(lin2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7aa00a4a-32a6-11e9-bb0f-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字3",
+            "熊猫",
+            "xióng māo",
+            "",
+            "熊(xiong2)猫(mao1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7af6b1ae-32a6-11e9-a9b7-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字3",
+            "朋友",
+            "péng you",
+            "",
+            "朋(peng2)友(you5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7b298ba8-32a6-11e9-a461-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字4",
+            "四季",
+            "sì jì",
+            "",
+            "四(si4)季(ji4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7b7b60be-32a6-11e9-a4bd-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字4",
+            "月光",
+            "yuè guāng",
+            "",
+            "月(yue4)光(guang1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7bafe11e-32a6-11e9-91d6-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字4",
+            "辛苦",
+            "xīn kǔ",
+            "",
+            "辛(xin1)苦(ku3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7be8af2c-32a6-11e9-aa9d-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "识字4",
+            "棉衣",
+            "mián yī",
+            "",
+            "棉(mian2)衣(yi1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7c14f348-32a6-11e9-ae59-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文4",
+            "一同",
+            "yī tóng",
+            "",
+            "一(yi1)同(tong2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7c499414-32a6-11e9-9bd7-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文4",
+            "柱子",
+            "zhù zi",
+            "",
+            "柱(zhu4)子(zi5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7c776736-32a6-11e9-92d0-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文4",
+            "一边",
+            "yī biān",
+            "",
+            "一(yi1)边(bian1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7ca50e34-32a6-11e9-b0a2-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文4",
+            "到底",
+            "dào dǐ",
+            "",
+            "到(dao4)底(di3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7cd18b86-32a6-11e9-ab85-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文4",
+            "秤杆",
+            "chèng gǎn",
+            "",
+            "秤(cheng4)杆(gan3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7d057fb6-32a6-11e9-9375-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文4",
+            "力气",
+            "lì qi",
+            "",
+            "力(li4)气(qi5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7d36204a-32a6-11e9-8210-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文4",
+            "出来",
+            "chū lái",
+            "",
+            "出(chu1)来(lai2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7d685f66-32a6-11e9-a4e7-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文4",
+            "船身",
+            "chuán shēn",
+            "",
+            "船(chuan2)身(shen1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7db3986e-32a6-11e9-a144-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文4",
+            "石头",
+            "shí tou",
+            "",
+            "石(shi2)头(tou5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7de5a27a-32a6-11e9-bbef-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文4",
+            "地方",
+            "dì fāng",
+            "dì fang",
+            "地(di4)方(fang1)",
+            "地(di4)方(fang5)"
+        ],
+        "flags": 0,
+        "guid": "7e1685f6-32a6-11e9-bdfd-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文4",
+            "果然",
+            "guǒ rán",
+            "",
+            "果(guo3)然(ran2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7e4a9a06-32a6-11e9-b9ae-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文5",
+            "评奖",
+            "píng jiǎng",
+            "",
+            "评(ping2)奖(jiang3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7e7a92c0-32a6-11e9-998e-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文5",
+            "时间",
+            "shí jiān",
+            "",
+            "时(shi2)间(jian1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7ed823e2-32a6-11e9-b612-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文5",
+            "时候",
+            "shí hou",
+            "",
+            "时(shi2)候(hou5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7f017c08-32a6-11e9-b8bd-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文5",
+            "来不及",
+            "lái bu jí",
+            "",
+            "来(lai2)不(bu5)及(ji2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7f3176ae-32a6-11e9-adea-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文6",
+            "出国",
+            "chū guó",
+            "",
+            "出(chu1)国(guo2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "7f617290-32a6-11e9-90cb-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文6",
+            "半年",
+            "bàn nián",
+            "",
+            "半(ban4)年(nian2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8188403a-32a6-11e9-be2f-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文6",
+            "今天",
+            "jīn tiān",
+            "",
+            "今(jin1)天(tian1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "81ba194a-32a6-11e9-af93-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文6",
+            "圆珠笔",
+            "yuán zhū bǐ",
+            "",
+            "圆(yuan2)珠(zhu1)笔(bi3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "81e82b48-32a6-11e9-8d8d-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文6",
+            "开心",
+            "kāi xīn",
+            "",
+            "开(kai1)心(xin1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8215decc-32a6-11e9-bd4a-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文6",
+            "以前",
+            "yǐ qián",
+            "",
+            "以(yi3)前(qian2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "826792b4-32a6-11e9-a551-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文6",
+            "还有",
+            "hái yǒu",
+            "",
+            "还(hai2)有(you3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "82a9bc88-32a6-11e9-9fa4-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文6",
+            "台灯",
+            "tái dēng",
+            "",
+            "台(tai2)灯(deng1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "82d88ff4-32a6-11e9-a482-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文6",
+            "这时",
+            "zhè shí",
+            "",
+            "这(zhe4)时(shi2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "86440928-32a6-11e9-9f20-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文6",
+            "阳光",
+            "yáng guāng",
+            "",
+            "阳(yang2)光(guang1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "866b8ff4-32a6-11e9-8472-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文7",
+            "明亮",
+            "míng liàng",
+            "",
+            "明(ming2)亮(liang4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "86961246-32a6-11e9-b44d-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文7",
+            "故事",
+            "gù shì",
+            "gù shi",
+            "故(gu4)事(shi4)",
+            "故(gu4)事(shi5)"
+        ],
+        "flags": 0,
+        "guid": "86c16954-32a6-11e9-b8ed-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文7",
+            "头发",
+            "tóu fa",
+            "",
+            "头(tou2)发(fa5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "870985cc-32a6-11e9-805c-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文7",
+            "窗外",
+            "chuāng wài",
+            "",
+            "窗(chuang1)外(wai4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "89451a5c-32a6-11e9-98dd-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文9",
+            "黄山",
+            "huáng shān",
+            "",
+            "黄(huang2)山(shan1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "898bc758-32a6-11e9-a3e1-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文9",
+            "南部",
+            "nán bù",
+            "",
+            "南(nan2)部(bu4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "89ba39ac-32a6-11e9-bdd7-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文9",
+            "那些",
+            "nà xiē",
+            "",
+            "那(na4)些(xie1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8a024dc6-32a6-11e9-951a-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文9",
+            "山顶",
+            "shān dǐng",
+            "",
+            "山(shan1)顶(ding3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8a4ecf1c-32a6-11e9-9273-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文9",
+            "一动不动",
+            "yī dòng bù dòng",
+            "",
+            "一(yi1)动(dong4)不(bu4)动(dong4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8a7c4e62-32a6-11e9-8998-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文9",
+            "云海",
+            "yún hǎi",
+            "",
+            "云(yun2)海(hai3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8aa36f4a-32a6-11e9-b432-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文9",
+            "巨石",
+            "jù shí",
+            "",
+            "巨(ju4)石(shi2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8cc351e6-32a6-11e9-91d9-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文9",
+            "前方",
+            "qián fāng",
+            "",
+            "前(qian2)方(fang1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8d140d6e-32a6-11e9-88e4-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文9",
+            "每当",
+            "měi dāng",
+            "",
+            "每(mei3)当(dang1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8d41f68a-32a6-11e9-bfa4-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文9",
+            "金光闪闪",
+            "jīn guāng shǎn shǎn",
+            "",
+            "金(jin1)光(guang1)闪(shan3)闪(shan3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8da35406-32a6-11e9-97e8-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文9",
+            "它们",
+            "tā men",
+            "",
+            "它(ta1)们(men5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8dedc338-32a6-11e9-8a71-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文10",
+            "群山",
+            "qún shān",
+            "",
+            "群(qun2)山(shan1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8e410f80-32a6-11e9-99ed-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文10",
+            "树木",
+            "shù mù",
+            "",
+            "树(shu4)木(mu4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8e6ee118-32a6-11e9-8f7a-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文10",
+            "名胜古迹",
+            "míng shèng gǔ jì",
+            "",
+            "名(ming2)胜(sheng4)古(gu3)迹(ji4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8ecfd3f8-32a6-11e9-823c-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文10",
+            "中央",
+            "zhōng yāng",
+            "",
+            "中(zhong1)央(yang1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8efcc5f4-32a6-11e9-a16f-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文10",
+            "美丽",
+            "měi lì",
+            "",
+            "美(mei3)丽(li4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8f311ee2-32a6-11e9-963c-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文10",
+            "灯光",
+            "dēng guāng",
+            "",
+            "灯(deng1)光(guang1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8f7508ee-32a6-11e9-ac03-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文10",
+            "中午",
+            "zhōng wǔ",
+            "",
+            "中(zhong1)午(wu3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8fba5112-32a6-11e9-b676-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文10",
+            "展现",
+            "zhǎn xiàn",
+            "",
+            "展(zhan3)现(xian4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "8fe53e98-32a6-11e9-a57f-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文10",
+            "风光",
+            "fēng guāng",
+            "fēng guang",
+            "风(feng1)光(guang1)",
+            "风(feng1)光(guang5)"
+        ],
+        "flags": 0,
+        "guid": "9011ee7a-32a6-11e9-8416-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文11",
+            "水果",
+            "shuǐ guǒ",
+            "",
+            "水(shui3)果(guo3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "90603548-32a6-11e9-a054-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文11",
+            "月份",
+            "yuè fèn",
+            "",
+            "月(yue4)份(fen4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "90a736a8-32a6-11e9-a55f-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文11",
+            "山坡",
+            "shān pō",
+            "",
+            "山(shan1)坡(po1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "90d4f168-32a6-11e9-b261-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文11",
+            "枝叶",
+            "zhī yè",
+            "",
+            "枝(zhi1)叶(ye4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9107a39c-32a6-11e9-a5f2-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文11",
+            "展开",
+            "zhǎn kāi",
+            "",
+            "展(zhan3)开(kai1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "91312c02-32a6-11e9-8a3f-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文11",
+            "五光十色",
+            "wǔ guāng shí sè",
+            "",
+            "五(wu3)光(guang1)十(shi2)色(se4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "916bd81a-32a6-11e9-9ab9-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文11",
+            "好客",
+            "hào kè",
+            "",
+            "好(hao4)客(ke4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "919b13b6-32a6-11e9-9d9c-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文11",
+            "老乡",
+            "lǎo xiāng",
+            "",
+            "老(lao3)乡(xiang1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "91cc4b30-32a6-11e9-82e6-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文11",
+            "城市",
+            "chéng shì",
+            "",
+            "城(cheng2)市(shi4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "921f4f86-32a6-11e9-9e77-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文11",
+            "利用",
+            "lì yòng",
+            "",
+            "利(li4)用(yong4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "928a08ba-32a6-11e9-8b4f-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文11",
+            "空气",
+            "kōng qì",
+            "",
+            "空(kong1)气(qi4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "92b51c94-32a6-11e9-bc41-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文11",
+            "水分",
+            "shuǐ fèn",
+            "",
+            "水(shui3)分(fen4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "92e36328-32a6-11e9-bdf7-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文12",
+            "坐井观天",
+            "zuò jǐng guān tiān",
+            "",
+            "坐(zuo4)井(jing3)观(guan1)天(tian1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "931a7d34-32a6-11e9-b309-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文12",
+            "井沿",
+            "jǐng yán",
+            "",
+            "井(jing3)沿(yan2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "966a0458-32a6-11e9-8157-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文12",
+            "回答",
+            "huí dá",
+            "",
+            "回(hui2)答(da2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "969ac05c-32a6-11e9-bf96-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文12",
+            "口渴",
+            "kǒu kě",
+            "",
+            "口(kou3)渴(ke3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "96c907da-32a6-11e9-8039-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文12",
+            "大话",
+            "dà huà",
+            "",
+            "大(da4)话(hua4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "971947c0-32a6-11e9-b960-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文12",
+            "井口",
+            "jǐng kǒu",
+            "",
+            "井(jing3)口(kou3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "97463746-32a6-11e9-be18-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文12",
+            "无边无际",
+            "wú biān wú jì",
+            "",
+            "无(wu2)边(bian1)无(wu2)际(ji4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9780a288-32a6-11e9-8947-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文13",
+            "山脚",
+            "shān jiǎo",
+            "",
+            "山(shan1)脚(jiao3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "97ac6b12-32a6-11e9-90d0-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文13",
+            "当作",
+            "dàng zuò",
+            "",
+            "当(dang4)作(zuo4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "980420f4-32a6-11e9-9e0c-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文13",
+            "前面",
+            "qián miàn",
+            "",
+            "前(qian2)面(mian4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "986130f0-32a6-11e9-b3e1-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文13",
+            "晴朗",
+            "qíng lǎng",
+            "",
+            "晴(qing2)朗(lang3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "98985c98-32a6-11e9-93cc-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文13",
+            "枯草",
+            "kū cǎo",
+            "",
+            "枯(ku1)草(cao3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "98ca76de-32a6-11e9-a14d-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文13",
+            "正好",
+            "zhèng hǎo",
+            "",
+            "正(zheng4)好(hao3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "98f31ec0-32a6-11e9-a2ea-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文13",
+            "清早",
+            "qīng zǎo",
+            "",
+            "清(qing1)早(zao3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9931a55c-32a6-11e9-886e-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文13",
+            "现在",
+            "xiàn zài",
+            "",
+            "现(xian4)在(zai4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "99616bb0-32a6-11e9-af7a-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文13",
+            "将来",
+            "jiāng lái",
+            "",
+            "将(jiang1)来(lai2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "998fb2d0-32a6-11e9-9ac4-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文13",
+            "大雪纷飞",
+            "dà xuě fēn fēi",
+            "",
+            "大(da4)雪(xue3)纷(fen1)飞(fei1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "99e1055e-32a6-11e9-a015-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文13",
+            "枝头",
+            "zhī tóu",
+            "",
+            "枝(zhi1)头(tou2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9a21afba-32a6-11e9-b478-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文13",
+            "夜里",
+            "yè lǐ",
+            "",
+            "夜(ye4)里(li3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9a4db630-32a6-11e9-a45a-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文14",
+            "从前",
+            "cóng qián",
+            "",
+            "从(cong2)前(qian2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9a7ec6a6-32a6-11e9-9f9a-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文14",
+            "细长",
+            "xì cháng",
+            "",
+            "细(xi4)长(chang2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9aaee074-32a6-11e9-adb6-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文14",
+            "可爱",
+            "kě ài",
+            "",
+            "可(ke3)爱(ai4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9ae17ae4-32a6-11e9-8591-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文14",
+            "每天",
+            "měi tiān",
+            "",
+            "每(mei3)天(tian1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9b36118a-32a6-11e9-b6cd-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文14",
+            "自言自语",
+            "zì yán zì yǔ",
+            "",
+            "自(zi4)言(yan2)自(zi4)语(yu3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9b6e305a-32a6-11e9-a0fe-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文14",
+            "南瓜",
+            "nán guā",
+            "",
+            "南(nan2)瓜(gua1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9bc7bd2e-32a6-11e9-80e6-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文14",
+            "邻居",
+            "lín jū",
+            "",
+            "邻(lin2)居(ju1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9bf51112-32a6-11e9-b163-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文14",
+            "奇怪",
+            "qí guài",
+            "",
+            "奇(qi2)怪(guai4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9c25fe24-32a6-11e9-90d2-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "洪水",
+            "hóng shuǐ",
+            "",
+            "洪(hong2)水(shui3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9c575fdc-32a6-11e9-a91e-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "经常",
+            "jīng cháng",
+            "",
+            "经(jing1)常(chang2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9c841e76-32a6-11e9-bd1d-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "到处",
+            "dào chù",
+            "",
+            "到(dao4)处(chu4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9cb62c0a-32a6-11e9-b042-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "百姓",
+            "bǎi xìng",
+            "",
+            "百(bai3)姓(xing4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9ce9582e-32a6-11e9-aa8b-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "灾难",
+            "zāi nàn",
+            "",
+            "灾(zai1)难(nan4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9d1a54f4-32a6-11e9-9c81-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "当时",
+            "dāng shí",
+            "dàng shí",
+            "当(dang1)时(shi2)",
+            "当(dang4)时(shi2)"
+        ],
+        "flags": 0,
+        "guid": "9d6cb01a-32a6-11e9-826c-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "知道",
+            "zhī dào",
+            "",
+            "知(zhi1)道(dao4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9d9ef7fa-32a6-11e9-81ec-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "家乡",
+            "jiā xiāng",
+            "",
+            "家(jia1)乡(xiang1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9dcf6acc-32a6-11e9-83d8-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "可是",
+            "kě shì",
+            "",
+            "可(ke3)是(shi4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9dfb8aa8-32a6-11e9-b848-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "认为",
+            "rèn wéi",
+            "",
+            "认(ren4)为(wei2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9e2716dc-32a6-11e9-8dfa-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "采用",
+            "cǎi yòng",
+            "",
+            "采(cai3)用(yong4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9e699736-32a6-11e9-99b8-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "千千万万",
+            "qiān qiān wàn wàn",
+            "",
+            "千(qian1)千(qian1)万(wan4)万(wan4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9eb15eec-32a6-11e9-a79b-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "一起",
+            "yī qǐ",
+            "",
+            "一(yi1)起(qi3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9edd2ac6-32a6-11e9-9b8f-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "河道",
+            "hé dào",
+            "",
+            "河(he2)道(dao4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9f088d3a-32a6-11e9-b39a-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "土地",
+            "tǔ dì",
+            "tǔ di",
+            "土(tu3)地(di4)",
+            "土(tu3)地(di5)"
+        ],
+        "flags": 0,
+        "guid": "9f606342-32a6-11e9-af68-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "农业",
+            "nóng yè",
+            "",
+            "农(nong2)业(ye4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9faffce2-32a6-11e9-9dd4-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文15",
+            "生产",
+            "shēng chǎn",
+            "",
+            "生(sheng1)产(chan3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "9fdd4f00-32a6-11e9-a409-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文16",
+            "扁担",
+            "biǎn dan",
+            "",
+            "扁(bian3)担(dan5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a007a25c-32a6-11e9-94d8-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文16",
+            "同志",
+            "tóng zhì",
+            "",
+            "同(tong2)志(zhi4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a0387dec-32a6-11e9-812c-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文16",
+            "带领",
+            "dài lǐng",
+            "",
+            "带(dai4)领(ling3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a0622f68-32a6-11e9-b762-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文16",
+            "队伍",
+            "duì wu",
+            "",
+            "队(dui4)伍(wu5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a085ed4a-32a6-11e9-a62f-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文16",
+            "会师",
+            "huì shī",
+            "",
+            "会(hui4)师(shi1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a0aba7f6-32a6-11e9-a02e-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文16",
+            "红军",
+            "hóng jūn",
+            "",
+            "红(hong2)军(jun1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a0fa4e54-32a6-11e9-b596-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文16",
+            "来回",
+            "lái huí",
+            "",
+            "来(lai2)回(hui2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a123b9b6-32a6-11e9-a4e7-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文16",
+            "战士",
+            "zhàn shì",
+            "",
+            "战(zhan4)士(shi4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a16ba082-32a6-11e9-a8c7-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文16",
+            "白天",
+            "bái tiān",
+            "",
+            "白(bai2)天(tian1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a19bc646-32a6-11e9-9067-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文16",
+            "起来",
+            "qǐ lái",
+            "",
+            "起(qi3)来(lai2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a1c3cc2e-32a6-11e9-88b7-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文17",
+            "难忘",
+            "nán wàng",
+            "",
+            "难(nan2)忘(wang4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a1ec2cd2-32a6-11e9-ae36-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文17",
+            "泼水节",
+            "pō shuǐ jié",
+            "",
+            "泼(po1)水(shui3)节(jie2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a2324be2-32a6-11e9-b526-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文17",
+            "火红",
+            "huǒ hóng",
+            "",
+            "火(huo3)红(hong2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a286ff62-32a6-11e9-9f9c-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文17",
+            "一年一度",
+            "yī nián yī dù",
+            "",
+            "一(yi1)年(nian2)一(yi1)度(du4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a2bab8b8-32a6-11e9-bcea-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文17",
+            "四面八方",
+            "sì miàn bā fāng",
+            "",
+            "四(si4)面(mian4)八(ba1)方(fang1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a2efa5b6-32a6-11e9-8719-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文17",
+            "龙船",
+            "lóng chuán",
+            "",
+            "龙(long2)船(chuan2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a33679ec-32a6-11e9-871b-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文17",
+            "花炮",
+            "huā pào",
+            "",
+            "花(hua1)炮(pao4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a383793a-32a6-11e9-b245-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文17",
+            "欢呼",
+            "huān hū",
+            "",
+            "欢(huan1)呼(hu1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a3c48140-32a6-11e9-85ed-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文17",
+            "人群",
+            "rén qún",
+            "",
+            "人(ren2)群(qun2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a3f4270a-32a6-11e9-886a-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文17",
+            "欢乐",
+            "huān lè",
+            "",
+            "欢(huan1)乐(le4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a422bed2-32a6-11e9-ae40-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文17",
+            "清水",
+            "qīng shuǐ",
+            "",
+            "清(qing1)水(shui3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a44e8d26-32a6-11e9-a46c-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文17",
+            "柏树枝",
+            "bǎi shù zhī",
+            "",
+            "柏(bai3)树(shu4)枝(zhi1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a818ac24-32a6-11e9-80fc-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文17",
+            "多么",
+            "duō me",
+            "",
+            "多(duo1)么(me5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a8463be4-32a6-11e9-9166-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "于是",
+            "yú shì",
+            "",
+            "于(yu2)是(shi4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a86f6c94-32a6-11e9-9577-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "无论",
+            "wú lùn",
+            "",
+            "无(wu2)论(lun4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a899e206-32a6-11e9-9bbd-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "海水",
+            "hǎi shuǐ",
+            "",
+            "海(hai3)水(shui3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a8c44664-32a6-11e9-a648-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "船只",
+            "chuán zhī",
+            "",
+            "船(chuan2)只(zhi1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a90c9b58-32a6-11e9-85ba-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "远方",
+            "yuǎn fāng",
+            "",
+            "远(yuan3)方(fang1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a946535c-32a6-11e9-a9ef-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "连同",
+            "lián tóng",
+            "",
+            "连(lian2)同(tong2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a98e6592-32a6-11e9-96d3-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "岸边",
+            "àn biān",
+            "",
+            "岸(an4)边(bian1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "a9b4a3fe-32a6-11e9-864f-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "海岸",
+            "hǎi àn",
+            "",
+            "海(hai3)岸(an4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "aa048d02-32a6-11e9-a864-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "同时",
+            "tóng shí",
+            "",
+            "同(tong2)时(shi2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "aa2f7d1a-32a6-11e9-9907-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "房屋",
+            "fáng wū",
+            "",
+            "房(fang2)屋(wu1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "aa6d3cd0-32a6-11e9-bd3c-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "行人",
+            "xíng rén",
+            "",
+            "行(xing2)人(ren2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "aa9d7418-32a6-11e9-ad76-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "一切",
+            "yī qiè",
+            "",
+            "一(yi1)切(qie4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "aacb9d62-32a6-11e9-a042-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "不久",
+            "bù jiǔ",
+            "",
+            "不(bu4)久(jiu3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "ab1e7d1c-32a6-11e9-88d5-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "出现",
+            "chū xiàn",
+            "",
+            "出(chu1)现(xian4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "ab71991e-32a6-11e9-a2a8-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文19",
+            "散步",
+            "sàn bù",
+            "",
+            "散(san4)步(bu4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "ab9ec126-32a6-11e9-aa5b-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文20",
+            "出门",
+            "chū mén",
+            "",
+            "出(chu1)门(men2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "abd1e3f6-32a6-11e9-b63a-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文20",
+            "空地",
+            "kòng dì",
+            "",
+            "空(kong4)地(di4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "ac038f58-32a6-11e9-8af9-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文20",
+            "唱歌",
+            "chàng gē",
+            "",
+            "唱(chang4)歌(ge1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "ac2d53f4-32a6-11e9-89fb-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文20",
+            "回家",
+            "huí jiā",
+            "",
+            "回(hui2)家(jia1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "ac8ba5ae-32a6-11e9-9088-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文20",
+            "屋子",
+            "wū zi",
+            "",
+            "屋(wu1)子(zi5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "acb9c8ac-32a6-11e9-9581-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文20",
+            "赶快",
+            "gǎn kuài",
+            "",
+            "赶(gan3)快(kuai4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "acefad36-32a6-11e9-833b-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文20",
+            "旁边",
+            "páng biān",
+            "",
+            "旁(pang2)边(bian1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "ad1bb926-32a6-11e9-b225-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文20",
+            "火星",
+            "huǒ xīng",
+            "",
+            "火(huo3)星(xing1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "ad472db8-32a6-11e9-a99e-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文20",
+            "连忙",
+            "lián máng",
+            "",
+            "连(lian2)忙(mang2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "ad7f1494-32a6-11e9-9fa3-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文20",
+            "浑身",
+            "hún shēn",
+            "",
+            "浑(hun2)身(shen1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "adab2c1c-32a6-11e9-b810-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文20",
+            "谢谢",
+            "xiè xie",
+            "",
+            "谢(xie4)谢(xie5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "ade39d8c-32a6-11e9-bdec-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文20",
+            "水汽",
+            "shuǐ qì",
+            "",
+            "水(shui3)汽(qi4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "ae31787e-32a6-11e9-b1cc-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文20",
+            "白云",
+            "bái yún",
+            "",
+            "白(bai2)云(yun2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "ae6226d2-32a6-11e9-9e99-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文21",
+            "食物",
+            "shí wù",
+            "",
+            "食(shi2)物(wu4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "aec82200-32a6-11e9-80cc-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文21",
+            "身边",
+            "shēn biān",
+            "",
+            "身(shen1)边(bian1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "aef9ce52-32a6-11e9-a69a-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文21",
+            "为什么",
+            "wèi shén me",
+            "",
+            "为(wei4)什(shen2)么(me5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "af52cffe-32a6-11e9-b7ef-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文21",
+            "爪子",
+            "zhuǎ zi",
+            "",
+            "爪(zhua3)子(zi5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "af7f4cfe-32a6-11e9-87aa-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文21",
+            "面前",
+            "miàn qián",
+            "",
+            "面(mian4)前(qian2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "afd1e294-32a6-11e9-9d54-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文21",
+            "神气活现",
+            "shén qì huó xiàn",
+            "",
+            "神(shen2)气(qi4)活(huo2)现(xian4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b0462298-32a6-11e9-873d-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文21",
+            "野猪",
+            "yě zhū",
+            "",
+            "野(ye3)猪(zhu1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b09a0ab6-32a6-11e9-a86e-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文21",
+            "往常",
+            "wǎng cháng",
+            "",
+            "往(wang3)常(chang2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b0c99d58-32a6-11e9-a52a-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文21",
+            "身后",
+            "shēn hòu",
+            "",
+            "身(shen1)后(hou4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b0fd0bb6-32a6-11e9-8882-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文21",
+            "信以为真",
+            "xìn yǐ wéi zhēn",
+            "",
+            "信(xin4)以(yi3)为(wei2)真(zhen1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b137eb14-32a6-11e9-9355-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文22",
+            "开始",
+            "kāi shǐ",
+            "",
+            "开(kai1)始(shi3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b1625edc-32a6-11e9-aa1e-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文22",
+            "过来",
+            "guò lái",
+            "",
+            "过(guo4)来(lai2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b1b40a5c-32a6-11e9-a9e5-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文22",
+            "仔细",
+            "zǐ xì",
+            "",
+            "仔(zi3)细(xi4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b1e0a098-32a6-11e9-9bc0-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文22",
+            "生气",
+            "shēng qì",
+            "",
+            "生(sheng1)气(qi4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b2132302-32a6-11e9-86b1-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文22",
+            "公平",
+            "gōng píng",
+            "",
+            "公(gong1)平(ping2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b2433fa8-32a6-11e9-9eea-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文23",
+            "纸船",
+            "zhǐ chuán",
+            "",
+            "纸(zhi3)船(chuan2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b38df41c-32a6-11e9-83ca-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文23",
+            "松果",
+            "sōng guǒ",
+            "",
+            "松(song1)果(guo3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b3c04fc8-32a6-11e9-89dc-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文23",
+            "纸条",
+            "zhǐ tiáo",
+            "",
+            "纸(zhi3)条(tiao2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b40a3edc-32a6-11e9-94a6-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文23",
+            "难过",
+            "nán guò",
+            "",
+            "难(nan2)过(guo4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b449d5de-32a6-11e9-a780-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文23",
+            "但是",
+            "dàn shì",
+            "",
+            "但(dan4)是(shi4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b47a6f0c-32a6-11e9-a02c-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文23",
+            "屋顶",
+            "wū dǐng",
+            "",
+            "屋(wu1)顶(ding3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b4ab9042-32a6-11e9-8556-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文23",
+            "和好",
+            "hé hǎo",
+            "",
+            "和(he2)好(hao3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b4d8a4ba-32a6-11e9-80fa-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文24",
+            "田野",
+            "tián yě",
+            "",
+            "田(tian2)野(ye3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b517bcc8-32a6-11e9-8476-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文24",
+            "事情",
+            "shì qing",
+            "",
+            "事(shi4)情(qing5)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b5456d94-32a6-11e9-9a91-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文24",
+            "风车",
+            "fēng chē",
+            "",
+            "风(feng1)车(che1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b5996b2c-32a6-11e9-889a-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文24",
+            "飞快",
+            "fēi kuài",
+            "",
+            "飞(fei1)快(kuai4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b5c65674-32a6-11e9-b583-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文24",
+            "秧苗",
+            "yāng miáo",
+            "",
+            "秧(yang1)苗(miao2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b619e8f0-32a6-11e9-a5c8-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文24",
+            "不住",
+            "bù zhù",
+            "",
+            "不(bu4)住(zhu4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b6721294-32a6-11e9-a18f-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文24",
+            "点头",
+            "diǎn tóu",
+            "",
+            "点(dian3)头(tou2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b6a07722-32a6-11e9-a410-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文24",
+            "急忙",
+            "jí máng",
+            "",
+            "急(ji2)忙(mang2)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b6d0d3e4-32a6-11e9-a9b7-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文24",
+            "广场",
+            "guǎng chǎng",
+            "",
+            "广(guang3)场(chang3)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b6fd6eca-32a6-11e9-8209-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文24",
+            "伤心",
+            "shāng xīn",
+            "",
+            "伤(shang1)心(xin1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b72c2724-32a6-11e9-821d-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文24",
+            "路边",
+            "lù biān",
+            "",
+            "路(lu4)边(bian1)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b77108c0-32a6-11e9-8576-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    },
+    {
+        "__type__": "Note",
+        "data": "",
+        "fields": [
+            "课文24",
+            "还要",
+            "hái yào",
+            "",
+            "还(hai2)要(yao4)",
+            ""
+        ],
+        "flags": 0,
+        "guid": "b7d3a31c-32a6-11e9-b888-ac9e17867d04",
+        "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+        "tags": []
+    }
+]
