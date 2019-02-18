@@ -126,19 +126,30 @@ def longmanwroddict(word=None, needExample=False, maxExample=3):
                 soundurl = span.attrs['data-src-mp3']
                 if (not soundurl is None) and len(sentence) > 0:
                     md5 = hashlib.md5(sentence.encode(encoding='UTF-8')).hexdigest()
-                    print("a555555555555555555")
-                    r = requests.get(soundurl, headers=headers, timeout=10) #下载例句发音文件
-                    time.sleep(1)
-                    print("a6666666666666666666")
-                    if r.status_code == 200:
-                        with open("%s/longman_%s.mp3" % (audioPath, md5), "wb") as code:
-                            code.write(r.content)
-                            result["example"].append(sentence)
-                            result["example_trans"].append(translate(sentence))
-                            result["example_sound"].append("[sound:longman_%s.mp3]" % (md5))
-                            i = i + 1
-                            if i > maxExample:
-                                break
+                    
+                    tryCount = 0
+                    while tryCount < 10:
+                        try:
+                            print("a555555555555555555 url=%s"%(soundurl))
+                            r = requests.get(soundurl, headers=headers, timeout=10) #下载例句发音文件
+                            print("a6666666666666666666")
+                            time.sleep(1)
+                            if r.status_code == 200:
+                                with open("%s/longman_%s.mp3" % (audioPath, md5), "wb") as code:
+                                    code.write(r.content)
+                                    result["example"].append(sentence)
+                                    result["example_trans"].append(translate(sentence))
+                                    result["example_sound"].append("[sound:longman_%s.mp3]" % (md5))
+                                    i = i + 1
+                                    if i > maxExample:
+                                        return result
+                                    break
+                        except requests.exceptions.ReadTimeout as err:
+                            print("error: donwload failed")
+                            print(err)
+                            tryCount = tryCount + 1
+                    
+                        
     print("a77777777777777777")
     return result
     
@@ -159,11 +170,14 @@ def youdaodict(word=None):
     phrsListTabDiv = soup.find(attrs={"id":"phrsListTab"})
     if not phrsListTabDiv is None:
         keywordSpan = phrsListTabDiv.find(attrs={"class":"keyword"})
-        transDiv = phrsListTabDiv.find(attrs={"class":"trans-container"}).ul #翻译
+        transDiv = phrsListTabDiv.find(attrs={"class":"trans-container"}) #翻译
         baavDiv = phrsListTabDiv.find(attrs={"class":"baav"}) # 发音
         
+        if keywordSpan is None or transDiv is None or transDiv.ul is None:
+            return result
+            
         keyword = str(keywordSpan.string)
-        trans = str(transDiv).replace("\n","")
+        trans = str(transDiv.ul).replace("\n","")
         
         #优先使用牛津中的音标，有音节切分。没有的话就使用有道词典的音标
         cambridge = cambridgewroddict(word)
@@ -229,8 +243,6 @@ def youdaodict(word=None):
             if not imageUrl is None:
                 # windows 特殊文件名
                 imageName = keyword
-                if imageName in ['con', 'aux', 'nul']:
-                    imageName = "%s_" % (imageName)
             
                 #从网络下载
                 #print("imageUrl=%s"%(imageUrl))
@@ -308,16 +320,16 @@ class TextSpeech(object):
         stream.close()
         p.terminate()
         
-def GetWordInfo(keyword):
+def GetWordInfo(index, keyword):
     keyword = keyword.strip()
     tryCount = 0
     while tryCount < 10:
         try:
-            print("%s=====================" % (keyword))
+            print("%d %s=====================" % (index, keyword))
             
             word = youdaodict(keyword)
             print("11111111111111111111")
-            if type(word['keyword']) != None:
+            if word.get('keyword', "") != "" and word.get('trans', "") != "":
             
                 anki = {}
                 anki['__type__'] = "Note"
@@ -361,8 +373,9 @@ def GetWordInfo(keyword):
 
                 break
             else:
-                print("####try count %d" % (tryCount))
-                tryCount = tryCount + 1
+                return
+                #print("####try count %d" % (tryCount))
+                #tryCount = tryCount + 1
                 
         except AttributeError as err:
             print(err)
@@ -438,4 +451,4 @@ with open('.\\wordlist.json', 'r', encoding='UTF-8') as f:
 #with open('.\\out\\output.json', 'w') as f:
 #    json.dump(dstData, f, indent = 4, sort_keys = True)
 for i in range(0, len(srcData)):
-    GetWordInfo(srcData[i])
+    GetWordInfo(i, srcData[i])

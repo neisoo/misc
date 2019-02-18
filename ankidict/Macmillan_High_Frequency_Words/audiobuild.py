@@ -72,4 +72,4 @@ class TextSpeech(object):
 
 if __name__ == '__main__':
     sp = TextSpeech()
-    sp.SpeechAndSave('IT has made considerable changes to the world in 21st century.', 'output.mp3')
+    sp.SpeechAndSave('We had such a good time at the aquarium.', 'aquarium_3.mp3')

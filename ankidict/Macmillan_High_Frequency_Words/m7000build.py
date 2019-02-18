@@ -94,7 +94,7 @@ def longmanwroddict(word=None, needExample=False, maxExample=3):
     result = {}
     url = 'https://www.ldoceonline.com/dictionary/%s' % (word.replace(" ", "-"))
     #url = 'http://www.ldoceonline.com/dictionary/%s' % (word)    
-    print("a11111111111111111111111%s"%(word))
+    print("a11111111111111111111111_%s"%(word))
     headers = {'User-Agent': 'User-Agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'} #伪装成google浏览器,因为服务器根据 UA 来判断拒绝了 python 爬虫。
     response = requests.post(url, headers=headers, timeout=5)
     print("a22222222222222222222222")

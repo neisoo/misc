@@ -6,3 +6,5 @@ m7000build.py 根据原有的麦克米伦字典m7000.json中单词，分别从�
 4.根据原来的字典例图链接，从百词斩下载例图。为例图句子自动生成例图句子的机器语音。
 5.朗文例句的翻译从http://fanyi.youdao.com/translate自动生成机器翻译。
 6.audiobuild.py可以自动生成句子的机器发音。
+
+7.wordlist.py/wordlist.json用来补充麦克米伦字典的词条。
