@@ -1,0 +1,451 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "3b2ab690-3730-11e9-b450-ac9e17867d04",
+    "deck_config_uuid": "351ee531-c6a9-11e8-8328-ac9e17867d04",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "351ee531-c6a9-11e8-8328-ac9e17867d04",
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    10
+                ],
+                "leechAction": 0,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": true,
+                "delays": [
+                    1,
+                    10
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    7
+                ],
+                "order": 1,
+                "perDay": 0,
+                "separate": true
+            },
+            "replayq": true,
+            "rev": {
+                "bury": true,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 100
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 10,
+    "extendRev": 50,
+    "media_files": [],
+    "mid": "1550885481269",
+    "name": "语文::3b读记词和日积月累",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "3b2b79b8-3730-11e9-8f7d-ac9e17867d04",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Index",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "name": "基础带索引笔记类型",
+            "req": [
+                [
+                    0,
+                    "all",
+                    [
+                        1
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}\n",
+                    "bafmt": "{{Back}}",
+                    "bqfmt": "{{Front}}",
+                    "did": null,
+                    "name": "正反卡",
+                    "ord": 0,
+                    "qfmt": "{{Front}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "css": ".card {\n font-family: \"Arial\",\"Microsoft YaHei\",\"黑体\",\"宋体\",sans-serif;;\n font-size: 1rem;\n text-align: center;\n color: black;\n background-color: white;\n}\n.zyh_question_title, .zyh_answer_title {\n  margin:1rem;\n}\n.zyh_answer_word {\n  font-size:3rem;\n  margin:1rem;\n}\n.zyh_pinyin {\n  font-size:2rem;\n}\n.zyh_pinyin span {\n  color: green;\n}\n.zyh_dictionary {\n  font-size:1rem;\n  float:right;\n}\n.zyh_dictionary a{\n  margin-left:0.5rem;\n}",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Provenance",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Word",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Pinyin1",
+                    "ord": 2,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Pinyin2",
+                    "ord": 3,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Pinyin1Url",
+                    "ord": 4,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Pinyin2Url",
+                    "ord": 5,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": true
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "name": "语文词语听写笔记类型",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        2,
+                        3,
+                        4,
+                        5
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "<div class=\"zyh_answer_title\">正确答案</div>\n\n<div class=\"zyh_pinyin\">\n{{#Pinyin1}}\n<span>{{Pinyin1}}</span>\n{{/Pinyin1}}\n{{#Pinyin2}}\n/ <span>{{Pinyin2}}</span>\n{{/Pinyin2}}\n</div>\n\n<div>\n{{#Pinyin1Url}}\n[sound:https://ss0.baidu.com/6KAZsjip0QIZ8tyhnq/text2audio?tex={{Pinyin1Url}}&cuid=dict&lan=ZH&ctp=1&pdt=30&vol=9&spd=4]\n{{/Pinyin1Url}}\n{{#Pinyin2Url}}\n[sound:https://ss0.baidu.com/6KAZsjip0QIZ8tyhnq/text2audio?tex={{Pinyin2Url}}&cuid=dict&lan=ZH&ctp=1&pdt=30&vol=9&spd=4]\n{{/Pinyin2Url}}\n</div>\n\n<div class=\"zyh_answer_word\">{{Word}}</div>\n\n<div class=\"zyh_dictionary\"  id=\"zyh_word\">\n<span>百度汉语:</span>\n</div>\n\n<script>\nfunction init() {\nvar wordElem = document.getElementById('zyh_word');\nvar word = '{{text:Word}}';\n\n// 称除相同的字符\nvar str = [].filter.call(word,function(s,i,o){return o.indexOf(s)==i;}).join('');\n\n// 为每个字添加字典链接\nfor(i = 0; i < str.length; i++) {\n  var a = document.createElement('a');\n  a.href = 'https://dict.baidu.com/s?wd=' + str[i] + '&ptype=zici';\n  a.innerText = str[i];\n  wordElem.appendChild(a);\n}\n\n// 为词组添加字典链接\nvar a = document.createElement('a');\na.href = 'https://dict.baidu.com/s?wd=' + word + '&ptype=zici';\na.innerText = word;\nwordElem.appendChild(a);\n}\n\ninit();\n</script>\n\n<!--\n<textarea style=\"width:100%;height:200px;\" id=\"kaiwa\" >_</textarea>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=document.body.innerHTML;return false;\">body</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.innerHTML;return false;\">parent1</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.innerHTML;return false;\">parent2</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.parentNode.innerHTML;return false;\">parent3</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.parentNode.parentNode.innerHTML;return false;\">parent4</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.parentNode.parentNode.parentNode.innerHTML;return false;\">parent5</a>\n-->",
+                    "bafmt": "{{Word}}",
+                    "bqfmt": "{{Pinyin1}}",
+                    "did": null,
+                    "name": "听写词语",
+                    "ord": 0,
+                    "qfmt": "<div class=\"zyh_question_title\">请写出听到的词语</div>\n\n<div class=\"zyh_pinyin\">\n{{#Pinyin1}}\n<span>{{Pinyin1}}</span>\n{{/Pinyin1}}\n{{#Pinyin2}}\n/ <span>{{Pinyin2}}</span>\n{{/Pinyin2}}\n</div>\n\n<div>\n{{#Pinyin1Url}}\n[sound:https://ss0.baidu.com/6KAZsjip0QIZ8tyhnq/text2audio?tex={{Pinyin1Url}}&cuid=dict&lan=ZH&ctp=1&pdt=30&vol=9&spd=4]\n{{/Pinyin1Url}}\n{{#Pinyin2Url}}\n[sound:https://ss0.baidu.com/6KAZsjip0QIZ8tyhnq/text2audio?tex={{Pinyin2Url}}&cuid=dict&lan=ZH&ctp=1&pdt=30&vol=9&spd=4]\n{{/Pinyin2Url}}\n</div>\n\n<!--\n<textarea style=\"width:100%;height:200px;\" id=\"kaiwa\" >_</textarea>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=document.body.innerHTML;return false;\">body</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.innerHTML;return false;\">parent1</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.innerHTML;return false;\">parent2</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.parentNode.innerHTML;return false;\">parent3</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.parentNode.parentNode.innerHTML;return false;\">parent4</a>\n<a class=\"test\" href=\"#\" onclick=\"d=document.getElementById('kaiwa');d.innerHTML=d.parentNode.parentNode.parentNode.parentNode.parentNode.innerHTML;return false;\">parent5</a>\n-->\n"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文01",
+                "默写 第14页 日积月累 忆江南",
+                "<style>\n.title {\n font-size: 2rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.subtitle {\n font-size: 1rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.content {\n position:absolute;\n font-size: 2rem;\n left:50%;\n margin-left: -9rem;\n text-align: left;\n}\n</style>\n<div class=\"title\">忆江南</div>\n<div class=\"subtitle\">[唐] 白居易</div>\n<div class=\"content\">\n<p>江南好，风景旧曾谙。</p>\n<p>日出江花红胜火，</p>\n<p>春来江水绿如蓝。</p>\n<p>能不忆江南？</p>\n</div>"
+            ],
+            "flags": 0,
+            "guid": "pO.rve=ST/",
+            "note_model_uuid": "3b2b79b8-3730-11e9-8f7d-ac9e17867d04",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文08",
+                "默写 第30页 日积月累",
+                "邯郸学步 滥竽充数 掩耳盗铃<div>自相矛盾 刻舟求剑 画蛇添足</div><div>杞人忧天 井底之蛙 杯弓蛇影</div>"
+            ],
+            "flags": 0,
+            "guid": "wu/l69Y+dR",
+            "note_model_uuid": "3b2b79b8-3730-11e9-8f7d-ac9e17867d04",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文15",
+                "默写 第58页 日积月累 滁州西涧",
+                "<style>\n.title {\n font-size: 2rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.subtitle {\n font-size: 1rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.content {\n position:absolute;\n font-size: 2rem;\n left:50%;\n margin-left: -15rem;\n text-align: left;\n}\n</style>\n<div class=\"title\">滁州西涧</div>\n<div class=\"subtitle\">[唐] 韦应物</div>\n<div class=\"content\">\n<p>独怜幽草涧边生，上有黄鹂深树鸣。</p>\n<p>春潮带雨晚来急，野渡无人舟自横。</p>\n</div>"
+            ],
+            "flags": 0,
+            "guid": "pzo2I[`K:@",
+            "note_model_uuid": "3b2b79b8-3730-11e9-8f7d-ac9e17867d04",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文21",
+                "默写 第84页 日积月累",
+                "见善则迁，有过则改 -《周易》&nbsp;<div>过而不改，是谓过矣 -《论语》&nbsp;</div><div>人谁无过？过而能改，善莫大焉。 -《左传》&nbsp;</div><div>改过不吝，从善如流。 -《苏轼》\n</div>"
+            ],
+            "flags": 0,
+            "guid": "o?,XPpAYc[",
+            "note_model_uuid": "3b2b79b8-3730-11e9-8f7d-ac9e17867d04",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文24",
+                "默写 第96页 日积月累",
+                "兵来将挡，水来土掩。<div>不入虎穴，焉得虎子。</div><div>眼见为实，耳听为虚。</div><div>近朱者赤，近墨者黑。</div>"
+            ],
+            "flags": 0,
+            "guid": "zpM,6GI!Bi",
+            "note_model_uuid": "3b2b79b8-3730-11e9-8f7d-ac9e17867d04",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文28",
+                "默写 第115页 日积月累 大林寺桃花",
+                "<style>\n.title {\n font-size: 2rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.subtitle {\n font-size: 1rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.content {\n position:absolute;\n font-size: 2rem;\n left:50%;\n margin-left: -7rem;\n text-align: left;\n}\n</style>\n<div class=\"title\">大林寺桃花</div>\n<div class=\"subtitle\">[唐] 白居易</div>\n<div class=\"content\">\n<p>人间四月芳菲尽，</p>\n<p>山寺桃花始盛开。</p>\n<p>长恨春归无觅处，</p>\n<p>不知转入此中来。</p>\n</div>\n"
+            ],
+            "flags": 0,
+            "guid": "eY.02gUB;",
+            "note_model_uuid": "3b2b79b8-3730-11e9-8f7d-ac9e17867d04",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文12",
+                "默写 第46页 日积月累",
+                "文房四宝：笔黑纸砚<br>雅人四好：琴棋书画<br>花中君子：梅兰竹菊<br>中医四诊：望闻问切"
+            ],
+            "flags": 0,
+            "guid": "u9}mj_+X++",
+            "note_model_uuid": "3b2b79b8-3730-11e9-8f7d-ac9e17867d04",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文04",
+                "救援",
+                "jiù yuán",
+                "",
+                "救(jiu4)援(yuan2)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "abe5b936-3730-11e9-86ac-ac9e17867d04",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文04",
+                "投掷",
+                "tóu zhì",
+                "",
+                "投(tou2)掷(zhi4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "ac12e12c-3730-11e9-88c3-ac9e17867d04",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文04",
+                "打捞",
+                "dǎ lāo",
+                "",
+                "打(da3)捞(lao1)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "ac470524-3730-11e9-b04d-ac9e17867d04",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文04",
+                "束缚",
+                "shù fù",
+                "",
+                "束(shu4)缚(fu4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "ac72c65a-3730-11e9-8cd2-ac9e17867d04",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文04",
+                "缭乱",
+                "liáo luàn",
+                "",
+                "缭(liao2)乱(luan4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "acb59bb4-3730-11e9-b52d-ac9e17867d04",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文04",
+                "网络",
+                "wǎng luò",
+                "",
+                "网(wang3)络(luo4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "acd8ad00-3730-11e9-9c8a-ac9e17867d04",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文04",
+                "资产",
+                "zī chǎn",
+                "",
+                "资(zi1)产(chan3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "acfb9aa8-3730-11e9-9106-ac9e17867d04",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文04",
+                "贡献",
+                "gòng xiàn",
+                "",
+                "贡(gong4)献(xian4)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "ad1fe2dc-3730-11e9-b5d8-ac9e17867d04",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "课文04",
+                "贷款",
+                "dài kuǎn",
+                "",
+                "贷(dai4)款(kuan3)",
+                ""
+            ],
+            "flags": 0,
+            "guid": "ad4a7354-3730-11e9-9e21-ac9e17867d04",
+            "note_model_uuid": "76949c90-2f59-11e9-82b0-180373427d85",
+            "tags": []
+        }
+    ]
+}
