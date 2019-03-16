@@ -55,6 +55,7 @@
     "extendNew": 10,
     "extendRev": 50,
     "media_files": [],
+    "mid": "1550903354654",
     "name": "语文::2b日积月累",
     "note_models": [
         {
@@ -124,7 +125,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "课文04",
+                "03 园地一",
                 "默写 第13页 日积月累&nbsp;赋得古原草送别（节选）",
                 "<style>\n.title {\n font-size: 2rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.subtitle {\n font-size: 1rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.content {\n position:relative;\n font-size: 2rem;\n left:50%;\n margin-left: -5rem;\n text-align: left;\n}\n</style>\n<div class=\"title\">赋得古原草送别</div>\n<div class=\"subtitle\">[唐] 白居易</div>\n<div class=\"content\">\n<p>离离原上草，</p>\n<p>一岁一枯荣。</p>\n<p>野火烧不尽，</p>\n<p>春风吹又生。</p>\n</div>\n"
             ],
@@ -137,7 +138,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "识字04",
+                "05 园地三",
                 "默写 第39页 日积月累 十二生肖",
                 "<style>\n.title {\n font-size: 2rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.subtitle {\n font-size: 1rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.content {\n position:relative;\n font-size: 2rem;\n left:50%;\n margin-left: -8rem;\n text-align: left;\n}\n</style>\n<div class=\"title\">十二生肖</div>\n<div class=\"content\">\n<p>子鼠、丑牛、寅虎、</p>\n<p>卯兔、辰龙、巳蛇、</p>\n<p>午马、未羊、申猴、</p>\n<p>酉鸡、戌狗、亥猪。</p>\n</div>\n"
             ],
@@ -150,7 +151,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "课文11",
+                "06 园地四",
                 "默写 第55页 日积月累",
                 "轻诺必寡信。 -《老子》<div>失信不立。 -《左传》</div><div>小信成则大信立。 -《韩非子》</div>"
             ],
@@ -163,7 +164,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "课文14",
+                "07 园地五",
                 "默写 第69页 日积月累 弟子规",
                 "<div><em>冠必正，</em>纽必结。</div><div>袜与履，俱紧切。</div><div>置冠服，有定位。</div><div>勿乱顿，致污秽。</div><div><br></div><div><div>唯德学，唯才艺。</div><div>不如人，当自砺。</div><div>若衣服，若饮食。</div><div>不如人，勿生戚。</div></div><div><br></div><div>-《弟子规》</div>"
             ],
@@ -176,7 +177,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "课文18",
+                "10 园地六",
                 "默写 第83页 日积月累 悯农（其一）",
                 "<style>\n.title {\n font-size: 2rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.subtitle {\n font-size: 1rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.content {\n position:relative;\n font-size: 2rem;\n left:50%;\n margin-left: -5rem;\n text-align: left;\n}\n</style>\n<div class=\"title\">悯农</div>\n<div class=\"subtitle\">[唐] 李绅</div>\n<div class=\"content\">\n<p>春种一粒粟，</p>\n<p>秋收万颗子。</p>\n<p>四海无闲田，</p>\n<p>农夫犹饿死。</p>\n</div>\n"
             ],
@@ -189,7 +190,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "课文22",
+                "11 园地七",
                 "默写 第100页 日积月累 二十四节气歌",
                 "<style>\n.title {\n font-size: 2rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.subtitle {\n font-size: 1rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.content {\n position:relative;\n font-size: 2rem;\n left:50%;\n margin-left: -7rem;\n text-align: left;\n}\n</style>\n<div class=\"title\">二十四节气歌</div>\n<div class=\"content\">\n<p>春雨惊春清谷天，</p>\n<p>夏满芒夏暑相连。</p>\n<p>秋处露秋寒霜降，</p>\n<p>冬雪雪冬小大寒。</p>\n</div>\n"
             ],
@@ -202,7 +203,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "课文25",
+                "12 园地八",
                 "默写 第113页 日积月累 舟夜书所见",
                 "<style>\n.title {\n font-size: 2rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.subtitle {\n font-size: 1rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.content {\n position:relative;\n font-size: 2rem;\n left:50%;\n margin-left: -5rem;\n text-align: left;\n}\n</style>\n<div class=\"title\">舟夜书所见</div>\n<div class=\"subtitle\">[清] 查慎行</div>\n<div class=\"content\">\n<p>月黑见渔灯，</p>\n<p>孤光一点萤。</p>\n<p>微微风簇浪，</p>\n<p>散作满河星。</p>\n</div>\n"
             ],
@@ -215,7 +216,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "课文01",
+                "01 课文01",
                 "默写 村居",
                 "<style>\n.title {\n font-size: 2rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.subtitle {\n font-size: 1rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.content {\n position:relative;\n font-size: 2rem;\n left:50%;\n margin-left: -7rem;\n text-align: left;\n}\n.explain {\n font-size: 1rem;\n text-align: left;\n margin-bottom:1rem;\n}\n</style>\n<div class=\"title\">村居</div>\n<div class=\"subtitle\">[清] 高鼎</div>\n<div class=\"content\">\n<p>草长莺飞二月天，</p>\n<p>拂堤杨柳醉春烟。</p>\n<p>儿童散学归来早，</p>\n<p>忙趁东风放纸鸢。</p>\n</div>\n<div class=\"explain\">\n<p><strong>译文</strong></p>\n农历二月，村子前后的青草已经渐渐发芽生长，黄莺飞来飞去。杨柳披着长长的绿枝条，随风摆动，好像在轻轻地抚摸着堤岸。在水泽和草木间蒸发的水汽，如同烟雾般凝集着。杨柳似乎都陶醉在这浓丽的景色中。村里的孩子们放了学急忙跑回家，趁着东风把风筝放上蓝天。\n</div>\n<div class=\"explain\">\n<p><strong>注释</strong></p>\n<ol>\n<li>村居：在乡村里居住时见到的景象。</li>\n<li>杨柳拂堤：像杨柳一样抚摸堤岸。</li>\n<li>醉：迷醉，陶醉。</li>\n<li>春烟：春天水泽、草木间蒸发形成的烟雾般的水汽。</li>\n<li>散学：放学。</li>\n<li>纸鸢：泛指风筝，它是一种纸做的形状像老鹰的风筝。鸢：老鹰。</li>\n</ol>\n</div>\n"
             ],
@@ -228,7 +229,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "课文01",
+                "02 课文01",
                 "默写&nbsp;咏柳",
                 "<style>\n.title {\n font-size: 2rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.subtitle {\n font-size: 1rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.content {\n position:relative;\n font-size: 2rem;\n left:50%;\n margin-left: -7rem;\n text-align: left;\n}\n.explain {\n font-size: 1rem;\n text-align: left;\n margin-bottom:1rem;\n}\n</style>\n<div class=\"title\">咏柳</div>\n<div class=\"subtitle\">[唐] 贺知章</div>\n<div class=\"content\">\n<p>碧玉妆成一树高，</p>\n<p>万条垂下绿丝绦。</p>\n<p>不知细叶谁裁出，</p>\n<p>二月春风似剪刀。</p>\n</div>\n<div class=\"explain\">\n<p><strong>译文</strong></p>\n高高的柳树长满了翠绿的新叶，轻柔的柳枝垂下来，就像万条轻轻飘动的绿色丝带。这细细的嫩叶是谁的巧手裁剪出来的呢？原来是那二月里温暖的春风，它就像一把灵巧的剪刀。\n</div>\n<div class=\"explain\">\n<p><strong>注释</strong></p>\n<ol>\n<li>碧玉：碧绿色的玉。这里用以比喻春天嫩绿的柳叶。</li>\n<li>妆：装饰，打扮。</li>\n<li>一树：满树。一：满，全。在中国古典词和文章中，数量词在使用中并不一定表示确切的数量。下一句的“万”，就是表示很多的意思。</li>\n<li>绦（tāo）：用丝编成的绳带。这里指像丝带一样的柳条。</li>\n<li>裁：裁剪。</li>\n<li>似：如同，好像。</li>\n</ol>\n</div>\n"
             ],
@@ -241,7 +242,7 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "课文15",
+                "08 课文15",
                 "默写 晓出净慈寺送林子方",
                 "<style>\n.title {\n font-size: 2rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.subtitle {\n font-size: 1rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.content {\n position:relative;\n font-size: 2rem;\n left:50%;\n margin-left: -7rem;\n text-align: left;\n}\n.explain {\n font-size: 1rem;\n text-align: left;\n margin-bottom:1rem;\n}\n</style>\n<div class=\"title\">晓出净慈寺送林子方</div>\n<div class=\"subtitle\">[宋] 杨万里</div>\n<div class=\"content\">\n<p>毕竟西湖六月中，</p>\n<p>风光不与四时同。</p>\n<p>接天莲叶无穷碧，</p>\n<p>映日荷花别样红。</p>\n</div>\n<div class=\"explain\">\n<p><strong>译文</strong></p>\n到底是西湖六月天的景色，风光与其它季节确实不同。\n荷叶接天望不尽一片碧绿，阳光下荷花分外艳丽鲜红。\n</div>\n<div class=\"explain\">\n<p><strong>注释</strong></p>\n<ol>\n<li>晓出：太阳刚刚升起。</li>\n<li>净慈寺：全名“净慈报恩光孝禅寺”，与灵隐寺为杭州西湖南北山两大著名佛寺。</li>\n<li>林子方：作者的朋友，官居直阁秘书。</li>\n<li>毕竟： 到底。</li>\n<li>六月中：六月的时候。</li>\n<li>四时：春夏秋冬四个季节。在这里指六月以外的其他时节。</li>\n<li>同：相同。</li>\n<li>接天：像与天空相接。</li>\n<li>同：相同。</li>\n<li>无穷：无边无际。无穷碧：因莲叶面积很广，似与天相接，故呈现无穷的碧绿。</li>\n<li>映日：太阳映照。</li>\n<li>别样：宋代俗语，特别，不一样。别样红：红得特别出色。</li>\n</ol>\n</div>\n"
             ],
@@ -254,12 +255,25 @@
             "__type__": "Note",
             "data": "",
             "fields": [
-                "课文15",
+                "09 课文15",
                 "默写 绝句 描写早春景象",
                 "<style>\n.title {\n font-size: 2rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.subtitle {\n font-size: 1rem;\n margin-bottom:1rem;\n text-align: center;\n}\n.content {\n position:relative;\n font-size: 2rem;\n left:50%;\n margin-left: -7rem;\n text-align: left;\n}\n.explain {\n font-size: 1rem;\n text-align: left;\n margin-bottom:1rem;\n}\n</style>\n<div class=\"title\">绝句</div>\n<div class=\"subtitle\">[唐] 杜甫</div>\n<div class=\"content\">\n<p>两个黄鹂鸣翠柳，</p>\n<p>一行白鹭上青天。</p>\n<p>窗含西岭千秋雪，</p>\n<p>门泊东吴万里船。</p>\n</div>\n<div class=\"explain\">\n<p><strong>译文</strong></p>\n两只黄鹂在翠绿的柳枝间鸣叫，一行白鹭向湛蓝的高空里飞翔。\n西岭雪山的景色仿佛嵌在窗里，往来东吴的航船就停泊在门旁。\n</div>\n<div class=\"explain\">\n<p><strong>注释</strong></p>\n<ol>\n<li>西岭：西岭雪山。</li>\n<li>千秋雪：指西岭雪山上千年不化的积雪。</li>\n<li>泊：停泊。</li>\n<li>东吴：古时候吴国的领地，江苏省一带。</li>\n<li>万里船：不远万里开来的船只。</li>\n<li>“绝句”是的名称，并不直接表示诗的内容。这种形式便于用来写一景一物，抒发作者一瞬间的感受。诗人偶有所见，触发了内心的激情，信手把诗人自己的感受写下来，一时不去拟题，便用诗的格律“绝句”作为题目。杜甫用这一形式写了一组诗，共四首，用“绝句”为总题。《绝句·两个黄鹂鸣翠柳》是其中的一首。诗歌以自然美景，透一种清新轻松的情调氛围。前两句，以“黄”衬“翠”，以“白”衬“青”，色彩鲜明，更托出早春的生机初发的气息。首句写黄鹂居柳上而鸣，与下句写白鹭飞翔上天，空间开阔了不少，由下而上，由近而远。“窗含西岭千秋雪”上两句已点明，当时正是早春之际，冬季的秋雪欲融未融，这就给读者一种湿润的感受。末句更进一步写出了杜甫当时的复杂心情——说船来自“东吴”，此句表战乱平定，交通恢复，诗人睹物生情，想念故乡。</li>\n</ol>\n</div>\n"
             ],
             "flags": 0,
             "guid": "q#00#K+FPE",
+            "note_model_uuid": "3b2b79b8-3730-11e9-8f7d-ac9e17867d04",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "04 园地二",
+                "默写 第27页 日积月累 助人为乐",
+                "予人玫瑰，手有余香。<div>平时肯帮人，急时有人帮。</div><div>与其锦上添加，不如雪中送炭。</div>"
+            ],
+            "flags": 0,
+            "guid": "L|kE%){<th",
             "note_model_uuid": "3b2b79b8-3730-11e9-8f7d-ac9e17867d04",
             "tags": []
         }
