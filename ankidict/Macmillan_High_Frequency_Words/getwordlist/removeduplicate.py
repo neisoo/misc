@@ -74,6 +74,7 @@ def remove_duplicate_word():
 
 mkdir(outputPath)
 word_dict = remove_duplicate_word()
+word_dict["notes"] = sorted(word_dict["notes"],key=lambda x:str.lower(x['fields'][0]))
 
 #生成单词列表，这些单词出现在当前目录的txt中，便不在alread_have.json字典中。
 with open('.\\out\\dict.json', 'w', encoding='utf-8') as f:
