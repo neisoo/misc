@@ -64,7 +64,7 @@ def buildmp3(filename, mp3FileName, outputDir):
 			splitStart = info['split'][chapter['start']]
 			splitEnd = info['split'][chapter['end']]
 			chunk = sound[splitStart['start']:splitEnd['end']]
-			chunk.export('%s/%s.ogg'%(outputDir, validateTitle('%02d_%s_%02d_%s'%(info['book']['index'] + 1, info['book']['name'], chapter['index'], chapter['title']))), format="ogg")
+			chunk.export('%s/%s.ogg'%(outputDir, validateTitle('%02d_%s_%02d_%s'%(info['book']['index'] + 1, info['book']['name'], chapter['index'] + 1, chapter['title']))), format="ogg")
 	return
 
 def buildvtt(filename, outputDir):
@@ -86,7 +86,7 @@ def buildvtt(filename, outputDir):
 				index += 1
 
 			# 保存vtt字幕文件
-			vttfilename = '%s/%s.vtt'%(outputDir, validateTitle('%02d_%s_%02d_%s'%(info['book']['index'] + 1, info['book']['name'], chapter['index'], chapter['title'])))
+			vttfilename = '%s/%s.vtt'%(outputDir, validateTitle('%02d_%s_%02d_%s'%(info['book']['index'] + 1, info['book']['name'], chapter['index'] + 1, chapter['title'])))
 			with open(vttfilename, 'w') as f:
 				print(subs)
 				f.write(srt.compose(subs))
