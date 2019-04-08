@@ -2,12 +2,18 @@
 #python3
 import logging
 
-
 from pydub import AudioSegment
 from pydub.silence import split_on_silence
+from pydub.silence import detect_nonsilent
 import sys
 import os
 import time
+import json
+
+import speech_recognition as sr
+from aip import AipSpeech #百度语音API
+
+
 
 # 实现拆分，只要这一句代码就够了
 #chunks = split_on_silence(chunk,min_silence_len=700,silence_thresh=-70)
@@ -165,43 +171,48 @@ def chunk_join_length_limit(chunks, joint_silence_len=1300, length_limit=60 * 10
     return adjust_chunks
 
 #从空白中间分割
-def split_on_silence_tp2(audio_segment, min_silence_len=1000, silence_thresh=-16, keep_silence=100,
-                     seek_step=1):
-   #从空白中间分
+def split_on_silence_tp2(audio_segment, min_silence_len=1000, silence_thresh=-16, keep_silence=100, seek_step=1):
+	data = {}
+	data['chunks'] = []
+	data['segment'] = []
 
-    not_silence_ranges = detect_nonsilent(audio_segment, min_silence_len, silence_thresh, seek_step)
-    #print(not_silence_ranges)
-   # print(len(not_silence_ranges))
-    chunks = []
-    #个数
-    num=len(not_silence_ranges)
-    num_i=0
-    if num==1:
-        chunks.append(audio_segment)
-    else:
+	#从空白中间分
 
-        for  index in range(len(not_silence_ranges)):
-            if index==0:
-                start_i=0
-            else:
-                start_i=round((not_silence_ranges[index][0]+not_silence_ranges[index-1][1])/2)
+	not_silence_ranges = detect_nonsilent(audio_segment, min_silence_len, silence_thresh, seek_step)
+	#print(not_silence_ranges)
+	# print(len(not_silence_ranges))
+	#chunks = []
 
-            if index==len(not_silence_ranges)-1:
-                end_i=len(audio_segment)
-            else:
-                end_i=round((not_silence_ranges[index + 1][0] + not_silence_ranges[index][1]) / 2)
+	#个数
+	num=len(not_silence_ranges)
+	num_i=0
+	if num==1:
+		chunks.append(audio_segment)
+	else:
 
-            #print(index)
-            #print([start_i,end_i])
-            #print(range(len(not_silence_ranges)-1))
+		for  index in range(len(not_silence_ranges)):
+			if index==0:
+				start_i=0
+			else:
+				start_i=round((not_silence_ranges[index][0]+not_silence_ranges[index-1][1])/2)
 
-            chunks.append(audio_segment[start_i:end_i])
+			if index==len(not_silence_ranges)-1:
+				end_i=len(audio_segment)
+			else:
+				end_i=round((not_silence_ranges[index + 1][0] + not_silence_ranges[index][1]) / 2)
 
-        #print([end_i,not_silence_ranges[num-1][1]])
+			#print(index)
+			#print([start_i,end_i])
+			#print(range(len(not_silence_ranges)-1))
 
-        #chunks.append(audio_segment[end_i:len(audio_segment)])
+			data['segment'].append({'index': index, 'start': start_i, 'end': end_i, 'text': ''})
+			data['chunks'].append(audio_segment[start_i:end_i])
 
-    return chunks
+		#print([end_i,not_silence_ranges[num-1][1]])
+
+		#chunks.append(audio_segment[end_i:len(audio_segment)])
+
+	return data
 
 #语音开始留白特定时间分割
 def split_on_silence_nocut(audio_segment, min_silence_len=1000, silence_thresh=-16, keep_silence=100,
@@ -270,6 +281,127 @@ def mkdir(path):
 		# 如果目录存在则不创建，并提示目录已存在
 		return False
 
+
+def mp3towav(rootdir, wavPath):
+	mkdir(wavPath)
+	for dirpath, dirs, files in os.walk(rootdir):            # 递归遍历当前目录和所有子目录的文件和目录
+		for name in files:                                   # files保存的是所有的文件名
+			if os.path.splitext(name)[1] == '.mp3':
+				filename = os.path.join(dirpath, name)       # 加上路径，dirpath是遍历时文件对应的路径
+
+				# 转换成wav格式
+				waveFilename = os.path.join(wavPath, os.path.splitext(name)[0] + ".wav")
+				sound = AudioSegment.from_file(filename, "mp3")
+				sound.export(waveFilename, format="wav")
+				print(name + "->" + waveFilename)
+
+def audiosplit(rootdir, splitPath):
+	mkdir(splitPath)
+	for dirpath, dirs, files in os.walk(rootdir):            # 递归遍历当前目录和所有子目录的文件和目录
+		print(files)
+		for name in files:                                   # files保存的是所有的文件名
+			if os.path.splitext(name)[1] == '.wav':
+				filename = os.path.join(dirpath, name)       # 加上路径，dirpath是遍历时文件对应的路径
+				print('Split %s ...' % filename)
+
+				# 创建分割文件的目录
+				dstPath = os.path.join(splitPath, os.path.splitext(name)[0])
+				mkdir(dstPath)
+
+				# 读出wav文件
+				sound = AudioSegment.from_file(filename, "wav")
+				#sound = sound[:3*60*1000] # 如果文件较大，先取前3分钟测试，根据测试结果，调整参数
+				sound = sound.set_channels(1)
+				sound = sound.set_frame_rate(16000)
+
+				# 设置参数
+				silence_thresh = -30  # 小于-70dBFS以下的为静默
+				min_silence_len = 400  # 静默超过700毫秒则拆分
+				length_limit = 60 * 1000  # 拆分后每段不得超过1分钟
+
+				# 将录音文件拆分
+				data = split_on_silence_tp2(sound, min_silence_len, silence_thresh)
+
+				# 保存所有分段声音
+				total = len(data['chunks'])
+				for i in range(total):
+					new = data['chunks'][i]
+					save_name = '%s_%04d.%s' % ("split", i, "wav")
+					new.export(os.path.join(dstPath, save_name), format="wav")
+					data['segment'][i]['file'] = save_name
+					print('%d[%8d,%8d]' % (i, data['segment'][i]['start'], data['segment'][i]['end']))
+
+				# 保存分段信息
+				with open(os.path.join(dstPath, 'segment.json'), 'w') as f:
+					json.dump(data['segment'], f, indent = 4, sort_keys = True)
+
+				print('Done.\r\n')
+
+#python内置的语音识别
+def speechReco_SR(filename):
+	r = sr.Recognizer()
+	harvard = sr.AudioFile(filename)
+	with harvard as source:
+		audio = r.record(source)
+		text = r.recognize_sphinx(audio)
+		return text
+	return ""
+
+#百度语音识别API
+def speechReco_BaiDu(filename):
+	""" 你的 APPID AK SK """
+	APP_ID = '6746004'
+	API_KEY = 'uDtZD8h83SbyqVKyZI1vRRVj'
+	SECRET_KEY = '76f710eec808e5dd74854c3180766b4d'
+
+	client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
+
+	# 读取文件
+	with open(filename, 'rb') as fp:
+		filedata = fp.read()
+
+		# 识别本地文件
+		ret = client.asr(filedata, 'wav', 16000, {
+			#'dev_pid': 1536,
+			'dev_pid': 1737, #英语
+		})
+		if (ret['err_no'] == 0):
+			return ret['result'][0]
+
+	return ""
+
+def audioReco(rootdir):
+	for dirpath, dirs, files in os.walk(rootdir):            # 递归遍历当前目录和所有子目录的文件和目录
+		print(files)
+		for name in files:                                   # files保存的是所有的文件名
+			if os.path.splitext(name)[1] == '.json':
+				filename = os.path.join(dirpath, name)       # 加上路径，dirpath是遍历时文件对应的路径
+
+				# 从json中读取相关信息。
+				segment = []
+				with open(filename, 'r', encoding='UTF-8') as f:
+					segment = json.load(f)
+					for i in range(0, len(segment)):
+						tryCount = 0
+						while tryCount < 10:
+							try:
+								segment[i]['text'] = speechReco_BaiDu(os.path.join(dirpath, segment[i]['file']));
+								print(segment[i])
+								break
+							except TimeoutError as err:
+								print(err)
+								print("$$$$try count %d" % (tryCount))
+								tryCount = tryCount + 1
+								time.sleep(2)
+						if tryCount >= 10:
+							# 出错时保存已有的结果到json。
+							with open(filename, 'w') as f:
+								json.dump(segment, f, indent = 4, sort_keys = True)
+
+				# 保存语音识别文本到json。
+				with open(filename, 'w') as f:
+					json.dump(segment, f, indent = 4, sort_keys = True)
+
 mkdir(outputPath)
 
 logger = logging.getLogger("mylog")
@@ -289,29 +421,7 @@ fh.setFormatter(formatter)
 logger.addHandler(ch)
 logger.addHandler(fh)
 
-# 载入
-name = 'test.mp3'
-sound = AudioSegment.from_file(name, "mp3")
-sound.export("temp.wav", format="wav")
-name = 'temp.wav'
-sound = AudioSegment.from_file(name, "wav")
-# sound = sound[:3*60*1000] # 如果文件较大，先取前3分钟测试，根据测试结果，调整参数
+#mp3towav("./mp3", "./out/wav")
+#audiosplit("./out/wav", "./out/split")
+audioReco("./out/split")
 
-# 设置参数
-silence_thresh = -70  # 小于-70dBFS以下的为静默
-min_silence_len = 700  # 静默超过700毫秒则拆分
-length_limit = 60 * 1000  # 拆分后每段不得超过1分钟
-abandon_chunk_len = 500  # 放弃小于500毫秒的段
-joint_silence_len = 1300  # 段拼接时加入1300毫秒间隔用于断句
-
-# 将录音文件拆分
-chunks = split_on_silence_tp2(sound)
-
-# 保存所有分段
-total = len(chunks)
-for i in range(total):
-    new = chunks[i]
-    save_name = '%s_%04d.%s' % ("test", i, "wav")
-    new.export('./out/' + save_name, format=namec)
-    print('%04d' % i, len(new))
-print('保存完毕')
