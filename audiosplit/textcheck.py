@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #python3
-from similarity.jarowinkler import JaroWinkler
+from similarity.jarowinkler import JaroWinkler #https://github.com/luozhouyang/python-string-similarity
 import logging
 import sys
 import os
@@ -38,79 +38,102 @@ def similarityFind(srcText, srcStart, dstText, maxWords = 30):
 	jarowinkler = JaroWinkler()
 	dstText = dstText.lower().strip()
 	dstLen = len(dstText)
+	lastword = dstText.split()[-1]
 	maxSim = {'sim':0, 'begin':-1, 'end': -1}
 
-	idx = srcStart
-	count = 0;
-	while count < maxWords:
-		# 计算开始位置
-		begin = idx
-		while srcText[begin] == ' ':
-			begin += 1
+	try:
+		idx = srcStart
+		count = 0;
+		while count < maxWords:
+			# 计算开始位置
+			begin = idx
+			while srcText[begin] == ' ':
+				begin += 1
 
-		end = begin + dstLen
-		while srcText[end] != ' ':
-			end += 1
+			end = begin + dstLen
+			while srcText[end] != ' ':
+				end += 1
 
-		# 去掉标点符号
-		temp = srcText[begin:end].lower()
-		temp = temp.replace('"', '')
-		temp = temp.replace('!', '')
-		temp = temp.replace('?', '')
-		temp = temp.replace('.', '')
-		temp = temp.replace(',', '')
-		temp = temp.replace('“', '')
-		temp = temp.replace('”', '')
-		temp = temp.replace('’', '')
+			# 如果最后一个单词没有出现在查找范围中，适当的加大范围
+			tempIdx = srcText[begin:end].lower().rfind(lastword)
+			if tempIdx < 0:
+				tempIdx = srcText[end: end + 15].lower().find(lastword)
+				if tempIdx > 0:
+					end += tempIdx + len(lastword)
+					while srcText[end] != ' ':
+						end += 1
+			else:
+				# 标点符号结尾
+				tempIdx2 = srcText[begin:end].lower().rfind(', ')
+				if tempIdx2 > tempIdx:
+					end = begin + tempIdx2 + 1
+				else:
+					tempIdx2 = srcText[begin:end].lower().rfind('. ')
+					if tempIdx2 > tempIdx:
+						end = begin + tempIdx2 + 1
+					else:
+						tempIdx2 = srcText[begin:end].lower().rfind('! ')
+						if tempIdx2 > tempIdx:
+							end = begin + tempIdx2 + 1
 
-		# 检查是否相似
-		sim = jarowinkler.similarity(temp, dstText)
-		if sim > maxSim['sim']:
-			#print('sssssssssssssssss1', temp)
-			#print('sssssssssssssssss2', dstText)
-			#print('sssssssssssssssss3', sim)
+			# 去掉标点符号
+			temp = srcText[begin:end].lower()
+			temp = temp.replace('"', '')
+			temp = temp.replace('!', '')
+			temp = temp.replace('?', '')
+			temp = temp.replace('.', '')
+			temp = temp.replace(',', '')
+			temp = temp.replace('“', '')
+			temp = temp.replace('”', '')
+			temp = temp.replace('’', '')
+			print('try:%s'%(temp))
 
-			#相似度开始下降时返回结果。
-			maxSim['sim'] = sim
-			maxSim['begin'] = begin
-			maxSim['end'] = end
-		else:
-			srcWordList = srcText[maxSim['begin']:maxSim['end']].split()
-			lastword = dstText.split()[-1]
-			if len(srcWordList) > 0 and lastword != srcWordList[-1]:
-				print('aaaaaaaaaaaaaaaa', srcWordList)
-				print('bbbbbbbbbbbbbbbb', lastword)
-				for i in range(len(srcWordList)-1,-1,-1):
-					if srcWordList[i].find(lastword) >= 0:
-						temp = ' '.join(srcWordList[0:i+1]).lower()
-						temp = temp.replace('"', '')
-						temp = temp.replace('!', '')
-						temp = temp.replace('?', '')
-						temp = temp.replace('.', '')
-						temp = temp.replace(',', '')
-						temp = temp.replace('“', '')
-						temp = temp.replace('”', '')
-						temp = temp.replace('’', '')
-						print('ccccccccccccccccc1', temp)
-						print('ccccccccccccccccc2', dstText)
-						sim = jarowinkler.similarity(temp, dstText)
-						print('ccccccccccccccccc3',sim)
-						if sim > maxSim['sim']:
-							maxSim['sim'] = sim
-							maxSim['begin'] = begin
-							end = srcText.rfind(lastword, begin, maxSim['end'])
-							while srcText[end] != ' ':
-								end += 1
-							maxSim['end'] = end
-							print('eeeeeeeeeeeeeeeeeeee', srcText[maxSim['begin']:maxSim['end']])
-							break
-			return maxSim
+			# 检查是否相似
+			sim = jarowinkler.similarity(temp, dstText)
+			print('sim:', sim)
+			if sim > maxSim['sim']:
+				#相似度开始下降时返回结果。
+				maxSim['sim'] = sim
+				maxSim['begin'] = begin
+				maxSim['end'] = end
+			else:
+				srcWordList = srcText[maxSim['begin']:maxSim['end']].split()
+				if len(srcWordList) > 0 and lastword != srcWordList[-1]:
+					print('aaaaaaaaaaaaaaaa', srcWordList)
+					print('bbbbbbbbbbbbbbbb', lastword)
+					for i in range(len(srcWordList)-1,-1,-1):
+						if srcWordList[i].find(lastword) >= 0:
+							temp = ' '.join(srcWordList[0:i+1]).lower()
+							temp = temp.replace('"', '')
+							temp = temp.replace('!', '')
+							temp = temp.replace('?', '')
+							temp = temp.replace('.', '')
+							temp = temp.replace(',', '')
+							temp = temp.replace('“', '')
+							temp = temp.replace('”', '')
+							temp = temp.replace('’', '')
+							print('ccccccccccccccccc1', temp)
+							print('ccccccccccccccccc2', dstText)
+							sim = jarowinkler.similarity(temp, dstText)
+							print('ccccccccccccccccc3',sim)
+							if sim > maxSim['sim']:
+								maxSim['sim'] = sim
+								maxSim['begin'] = begin
+								end = srcText.rfind(lastword, begin, maxSim['end'])
+								while srcText[end] != ' ':
+									end += 1
+								maxSim['end'] = end
+								print('eeeeeeeeeeeeeeeeeeee', srcText[maxSim['begin']:maxSim['end']])
+								break
+				return maxSim
 
-		# 继续从一下个单词开始比较。
-		while srcText[begin] != ' ':
-			begin += 1
-		idx = begin
-		count += 1
+			# 继续从一下个单词开始比较。
+			while srcText[begin] != ' ':
+				begin += 1
+			idx = begin
+			count += 1
+	except IndexError as e:
+		print('error:', e)
 
 	return maxSim
 
@@ -147,24 +170,35 @@ def checkSegment(filename, textFileName, segmentIdx=0, textIdx=0):
 				print(i, textIdx)
 				#print(text[textIdx:textIdx + 150])
 				dstText = segment[i]['text'].lower().strip()
-				print('****[%s]****'%dstText)
+				print('audio say:[%s]'%dstText)
 				
 				ret = similarityFind(text, textIdx, dstText)
 				print(ret)
 				if ret['sim'] >= 0.8:
 					print('[%s]%s'%(text[ret['begin']:ret['end']], text[ret['end']:ret['end']+150]))
-					if not('textCheck' in segment[i].keys()):
-						segment[i]['textCheck'] = text[ret['begin']:ret['end']].strip()
+					if not('texc' in segment[i].keys()):
+						if not('textCheck' in segment[i].keys()):
+							segment[i]['texc'] = text[ret['begin']:ret['end']].strip()
+						else:
+							segment[i]['texc'] = segment[i]['textCheck']
+					if 'textCheck' in segment[i].keys():
+						del segment[i]['textCheck']
 					textIdx = ret['end']
-				else:
+				elif i+1 < len(segment):
 					dstText = segment[i + 1]['text'].lower().strip()
-					print('****[%s]****'%dstText)
+					print('next audio say:[%s]****'%dstText)
 					ret = similarityFind(text, textIdx, dstText)
 					print(ret)
 					if ret['sim'] >= 0.8:
 						print('[%s]%s'%(text[textIdx:ret['begin']], text[ret['begin']:ret['begin']+150]))
-						if not('textCheck' in segment[i].keys()):
-							segment[i]['textCheck'] = text[textIdx:ret['begin']].strip()
+						if not('texc' in segment[i].keys()):
+							if not('textCheck' in segment[i].keys()):
+								segment[i]['texc'] = text[textIdx:ret['begin']].strip()
+							else:
+								segment[i]['texc'] = segment[i]['textCheck']
+								segment[i]['textCheck'] = null
+						if 'textCheck' in segment[i].keys():
+							del segment[i]['textCheck']
 						textIdx = ret['begin']
 					else:
 						print(segment[i + 1]['text'].lower().strip())
@@ -201,9 +235,9 @@ logger.addHandler(fh)
 #audioReco("./out/split")
 textCheck("./out/split", "./txt")
 
-#s1='but that smarty-pants-iknow-everything-girl andrea young beat me to it and'
-#s2='but that smarty-pants-iknow-everything-girl andrea young beat me to it'
-#s3="but that's smarty pants i know everything girl andrea young beat me to it"
+#s1='we tried to convince neil armstrong that he was really mrs roopy dressed in a spacesuit but'
+#s2='we tried to convince neil armstrong that he was really mrs roopy dressed in a spacesuit'
+#s3="we tried to convince niel armstrong that he was really misses ruby dressed in a space suit"
 #jarowinkler = JaroWinkler()
 #sim = jarowinkler.similarity(s1, s3)
 #print(sim)

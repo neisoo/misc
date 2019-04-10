@@ -64,8 +64,19 @@ def buildmp3(filename, mp3FileName, outputDir):
 			splitStart = info['split'][chapter['start']]
 			splitEnd = info['split'][chapter['end']]
 			chunk = sound[splitStart['start']:splitEnd['end']]
-			chunk.export('%s/%s.ogg'%(outputDir, validateTitle('%02d_%s_%02d_%s'%(info['book']['index'] + 1, info['book']['name'], chapter['index'] + 1, chapter['title']))), format="ogg")
+			chunk.export('%s/%s.mp3'%(outputDir, validateTitle('%02d_%s_%02d_%s'%(info['book']['index'] + 1, info['book']['name'], chapter['index'] + 1, chapter['title']))), format="mp3")
+			#chunk.export('%s/%s.ogg'%(outputDir, validateTitle('%02d_%s_%02d_%s'%(info['book']['index'] + 1, info['book']['name'], chapter['index'] + 1, chapter['title']))), format="ogg")
 	return
+
+def srt2vtt(src):
+	# 将时间中的’,'替换成'.'
+	srtList = src.split('\n')
+	for i in range(0, len(srtList)):
+		if "-->" in srtList[i]:
+			srtList[i] = srtList[i].replace(",", ".")
+
+	# 添加上头部
+	return 'WEBVTT\n\n\n' + '\n'.join(srtList)
 
 def buildvtt(filename, outputDir):
 	# 从json中读取分段信息。
@@ -87,9 +98,11 @@ def buildvtt(filename, outputDir):
 
 			# 保存vtt字幕文件
 			vttfilename = '%s/%s.vtt'%(outputDir, validateTitle('%02d_%s_%02d_%s'%(info['book']['index'] + 1, info['book']['name'], chapter['index'] + 1, chapter['title'])))
-			with open(vttfilename, 'w') as f:
-				print(subs)
-				f.write(srt.compose(subs))
+			with open(vttfilename, 'w', encoding='UTF-8') as f:
+				# srt转成WebVTT格式
+				strVTT = srt2vtt(srt.compose(subs))
+				print(strVTT)
+				f.write(strVTT)
 	return
 
 mkdir(outputPath)
