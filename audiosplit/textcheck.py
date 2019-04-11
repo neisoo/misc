@@ -7,6 +7,12 @@ import os
 import time
 import json
 
+import re
+from pydub import AudioSegment
+import srt_tools.utils
+import srt
+from datetime import datetime,timedelta
+
 #####################################################################
 outputPath = "./out"
         
@@ -137,18 +143,40 @@ def similarityFind(srcText, srcStart, dstText, maxWords = 30):
 
 	return maxSim
 
-def textCheck(rootdir, txtdir):
+def textCheck(segmentRootDir, inputDir, outputDir):
+	mkdir(outputDir)
+
 	#用来判断文字相似度
 	jarowinkler = JaroWinkler()
 
-	for dirpath, dirs, files in os.walk(rootdir):            # 递归遍历当前目录和所有子目录的文件和目录
+	for dirpath, dirs, files in os.walk(segmentRootDir):            # 递归遍历当前目录和所有子目录的文件和目录
 		#print(files)
 		for name in files:                                   # files保存的是所有的文件名
 			if os.path.splitext(name)[1] == '.json':
 				filename = os.path.join(dirpath, name)       # 加上路径，dirpath是遍历时文件对应的路径
-				textFileName = os.path.join(txtdir, os.path.split(dirpath)[1] + '.txt')
-				checkSegment(filename, textFileName)
+				bookname = os.path.split(dirpath)[1]
+				textFileName = os.path.join(inputDir, bookname + '.txt')
+				# 文字校对
+				if checkSegment(filename, textFileName):
+					bookInfoPath = os.path.join(outputDir, 'bookinfo')
+					bookInfoFileName = os.path.join(bookInfoPath, bookname + '.json')
+					mkdir(bookInfoPath)
+					# 生成bookinfo
+					if buildBookInfo(filename, bookInfoFileName):
+						mp3FileName = os.path.join(inputDir, bookname + '.mp3')
+						#按章节切分mp3
+						mp3Path = os.path.join(outputDir, bookname)
+						mkdir(mp3Path)
+						buildMP3(bookInfoFileName, mp3FileName, mp3Path)
+						#按章节生成VTT字幕
+						buildVTT(bookInfoFileName, mp3Path)
+						
+				else:
+					break
 
+# 根据语音识别的内容（segment中的text）和原文进行模糊对比。进行校对
+# 如果出现无法自动校对的情况，中断运行，由用户手动介入修改。修改后
+# 的文本保存在segment的texc中。
 def checkSegment(filename, textFileName, segmentIdx=0, textIdx=0):
 	#用来判断文字相似度
 	jarowinkler = JaroWinkler()
@@ -196,19 +224,122 @@ def checkSegment(filename, textFileName, segmentIdx=0, textIdx=0):
 								segment[i]['texc'] = text[textIdx:ret['begin']].strip()
 							else:
 								segment[i]['texc'] = segment[i]['textCheck']
-								segment[i]['textCheck'] = null
 						if 'textCheck' in segment[i].keys():
 							del segment[i]['textCheck']
 						textIdx = ret['begin']
 					else:
 						print(segment[i + 1]['text'].lower().strip())
 						print(text[textIdx:textIdx+150])
-						break;
+						return False
 
 	with open(filename, 'w', encoding='UTF-8') as f:
 		json.dump(segment, f, indent = 4, sort_keys = True, ensure_ascii = False)
 		print('--------------------------------')
 	print('**********************************')
+	return True
+
+# 生成章节信息
+def buildBookInfo(filename, bookInfoFileName):
+	info = {}
+	chapter = []
+	idx = 0
+
+	# 从json中读取分段信息。
+	segment = []
+	with open(filename, 'r', encoding='UTF-8') as f:
+		segment = json.load(f)
+
+		# 遍历找出所有'Chapter'开始的句子。
+		for i in range(0, len(segment)):
+			print('segment: %d\n%s\n'%(i, segment[i]))
+			if segment[i]['texc'].find('Chapter ') == 0:
+				if idx == 0:
+					info['index'] = idx
+					info['start'] = 0
+					info['title'] = segment[i + 1]['texc']
+					idx += 1
+				else:
+					chapter.append(info)
+					info = {}
+					info['index'] = idx
+					info['start'] = i
+					info['title'] = segment[i + 1]['texc']
+					idx += 1
+			else:
+				info['end'] = i
+
+		#最后一个
+		chapter.append(info)
+
+	bookInfo = {}
+	bookInfo['chapter'] = chapter
+	bookInfo['split'] = segment
+
+	with open(bookInfoFileName, 'w', encoding='UTF-8') as f:
+		json.dump(bookInfo, f, indent = 4, sort_keys = True, ensure_ascii = False)
+	print('%s done.'%bookInfoFileName)
+	return True
+
+def buildMP3(bookInfoFileName, mp3FileName, outputDir):
+	sound = AudioSegment.from_file(mp3FileName, "mp3")
+
+	# 从json中读取分段信息。
+	info = {}
+	with open(bookInfoFileName, 'r', encoding='UTF-8') as f:
+		info = json.load(f)
+		print(info['chapter'])
+		for chapter in info['chapter']:
+			# 分割音频文件
+			splitStart = info['split'][chapter['start']]
+			splitEnd = info['split'][chapter['end']]
+			chunk = sound[splitStart['start']:splitEnd['end']]
+			filename = '%s/%s.mp3'%(outputDir, validateTitle('%02d %s'%(chapter['index'] + 1, chapter['title'])))
+			chunk.export(filename, format="mp3")
+			#chunk.export('%s/%s.ogg'%(outputDir, validateTitle('%02d_%s_%02d_%s'%(info['book']['index'] + 1, info['book']['name'], chapter['index'] + 1, chapter['title']))), format="ogg")
+			print('%s done.'%filename)
+	return
+
+def validateTitle(title):
+	rstr = r"[\/\\\:\*\?\"\<\>\|]"  # '/ \ : * ? " < > |'
+	new_title = re.sub(rstr, "_", title)  # 替换为下划线
+	return new_title
+
+def srt2vtt(src):
+	# 将时间中的’,'替换成'.'
+	srtList = src.split('\n')
+	for i in range(0, len(srtList)):
+		if "-->" in srtList[i]:
+			srtList[i] = srtList[i].replace(",", ".")
+
+	# 添加上头部
+	return 'WEBVTT\n\n\n' + '\n'.join(srtList)
+
+def buildVTT(bookInfoFileName, outputDir):
+	# 从json中读取分段信息。
+	info = {}
+	with open(bookInfoFileName, 'r', encoding='UTF-8') as f:
+		info = json.load(f)
+		print(info['chapter'])
+		for chapter in info['chapter']:
+			subs = []
+			index = 0
+			offset = info['split'][chapter['start']]['start']
+			for i in range(chapter['start'], chapter['end'] + 1):
+				split = info['split'][i]
+				start = timedelta(milliseconds=(split['start'] - offset))
+				end = timedelta(milliseconds=(split['end'] - offset))
+				content = split['texc']
+				subs.append(srt.Subtitle(index, start, end, content))
+				index += 1
+
+			# 保存vtt字幕文件
+			vttfilename = '%s/%s.vtt'%(outputDir, validateTitle('%02d %s'%(chapter['index'] + 1, chapter['title'])))
+			with open(vttfilename, 'w', encoding='UTF-8') as f:
+				# srt转成WebVTT格式
+				strVTT = srt2vtt(srt.compose(subs))
+				print(strVTT)
+				f.write(strVTT)
+				print('%s done.'%vttfilename)
 	return
 
 mkdir(outputPath)
@@ -230,10 +361,7 @@ fh.setFormatter(formatter)
 logger.addHandler(ch)
 logger.addHandler(fh)
 
-#mp3towav("./mp3", "./out/wav")
-#audiosplit("./out/wav", "./out/split")
-#audioReco("./out/split")
-textCheck("./out/split", "./txt")
+textCheck("./out/split", "./input", "./output")
 
 #s1='we tried to convince neil armstrong that he was really mrs roopy dressed in a spacesuit but'
 #s2='we tried to convince neil armstrong that he was really mrs roopy dressed in a spacesuit'

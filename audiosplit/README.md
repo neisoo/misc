@@ -1,5 +1,3 @@
 audiosplit.py 将mp3文件根据静音切割成小段文件wav，再将小段的wav文件上传给百度语音识别成文字。保存到segment.json中。
-textcheck.py 将segment.json中识别的文字和正确文本进行校正。校正结果回存到segment.json。
-手动将segment.json中的数据保存vtt目录下的json文件中，其中增加了章节信息。
-vttbuild.py读取vtt目录下的json文件，每个章节生成ogg声音文件和vtt字幕文件。
+textcheck.py 将segment.json中识别的文字和正确文本进行校正。校正结果回存到segment.json。然后生成章节，每个章节生成ogg声音文件和vtt字幕文件。
  
