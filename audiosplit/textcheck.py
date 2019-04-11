@@ -124,7 +124,6 @@ def similarityFind(srcText, srcStart, dstText, maxWords = 30):
 							print('ccccccccccccccccc3',sim)
 							if sim > maxSim['sim']:
 								maxSim['sim'] = sim
-								maxSim['begin'] = begin
 								end = srcText.rfind(lastword, begin, maxSim['end'])
 								while srcText[end] != ' ':
 									end += 1
@@ -181,6 +180,7 @@ def checkSegment(filename, textFileName, segmentIdx=0, textIdx=0):
 	#用来判断文字相似度
 	jarowinkler = JaroWinkler()
 
+	ret = True
 	# 从json中读取分段信息。
 	segment = []
 	with open(filename, 'r', encoding='UTF-8') as f:
@@ -230,13 +230,14 @@ def checkSegment(filename, textFileName, segmentIdx=0, textIdx=0):
 					else:
 						print(segment[i + 1]['text'].lower().strip())
 						print(text[textIdx:textIdx+150])
-						return False
+						ret = False
+						break
 
 	with open(filename, 'w', encoding='UTF-8') as f:
 		json.dump(segment, f, indent = 4, sort_keys = True, ensure_ascii = False)
 		print('--------------------------------')
 	print('**********************************')
-	return True
+	return ret
 
 # 生成章节信息
 def buildBookInfo(filename, bookInfoFileName):
@@ -256,14 +257,20 @@ def buildBookInfo(filename, bookInfoFileName):
 				if idx == 0:
 					info['index'] = idx
 					info['start'] = 0
-					info['title'] = segment[i + 1]['texc']
+					if 'title' in segment[i].keys():
+						info['title'] = segment[i]['title']
+					else:
+						info['title'] = segment[i + 1]['texc']
 					idx += 1
 				else:
 					chapter.append(info)
 					info = {}
 					info['index'] = idx
 					info['start'] = i
-					info['title'] = segment[i + 1]['texc']
+					if 'title' in segment[i].keys():
+						info['title'] = segment[i]['title']
+					else:
+						info['title'] = segment[i + 1]['texc']
 					idx += 1
 			else:
 				info['end'] = i
