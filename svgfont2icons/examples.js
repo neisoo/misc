@@ -22,7 +22,8 @@ for (var i = 0; i < icons.length; i++) {
     var icon = icons[i];
     if (icon.includes('icon-')) {
         var className = icon.split('.')[1].split(':')[0];
-        html += '<i class="iconfont ' + className + '"></i>\n';
+        var unicode = icon.split('.')[1].split(':')[2].split('"')[1].replace('\\', '');
+        html += '<div style="display:inline-block;"><i class="iconfont ' + className + '"></i><div>' + className + '</div><div>' + unicode + '</div></div>\n';
     }
 }
 html += '<script>\n' +
