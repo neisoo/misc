@@ -1,0 +1,220 @@
+{
+copyright = "\U00A9 2015 Thomas Helbig. All rights reserved.";
+date = "2015-02-08 01:03:58 +0000";
+designer = "Thomas Helbig";
+designerURL = "http://www.dergraph.com";
+familyName = "Icon Excerpt";
+fontMaster = (
+{
+ascender = 1500;
+capHeight = 1200;
+descender = "-12";
+id = "26BBFFB4-DA81-4B82-A3F6-E874E18C5992";
+userData = {
+GSCornerRadius = 40;
+GSOffsetHorizontal = 10;
+GSOffsetProportional = 1;
+GSOffsetVertical = 100;
+GSRoughenHorizontal = 0;
+GSRoughenSegmentLength = 15;
+GSRoughenVertical = 10;
+};
+xHeight = 0;
+}
+);
+glyphs = (
+{
+glyphname = suitcase;
+lastChange = "2014-04-06 19:18:14 +0000";
+layers = (
+{
+layerId = "26BBFFB4-DA81-4B82-A3F6-E874E18C5992";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"0 600 LINE",
+"0 50 LINE SMOOTH",
+"0 0 OFFCURVE",
+"0 0 OFFCURVE",
+"50 0 CURVE SMOOTH",
+"1150 0 LINE SMOOTH",
+"1200 0 OFFCURVE",
+"1200 0 OFFCURVE",
+"1200 50 CURVE SMOOTH",
+"1200 600 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"700 500 LINE",
+"500 500 LINE",
+"500 600 LINE",
+"700 600 LINE"
+);
+},
+{
+closed = 1;
+nodes = (
+"450 1200 LINE SMOOTH",
+"400 1200 OFFCURVE",
+"350 1150 OFFCURVE",
+"350 1100 CURVE SMOOTH",
+"350 1000 LINE",
+"50 1000 LINE SMOOTH",
+"0 1000 OFFCURVE",
+"0 1000 OFFCURVE",
+"0 950 CURVE SMOOTH",
+"0 700 LINE",
+"1200 700 LINE",
+"1200 950 LINE SMOOTH",
+"1200 1000 OFFCURVE",
+"1200 1000 OFFCURVE",
+"1150 1000 CURVE SMOOTH",
+"850 1000 LINE",
+"850 1100 LINE SMOOTH",
+"850 1150 OFFCURVE",
+"800 1200 OFFCURVE",
+"750 1200 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"750 1000 LINE",
+"450 1000 LINE",
+"450 1100 LINE",
+"750 1100 LINE"
+);
+}
+);
+width = 1200;
+}
+);
+unicode = E1F8;
+},
+{
+glyphname = tag;
+lastChange = "2014-04-06 19:18:14 +0000";
+layers = (
+{
+layerId = "26BBFFB4-DA81-4B82-A3F6-E874E18C5992";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"100 1200 LINE SMOOTH",
+"0 1200 OFFCURVE",
+"0 1200 OFFCURVE",
+"0 1100 CURVE SMOOTH",
+"0 775 LINE SMOOTH",
+"0 700 OFFCURVE",
+"2 703 OFFCURVE",
+"38 667 CURVE SMOOTH",
+"669 36 LINE SMOOTH",
+"705 0 OFFCURVE",
+"704 0 OFFCURVE",
+"740 36 CURVE SMOOTH",
+"1165 459 LINE SMOOTH",
+"1200 494 OFFCURVE",
+"1200 496 OFFCURVE",
+"1164 531 CURVE SMOOTH",
+"532 1162 LINE SMOOTH",
+"496 1197 OFFCURVE",
+"500 1200 OFFCURVE",
+"425 1200 CURVE SMOOTH"
+);
+},
+{
+closed = 1;
+nodes = (
+"305.229 1050 OFFCURVE",
+"350 1005.23 OFFCURVE",
+"350 950 CURVE SMOOTH",
+"350 894.771 OFFCURVE",
+"305.229 850 OFFCURVE",
+"250 850 CURVE SMOOTH",
+"194.771 850 OFFCURVE",
+"150 894.771 OFFCURVE",
+"150 950 CURVE SMOOTH",
+"150 1005.23 OFFCURVE",
+"194.771 1050 OFFCURVE",
+"250 1050 CURVE SMOOTH"
+);
+}
+);
+width = 1200;
+}
+);
+unicode = E1FA;
+},
+{
+glyphname = "thumbs-up";
+lastChange = "2014-06-03 02:52:09 +0000";
+layers = (
+{
+layerId = "26BBFFB4-DA81-4B82-A3F6-E874E18C5992";
+name = Regular;
+paths = (
+{
+closed = 1;
+nodes = (
+"725 875 OFFCURVE",
+"500 850 OFFCURVE",
+"400 650 CURVE",
+"400 75 LINE",
+"550 25 OFFCURVE",
+"675 0 OFFCURVE",
+"800 0 CURVE SMOOTH",
+"1025 0 OFFCURVE",
+"1200 129 OFFCURVE",
+"1200 500 CURVE SMOOTH",
+"1200 625 OFFCURVE",
+"1175 700 OFFCURVE",
+"1075 700 CURVE SMOOTH",
+"800 700 LINE",
+"875 800 OFFCURVE",
+"925 950 OFFCURVE",
+"925 1050 CURVE SMOOTH",
+"925 1100 OFFCURVE",
+"925 1200 OFFCURVE",
+"825 1200 CURVE"
+);
+},
+{
+closed = 1;
+nodes = (
+"0 0 LINE",
+"300 0 LINE",
+"300 700 LINE",
+"0 700 LINE"
+);
+}
+);
+width = 1200;
+}
+);
+unicode = E21C;
+}
+);
+gridSubDivision = 10;
+instances = (
+{
+name = Regular;
+}
+);
+manufacturer = "Neue Deutsche";
+manufacturerURL = "http://www.neuedeutsche.com";
+unitsPerEm = 1000;
+userData = {
+GSDimensionPlugin.Dimensions = {
+"26BBFFB4-DA81-4B82-A3F6-E874E18C5992" = {
+};
+};
+};
+versionMajor = 1;
+versionMinor = 0;
+}
