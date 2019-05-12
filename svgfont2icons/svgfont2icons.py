@@ -1,4 +1,5 @@
-#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+#python3
 
 # https://www.iconfont.cn 下载iconfont后，会产生iconfont.svg字体文件。其中包括了图标的svg信息，但没有彩色。
 # 这个工具会根据iconfont.svg中的内容生成每个图标单独的svg文件。
@@ -115,11 +116,14 @@ def main(arguments):
 
         glyph_name = glyph_node.get('glyph-name').replace('.', '')
         glyph_path = glyph_node.get('d')
+        glyph_unicode = glyph_node.get('unicode')
+        glyph_unicode = '%x' % ord(glyph_unicode)
+        print('%s, %s' % (glyph_unicode, glyph_name))
 
         if glyph_name and glyph_path:
             if glyph_name in name_mapper:
                 glyph_name = name_mapper[glyph_name]
-            icon_file = open(os.path.join('icons', glyph_name + '.svg'), 'w', encoding='UTF-8')
+            icon_file = open(os.path.join('icons', glyph_unicode + '_' + glyph_name + '.svg'), 'w', encoding='UTF-8')
             icon_content = template.replace('{{ icon_path }}', glyph_path)
             icon_file.write(icon_content)
             icon_file.close()
