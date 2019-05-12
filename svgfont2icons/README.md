@@ -1,21 +1,13 @@
-# svgfont2icons Converter #
+iconfontjs2icons.py：
+https://www.iconfont.cn 下载iconfont后，会产生iconfont.js文件。其中包括了图标的svg信息，并支持彩色。
+这个工具会根据iconfont.js中的内容生成每个图标单独的svg文件。
+命令：iconfontjs2icons.py iconfont.js
 
-This converter converts SVG font files to SVG icon images.
+svgfont2icons.py：
+https://www.iconfont.cn 下载iconfont后，会产生iconfont.svg字体文件。其中包括了图标的svg信息，但没有彩色。
+这个工具会根据iconfont.svg中的内容生成每个图标单独的svg文件。
+命令：svgfont2icons.py iconfont.svg
 
-## Syntax ##
-
-    $ python svgfont2icons.py <icons.svg> [<icons.glyphs>] [--padding=<padding>]
-
-For example:
-
-    $ python svgfont2icons.py icon-excerpt.svg
-    $ python svgfont2icons.py icon-excerpt.svg icon-excerpt.glyphs --padding=200
-
-These commands would create icons directory and populate it with SVG icons from the font file.
-If the original Glyphs file is passed to the script as a second parameter,
-it will be used to read out the names for each Glyph and use them as the filenames.
-If padding is passed, each glyph will be added some padding.
-
-The idea of the script belongs to Thomas Helbig (http://www.dergraph.com / http://www.neuedeutsche.com).
-
-Implemented by Aidas Bendoraitis (aidas@bendoraitis.lt).
+examples.js：
+根据iconfont.css生成examples.html, 用来显示iconfont中有哪些图标。
+命令：node examples.js
