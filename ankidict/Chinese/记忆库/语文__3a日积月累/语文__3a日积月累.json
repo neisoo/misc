@@ -1,0 +1,163 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "051596ac-ed63-11e9-b41b-ac9e17867d04",
+    "deck_config_uuid": "351ee531-c6a9-11e8-8328-ac9e17867d04",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "351ee531-c6a9-11e8-8328-ac9e17867d04",
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    10
+                ],
+                "leechAction": 0,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": true,
+                "delays": [
+                    1,
+                    10
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    7
+                ],
+                "order": 1,
+                "perDay": 0,
+                "separate": true
+            },
+            "replayq": true,
+            "rev": {
+                "bury": true,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 200
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 10,
+    "extendRev": 50,
+    "media_files": [],
+    "name": "语文::3a日积月累",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "05171d5a-ed63-11e9-9f00-ac9e17867d04",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "name": "正反",
+            "req": [
+                [
+                    0,
+                    "all",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}",
+                    "bafmt": "",
+                    "bqfmt": "",
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "{{Front}}\n<br/>\n怎么念？"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "第二单元日积月累",
+                "秋亮气爽 天高云淡 秋风习习<div>一叶知秋 金桂飘香 层林尽染</div><div>五谷丰登 果实累累 春华秋实</div>"
+            ],
+            "flags": 0,
+            "guid": "CoYnFu2P-j",
+            "note_model_uuid": "05171d5a-ed63-11e9-9f00-ac9e17867d04",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "第三单元日积月累",
+                "灯不拨不亮，理不辩不明。<div>有理走遍天下，无理寸步难行。</div><div>一时强弱在于力，万古胜负在于理。</div>"
+            ],
+            "flags": 0,
+            "guid": "A`4Vukw#D>",
+            "note_model_uuid": "05171d5a-ed63-11e9-9f00-ac9e17867d04",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "第四单元日积月累",
+                "人心齐，泰山移。<div>二人同心，其利断金。</div><div>三个臭皮匠，顶个诸葛亮。</div><div>一个篱笆三个桩，一个好汉三个帮。</div>"
+            ],
+            "flags": 0,
+            "guid": "m]*D4e]8|-",
+            "note_model_uuid": "05171d5a-ed63-11e9-9f00-ac9e17867d04",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "data": "",
+            "fields": [
+                "第八单元日积月累",
+                "不迁怒、不贰过。--《论语》<div>爱人若爱其身。 --《墨子》</div><div>仁者爱人，有礼者敬人。 --《孟子》</div><div>与人善言，暖于布帛；伤人以言，深于矛戟 --《荀子》</div>"
+            ],
+            "flags": 0,
+            "guid": "ApW]{^f|zz",
+            "note_model_uuid": "05171d5a-ed63-11e9-9f00-ac9e17867d04",
+            "tags": []
+        }
+    ]
+}
